@@ -1,0 +1,72 @@
+{
+  "id": "USA",
+  "name": "United States",
+  "region": "North America",
+  "demographics": {
+    "population_millions": 335
+  },
+  "economy": {
+    "gdp_usd_trillion": 27.4,
+    "gdp_growth_pct": 2.5,
+    "notes": "Demo/approximate figures \u2014 replace with sourced data via data/sources/"
+  },
+  "military": {
+    "active_troops": 1328000,
+    "defence_spending_usd_billion": 916,
+    "defence_spending_pct_gdp": 3.42,
+    "defence_spending_pct_gdp_source": "World Bank WDI (MS.MIL.XPND.GD.ZS), 2024 data, extracted from user-provided dataset (file last updated 2026-02-24)",
+    "arms_exports_usd": 13512000000,
+    "arms_exports_year": 2024,
+    "arms_exports_source": "World Bank WDI (MS.MIL.XPRT.KD), constant USD, from user-provided dataset"
+  },
+  "energy": {
+    "net_import_dependence_ratio": -0.05,
+    "note": "Positive = net importer, negative = net exporter (approximate ratio, demo data)"
+  },
+  "infrastructure": {},
+  "trade": {},
+  "technology": {},
+  "geography": {
+    "region": "North America"
+  },
+  "politics": {},
+  "nuclear": {
+    "weapons_state": true
+  },
+  "strategic_priorities": [
+    "Indo-Pacific deterrence of China",
+    "Alliance cohesion (NATO/AUKUS)",
+    "Tech export controls",
+    "Domestic semiconductor reshoring"
+  ],
+  "dependencies": [],
+  "vulnerabilities": [
+    "High national debt",
+    "Political polarization",
+    "Overseas commitment overstretch"
+  ],
+  "strengths": [
+    "Global reserve currency",
+    "Technology/innovation leadership",
+    "Energy self-sufficiency (shale)",
+    "Global alliance network"
+  ],
+  "alliances": [
+    "GBR",
+    "JPN",
+    "AUS",
+    "KOR",
+    "ISR"
+  ],
+  "rivals": [
+    "CHN",
+    "RUS",
+    "IRN"
+  ],
+  "_meta": {
+    "data_quality": "demo; military spending %GDP and arms exports now sourced from real World Bank WDI data",
+    "source": "see data/sources/",
+    "confidence": "low-demo",
+    "last_updated": "2026-08-27"
+  }
+}

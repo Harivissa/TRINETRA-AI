@@ -1,0 +1,73 @@
+{
+  "id": "BGD",
+  "name": "Bangladesh",
+  "region": "South Asia",
+  "demographics": {
+    "population_millions": 173
+  },
+  "economy": {
+    "gdp_usd_trillion": 0.45,
+    "gdp_growth_pct": 5.5,
+    "notes": "Approximate/demo baseline figures \u2014 replace with sourced data via data/sources/"
+  },
+  "military": {
+    "active_troops": 165000,
+    "defence_spending_usd_billion": 4.4,
+    "defence_spending_pct_gdp": 0.94,
+    "defence_spending_pct_gdp_source": "World Bank WDI (MS.MIL.XPND.GD.ZS), 2024 data, extracted from user-provided dataset (file last updated 2026-02-24)",
+    "arms_exports_usd": 2000000,
+    "arms_exports_year": 1984,
+    "arms_exports_source": "World Bank WDI (MS.MIL.XPRT.KD), constant USD, from user-provided dataset"
+  },
+  "energy": {
+    "net_import_dependence_ratio": 0.6,
+    "note": "Positive = net importer (approximate ratio, demo data)"
+  },
+  "infrastructure": {
+    "notes": "Mangla Port operations agreement reportedly handed to a Chinese operator in 2026, raising Indian strategic concerns (per Organiser, Aug 2026)"
+  },
+  "trade": {},
+  "technology": {},
+  "geography": {
+    "region": "South Asia",
+    "notes": "Shares a roughly 4,100 km border with India"
+  },
+  "politics": {
+    "government": "Bangladesh Nationalist Party (BNP) government under PM Tarique Rahman, sworn in 17 Feb 2026, after winning Feb 2026 elections",
+    "prior_government": "Interim government led by Chief Adviser Muhammad Yunus (Aug 2024 - Feb 2026), which took power after PM Sheikh Hasina was ousted in a student-led uprising and fled to India on 5 Aug 2024",
+    "notes": "Jamaat-e-Islami made a significant seat gain in the Feb 2026 election, concentrated in border areas near India's West Bengal and Assam, which some analysts flag as a security-relevant shift"
+  },
+  "nuclear": {
+    "weapons_state": false
+  },
+  "strategic_priorities": [
+    "Balancing relations between India, China, and Pakistan",
+    "Resolving the Sheikh Hasina extradition/return question",
+    "Ganga/river water-sharing negotiations with India",
+    "Deepened ties with China (elevated to 'Community with a Shared Future', June 2026) and Pakistan"
+  ],
+  "dependencies": [
+    "India remains a major trading partner and, per Indian reporting, sent emergency diesel shipments (~45,000 tons, April 2026) amid fuel shortages"
+  ],
+  "vulnerabilities": [
+    "Political volatility following the 2024 uprising and 2026 election transition",
+    "Border-area political shifts (Jamaat-e-Islami gains) cited as a security concern by Indian analysts",
+    "Balancing competing pressure from India, China, and Pakistan simultaneously"
+  ],
+  "strengths": [
+    "Large population and growing garment-export economy",
+    "Strategic geographic position between India and Southeast Asia",
+    "New diplomatic leverage from being courted by India, China, and Pakistan simultaneously"
+  ],
+  "alliances": [
+    "CHN",
+    "PAK"
+  ],
+  "rivals": [],
+  "_meta": {
+    "data_quality": "sourced for 2024-2026 political events, demo for economic/military baseline; military spending %GDP and arms exports now sourced from real World Bank WDI data",
+    "source": "The Diplomat (Aug 2026, x2); RSIS (2026); Al Jazeera (Feb 2026); Organiser (Aug 2026); Deccan Herald; Malay Mail (2025)",
+    "confidence": "moderate \u2014 political sequence well corroborated across sources; some framing (e.g. 'anti-India stance') reflects Indian-aligned commentary and should be read alongside Bangladeshi government statements",
+    "last_updated": "2026-08-27"
+  }
+}

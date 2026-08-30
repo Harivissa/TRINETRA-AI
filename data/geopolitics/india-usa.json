@@ -1,0 +1,51 @@
+{
+  "country_a": "IND",
+  "country_b": "USA",
+  "relationship_type": "strategic_partner",
+  "classification": {
+    "category": "strategic_partner",
+    "strength": "high",
+    "direction": "mutual",
+    "economic_importance": "high",
+    "military_importance": "high",
+    "energy_importance": "low",
+    "diplomatic_importance": "high",
+    "reason": "The US views India as a key counterweight to China in the Indo-Pacific (Quad partnership with Japan and Australia). Neither side has a formal mutual-defence treaty, so the US is a strategic partner rather than a treaty ally.",
+    "confidence": "high",
+    "source": "Quad joint statements; US-India defence framework agreements"
+  },
+  "strategic_issues": [
+    "India's continued defence and energy purchases from Russia create friction with US sanctions policy",
+    "Trade disputes over tariffs and market access recur periodically"
+  ],
+  "trade_dependencies": [
+    "The US is one of India's largest export markets, particularly for IT services and pharmaceuticals"
+  ],
+  "energy_relationship": {
+    "direct_dependency": "low",
+    "notes": "Some US LNG and crude exports to India, but not a primary energy relationship"
+  },
+  "military_relationship": {
+    "posture": "growing defence cooperation, not a formal alliance",
+    "notes": "Joint exercises (Malabar), defence technology sharing agreements, and Quad coordination against Chinese regional assertiveness"
+  },
+  "diplomatic_relationship": {
+    "posture": "close strategic partnership",
+    "notes": "Quad grouping with Japan and Australia is explicitly framed around a free and open Indo-Pacific, widely read as balancing China"
+  },
+  "major_disputes": [],
+  "areas_of_cooperation": [
+    "Quad security and diplomatic coordination",
+    "Defence technology transfer",
+    "Trade and technology (semiconductors, critical minerals)"
+  ],
+  "escalation_factors": [],
+  "deescalation_factors": [
+    "Deep economic interdependence in trade and technology"
+  ],
+  "_meta": {
+    "data_quality": "demo/approximate baseline with sourced general trend",
+    "confidence": "moderate",
+    "last_updated": "2026-08-22"
+  }
+}

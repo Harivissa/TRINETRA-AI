@@ -1,0 +1,142 @@
+{
+  "country_id": "IND",
+  "events": [
+    {
+      "year": 1947,
+      "title": "Independence and Partition",
+      "what_happened": "British India gained independence on 15 August 1947 and was simultaneously partitioned into India and Pakistan, triggering mass migration and communal violence.",
+      "why_it_happened": "Decades of independence movement (Indian National Congress, Muslim League) combined with British withdrawal after WWII; the League's demand for a separate Muslim-majority state led to Partition alongside independence.",
+      "key_actors": ["Indian National Congress", "Muslim League", "British Raj", "Jawaharlal Nehru", "Mohammad Ali Jinnah", "Mahatma Gandhi"],
+      "consequences": "Formation of two independent states; large-scale population displacement and violence; the unresolved status of princely states, including Kashmir, set up future India-Pakistan disputes.",
+      "long_term_significance": "Founding event of the modern Indian state and the root of the India-Pakistan rivalry that continues today.",
+      "type": "FACT",
+      "confidence": "high"
+    },
+    {
+      "year": 1950,
+      "title": "Constitution comes into force",
+      "what_happened": "India's Constitution took effect on 26 January 1950, establishing India as a sovereign democratic republic.",
+      "why_it_happened": "The Constituent Assembly, formed after independence, drafted a founding document establishing a parliamentary democracy, federal structure, and fundamental rights.",
+      "key_actors": ["B.R. Ambedkar (chair, drafting committee)", "Constituent Assembly"],
+      "consequences": "Established the parliamentary system, federal structure, and fundamental rights framework still in use today.",
+      "long_term_significance": "Basic governing framework of the Indian state.",
+      "type": "FACT",
+      "confidence": "high"
+    },
+    {
+      "year": 1962,
+      "title": "Sino-Indian War",
+      "what_happened": "China and India fought a brief border war over disputed Himalayan territory (Aksai Chin and the eastern sector/NEFA), which India lost militarily.",
+      "why_it_happened": "Unresolved and undemarcated colonial-era border (the McMahon Line dispute), competing claims following China's annexation of Tibet, and breakdown of the earlier 'Hindi-Chini bhai-bhai' diplomatic period.",
+      "key_actors": ["India", "China", "Jawaharlal Nehru", "Mao Zedong"],
+      "consequences": "Indian military setback, loss of Aksai Chin territory to Chinese control, and a fundamental reorientation of Indian defence policy toward military modernisation.",
+      "long_term_significance": "Root cause of the still-unresolved Line of Actual Control dispute at the heart of the modern India-China rivalry.",
+      "type": "FACT",
+      "confidence": "high"
+    },
+    {
+      "year": 1971,
+      "title": "Bangladesh Liberation War",
+      "what_happened": "India intervened militarily in support of Bengali nationalists in East Pakistan, resulting in a decisive Indian/Bangladeshi victory and the creation of independent Bangladesh.",
+      "why_it_happened": "Political repression and military crackdown by the Pakistani state against the Bengali population in East Pakistan following the 1970 election, combined with a large refugee influx into India.",
+      "key_actors": ["India", "Pakistan", "Mukti Bahini (Bengali resistance)", "Indira Gandhi"],
+      "consequences": "Creation of Bangladesh as an independent state; Pakistan's military defeat and loss of its eastern wing.",
+      "long_term_significance": "Reshaped South Asia's map and cemented India as the region's dominant military power; a foundational reference point in India-Pakistan and India-Bangladesh relations.",
+      "type": "FACT",
+      "confidence": "high"
+    },
+    {
+      "year": 1991,
+      "title": "Economic liberalisation",
+      "what_happened": "Facing a severe balance-of-payments crisis, India undertook major economic reforms, dismantling much of its licence-permit-raj system and opening to foreign trade and investment.",
+      "why_it_happened": "A foreign exchange reserves crisis (partly triggered by the 1990-91 Gulf War oil price shock) forced the government to seek IMF assistance conditioned on structural reform.",
+      "key_actors": ["P.V. Narasimha Rao (PM)", "Manmohan Singh (Finance Minister)"],
+      "consequences": "Opened India's economy to global trade and investment, setting off three decades of accelerated economic growth.",
+      "long_term_significance": "Turning point that shaped India's modern economic trajectory and its integration into the global economy.",
+      "type": "FACT",
+      "confidence": "high"
+    },
+    {
+      "year": 1998,
+      "title": "Pokhran-II nuclear tests",
+      "what_happened": "India conducted a series of nuclear weapons tests, declaring itself a nuclear weapons state.",
+      "why_it_happened": "Longstanding security concerns following the 1962 and 1971 wars and China's earlier nuclearisation, combined with a strategic decision under the BJP-led government to formalise India's nuclear deterrent.",
+      "key_actors": ["Atal Bihari Vajpayee (PM)"],
+      "consequences": "International sanctions in the immediate aftermath; Pakistan conducted its own nuclear tests shortly after.",
+      "long_term_significance": "Established India's declared nuclear deterrent, a central pillar of its strategic posture today.",
+      "type": "FACT",
+      "confidence": "high"
+    },
+    {
+      "year": 1999,
+      "title": "Kargil War",
+      "what_happened": "Pakistani forces and militants occupied high-altitude positions on the Indian side of the Line of Control in Kargil; India fought a limited but intense conflict to reclaim the territory.",
+      "why_it_happened": "Pakistani military intrusion across the LoC, following the thaw of the Lahore Declaration talks earlier that year.",
+      "key_actors": ["India", "Pakistan", "Atal Bihari Vajpayee (PM)", "Pervez Musharraf"],
+      "consequences": "India recaptured the occupied positions; the conflict damaged Pakistan's international standing and contributed to Musharraf's later coup.",
+      "long_term_significance": "First open military conflict between two declared nuclear powers, reinforcing the risks of India-Pakistan escalation.",
+      "type": "FACT",
+      "confidence": "high"
+    },
+    {
+      "year": 2008,
+      "title": "India-US Civil Nuclear Agreement",
+      "what_happened": "The US and India concluded a civil nuclear cooperation agreement, ending India's nuclear isolation despite it not being a signatory to the Non-Proliferation Treaty.",
+      "why_it_happened": "Both countries sought a strategic partnership; the US saw India as a long-term Indo-Pacific partner and was willing to make an exception to non-proliferation norms.",
+      "key_actors": ["Manmohan Singh (PM)", "George W. Bush"],
+      "consequences": "Opened the door for India to access global civil nuclear trade and marked a significant deepening of the India-US strategic relationship.",
+      "long_term_significance": "Foundational moment in the modern India-US strategic partnership.",
+      "type": "FACT",
+      "confidence": "high"
+    },
+    {
+      "year": 2017,
+      "title": "Doklam standoff",
+      "what_happened": "Indian and Chinese troops faced off for over two months near the Doklam plateau, a disputed area between China and Bhutan, after Indian forces intervened to stop Chinese road construction.",
+      "why_it_happened": "China's road-building in territory claimed by Bhutan (an Indian security partner) was seen by India as altering the status quo near a strategically sensitive tri-junction near India's 'Chicken's Neck' corridor.",
+      "key_actors": ["India", "China", "Bhutan"],
+      "consequences": "Resolved through diplomatic disengagement without major escalation.",
+      "long_term_significance": "Signalled India's willingness to directly confront Chinese infrastructure assertiveness near sensitive borders, foreshadowing the more serious 2020 Galwan clash.",
+      "type": "FACT",
+      "confidence": "high"
+    },
+    {
+      "year": 2019,
+      "title": "Balakot airstrike and Article 370 revocation",
+      "what_happened": "Following the Pulwama suicide bombing (Feb 2019) that killed 40 Indian paramilitary personnel, India conducted airstrikes on an alleged militant camp in Balakot, Pakistan. Later that year, India revoked Jammu & Kashmir's special constitutional status (Article 370) and reorganised it into two union territories.",
+      "why_it_happened": "The Balakot strike was a response to the Pulwama attack, which India attributed to a Pakistan-based militant group. The Article 370 revocation reflected the BJP government's longstanding political commitment to fuller integration of J&K.",
+      "key_actors": ["Narendra Modi (PM)", "Indian Air Force"],
+      "consequences": "Balakot marked the first use of airpower across the international border between the two nuclear-armed neighbours since 1971; Article 370's revocation triggered a security lockdown in J&K and sharp criticism from Pakistan.",
+      "long_term_significance": "Raised the baseline severity of India-Pakistan military responses and reshaped the legal/political status of Jammu & Kashmir.",
+      "type": "FACT",
+      "confidence": "high"
+    },
+    {
+      "year": 2020,
+      "title": "Galwan Valley clash",
+      "what_happened": "Indian and Chinese troops engaged in violent hand-to-hand clashes in the Galwan Valley along the Line of Actual Control, resulting in the first fatalities on the India-China border in over 40 years.",
+      "why_it_happened": "Competing infrastructure buildup and patrolling disputes along the poorly demarcated LAC in eastern Ladakh.",
+      "key_actors": ["India", "China"],
+      "consequences": "Both sides suffered military casualties; large-scale troop and infrastructure buildup followed on both sides of the LAC, which continues today.",
+      "long_term_significance": "Marked the most serious India-China military crisis since 1962 and hardened India's threat perception of China.",
+      "type": "FACT",
+      "confidence": "high"
+    },
+    {
+      "year": 2025,
+      "title": "Pahalgam attack and Operation Sindoor",
+      "what_happened": "A militant attack near Pahalgam in Indian-administered Kashmir killed 26 people on 22 April 2025. India launched 'Operation Sindoor' on 7 May 2025, striking targets inside Pakistan; four days of strikes and counter-strikes followed before a ceasefire was announced on 10 May 2025.",
+      "why_it_happened": "India attributed the Pahalgam attack to Pakistan-based militants and retaliated militarily; both sides then exchanged strikes before international pressure and direct military-to-military contact led to a ceasefire.",
+      "key_actors": ["India", "Pakistan", "Indian Air Force", "Indian Navy"],
+      "consequences": "India suspended the Indus Waters Treaty; the ceasefire has broadly held despite mutual accusations of violations; reporting since (including an Aug 2026 China-Turkey arms airlift to Pakistan) suggests continued regional realignment.",
+      "long_term_significance": "The most serious India-Pakistan military crisis since Kargil, and the reason the Indus Waters Treaty — previously untouched even during past wars — is now suspended.",
+      "type": "FACT",
+      "confidence": "high"
+    }
+  ],
+  "_meta": {
+    "data_quality": "sourced — general historical facts through 2020 are well-established and widely corroborated; 2025-2026 events sourced from contemporaneous reporting (see sources.json)",
+    "confidence": "high for pre-2024 events; moderate-high for 2025-2026 events",
+    "last_updated": "2026-08-22"
+  }
+}

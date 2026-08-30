@@ -1,0 +1,44 @@
+{
+  "country_id": "IND",
+  "sources": [
+    {
+      "title": "India's Domestic Political Setting",
+      "publisher": "Congressional Research Service (via Congress.gov)",
+      "tier": 2,
+      "url": "https://www.congress.gov/crs-product/IF10298",
+      "used_for": "Current government composition, 2024 election results, coalition structure"
+    },
+    {
+      "title": "2024 Indian general election",
+      "publisher": "Wikipedia (aggregating Election Commission of India data)",
+      "tier": 3,
+      "url": "https://en.wikipedia.org/wiki/2024_Indian_general_election",
+      "used_for": "Seat counts and party results"
+    },
+    {
+      "title": "Four Days in May: The India-Pakistan Crisis of 2025",
+      "publisher": "Stimson Center",
+      "tier": 2,
+      "url": "https://www.stimson.org/2025/four-days-in-may-the-india-pakistan-crisis-of-2025/",
+      "used_for": "2025 India-Pakistan conflict timeline and details"
+    },
+    {
+      "title": "India-Pakistan Conflict in Spring 2025",
+      "publisher": "Congressional Research Service (via Congress.gov)",
+      "tier": 2,
+      "url": "https://www.congress.gov/crs-product/IF13000",
+      "used_for": "Ceasefire sequence and US role characterization"
+    },
+    {
+      "title": "SIPRI Trends in International Arms Transfers 2024",
+      "publisher": "Stockholm International Peace Research Institute",
+      "tier": 1,
+      "url": null,
+      "used_for": "China-Pakistan and Turkey-Pakistan arms trade share estimates"
+    }
+  ],
+  "_meta": {
+    "note": "This is a starting source list, not exhaustive. Pre-2024 historical events (independence, 1962/1971/1999 wars, 1991 liberalisation, 1998 tests) reflect widely corroborated historical consensus rather than a single citation.",
+    "last_updated": "2026-08-22"
+  }
+}

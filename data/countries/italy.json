@@ -1,0 +1,64 @@
+{
+  "id": "ITA",
+  "name": "Italy",
+  "region": "Europe",
+  "demographics": {
+    "population_millions": 59
+  },
+  "economy": {
+    "gdp_usd_trillion": 2.3,
+    "gdp_growth_pct": 0.7,
+    "notes": "Demo/approximate figures \u2014 replace with sourced data via data/sources/"
+  },
+  "military": {
+    "active_troops": 161500,
+    "defence_spending_usd_billion": 33,
+    "defence_spending_pct_gdp": 1.61,
+    "defence_spending_pct_gdp_source": "World Bank WDI (MS.MIL.XPND.GD.ZS), 2024 data, extracted from user-provided dataset (file last updated 2026-02-24)",
+    "arms_exports_usd": 1379000000,
+    "arms_exports_year": 2024,
+    "arms_exports_source": "World Bank WDI (MS.MIL.XPRT.KD), constant USD, from user-provided dataset"
+  },
+  "energy": {
+    "net_import_dependence_ratio": 0.75,
+    "note": "Positive = net importer, negative = net exporter (approximate ratio, demo data)"
+  },
+  "infrastructure": {},
+  "trade": {},
+  "technology": {},
+  "geography": {
+    "region": "Europe"
+  },
+  "politics": {},
+  "nuclear": {
+    "weapons_state": false
+  },
+  "strategic_priorities": [
+    "Mediterranean/North Africa stability",
+    "Energy diversification post-Russia",
+    "NATO southern flank commitments"
+  ],
+  "dependencies": [],
+  "vulnerabilities": [
+    "High energy import dependence",
+    "North Africa migration/instability exposure",
+    "High public debt"
+  ],
+  "strengths": [
+    "Mediterranean strategic position",
+    "NATO southern-flank anchor",
+    "Domestic defence industry (Leonardo)"
+  ],
+  "alliances": [
+    "FRA",
+    "DEU",
+    "USA"
+  ],
+  "rivals": [],
+  "_meta": {
+    "data_quality": "demo; military spending %GDP and arms exports now sourced from real World Bank WDI data",
+    "source": "see data/sources/",
+    "confidence": "low-demo",
+    "last_updated": "2026-08-27"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "id": "ORG_QUAD",
+  "entity_type": "organisation",
+  "name": "Quadrilateral Security Dialogue (Quad)",
+  "members": ["USA", "IND", "JPN", "AUS"],
+  "type": "informal strategic/diplomatic grouping, not a formal defence treaty",
+  "purpose": "Indo-Pacific security and diplomatic coordination, widely read as balancing Chinese regional influence, though members avoid framing it that way publicly.",
+  "founded": "2007 (dialogue began); revived and institutionalised from 2017 onward",
+  "record_type": "FACT",
+  "confidence": "high",
+  "_meta": {"sources": [], "last_updated": "2026-08-22"}
+}

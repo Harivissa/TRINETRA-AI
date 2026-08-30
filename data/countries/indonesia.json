@@ -1,0 +1,62 @@
+{
+  "id": "IDN",
+  "name": "Indonesia",
+  "region": "Southeast Asia",
+  "demographics": {
+    "population_millions": 283
+  },
+  "economy": {
+    "gdp_usd_trillion": 1.47,
+    "gdp_growth_pct": 5.0,
+    "notes": "Demo/approximate figures \u2014 replace with sourced data via data/sources/"
+  },
+  "military": {
+    "active_troops": 400000,
+    "defence_spending_usd_billion": 9.5,
+    "defence_spending_pct_gdp": 0.78,
+    "defence_spending_pct_gdp_source": "World Bank WDI (MS.MIL.XPND.GD.ZS), 2024 data, extracted from user-provided dataset (file last updated 2026-02-24)",
+    "arms_exports_usd": 17000000,
+    "arms_exports_year": 2021,
+    "arms_exports_source": "World Bank WDI (MS.MIL.XPRT.KD), constant USD, from user-provided dataset"
+  },
+  "energy": {
+    "net_import_dependence_ratio": 0.1,
+    "note": "Positive = net importer, negative = net exporter (approximate ratio, demo data)"
+  },
+  "infrastructure": {},
+  "trade": {},
+  "technology": {},
+  "geography": {
+    "region": "Southeast Asia"
+  },
+  "politics": {},
+  "nuclear": {
+    "weapons_state": false
+  },
+  "strategic_priorities": [
+    "Maritime chokepoint security",
+    "South China Sea claims management",
+    "ASEAN centrality maintenance"
+  ],
+  "dependencies": [],
+  "vulnerabilities": [
+    "Archipelagic defence complexity",
+    "South China Sea claim overlap with China",
+    "Low defence spending ratio"
+  ],
+  "strengths": [
+    "Largest ASEAN economy/population",
+    "Critical maritime chokepoints (Malacca/Sunda)",
+    "Non-aligned strategic positioning"
+  ],
+  "alliances": [
+    "ASEAN-bloc"
+  ],
+  "rivals": [],
+  "_meta": {
+    "data_quality": "demo; military spending %GDP and arms exports now sourced from real World Bank WDI data",
+    "source": "see data/sources/",
+    "confidence": "low-demo",
+    "last_updated": "2026-08-27"
+  }
+}

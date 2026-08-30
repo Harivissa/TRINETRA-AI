@@ -1,0 +1,52 @@
+{
+  "id": "REL_IND_RUS_STRATEGIC",
+  "source": "IND",
+  "target": "RUS",
+  "relationship_type": "strategic_partnership",
+  "domain": ["defence", "energy", "diplomacy", "nuclear"],
+  "strength": 0.75,
+  "strength_note": "Analyst judgment on a 0-1 scale, not a measured quantity. Reflects a historically deep relationship that has diversified on India's side since 2000, and become more asymmetric (India needing Russia less exclusively than before) rather than weaker outright.",
+  "direction": "mutual",
+  "status": "active",
+  "history": [
+    {
+      "period": "1950s-1960s",
+      "state": "developing",
+      "note": "Early Cold War-era engagement; Soviet Union began supplying arms and industrial assistance as India pursued non-alignment.",
+      "record_type": "HISTORICAL_FACT",
+      "confidence": "high"
+    },
+    {
+      "period": "1971",
+      "state": "strong_strategic_cooperation",
+      "note": "Indo-Soviet Treaty of Peace, Friendship and Cooperation (Aug 1971) preceded the Bangladesh Liberation War; the USSR provided diplomatic cover (UN Security Council vetoes) and arms support.",
+      "record_type": "HISTORICAL_FACT",
+      "confidence": "high"
+    },
+    {
+      "period": "1991",
+      "state": "transition",
+      "note": "Soviet collapse removed India's primary Cold War patron just as India began its own economic liberalisation and diversification of foreign partnerships.",
+      "record_type": "HISTORICAL_FACT",
+      "confidence": "high"
+    },
+    {
+      "period": "2000-2021",
+      "state": "strategic_partnership",
+      "note": "Formalised as a 'Strategic Partnership' (2000) then 'Special and Privileged Strategic Partnership' (2010); continued as India's largest cumulative arms supplier while India began diversifying toward France, the US, and Israel.",
+      "record_type": "HISTORICAL_FACT",
+      "confidence": "high"
+    },
+    {
+      "period": "2022-2026",
+      "state": "strategic_partnership_with_western_friction",
+      "note": "Russia's invasion of Ukraine created friction with India's Western partners over India's continued Russian oil purchases and refusal to condemn Russia at the UN, but the bilateral relationship itself continued largely undisrupted — India became one of the largest buyers of discounted Russian crude.",
+      "record_type": "ANALYTICAL_ASSESSMENT",
+      "confidence": "high"
+    }
+  ],
+  "evidence": ["SRC_SIPRI_ARMS_2024"],
+  "confidence": "high",
+  "record_type": "ANALYTICAL_ASSESSMENT",
+  "_meta": {"last_updated": "2026-08-22"}
+}

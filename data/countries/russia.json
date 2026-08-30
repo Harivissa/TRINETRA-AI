@@ -1,0 +1,69 @@
+{
+  "id": "RUS",
+  "name": "Russia",
+  "region": "Eurasia",
+  "demographics": {
+    "population_millions": 144
+  },
+  "economy": {
+    "gdp_usd_trillion": 2.02,
+    "gdp_growth_pct": 1.5,
+    "notes": "Demo/approximate figures \u2014 replace with sourced data via data/sources/"
+  },
+  "military": {
+    "active_troops": 1330000,
+    "defence_spending_usd_billion": 109,
+    "defence_spending_pct_gdp": 7.05,
+    "defence_spending_pct_gdp_source": "World Bank WDI (MS.MIL.XPND.GD.ZS), 2024 data, extracted from user-provided dataset (file last updated 2026-02-24)",
+    "arms_exports_usd": 1339000000,
+    "arms_exports_year": 2024,
+    "arms_exports_source": "World Bank WDI (MS.MIL.XPRT.KD), constant USD, from user-provided dataset"
+  },
+  "energy": {
+    "net_import_dependence_ratio": -1.2,
+    "note": "Positive = net importer, negative = net exporter (approximate ratio, demo data)"
+  },
+  "infrastructure": {},
+  "trade": {},
+  "technology": {},
+  "geography": {
+    "region": "Eurasia"
+  },
+  "politics": {},
+  "nuclear": {
+    "weapons_state": true
+  },
+  "strategic_priorities": [
+    "Ukraine war objectives",
+    "Energy leverage over Europe",
+    "Deepening China alignment",
+    "Arctic resource access"
+  ],
+  "dependencies": [],
+  "vulnerabilities": [
+    "Western sanctions isolation",
+    "Ukraine war attrition",
+    "Technology import restrictions"
+  ],
+  "strengths": [
+    "Vast energy exports",
+    "Nuclear arsenal parity with US",
+    "Strategic depth/geography"
+  ],
+  "alliances": [
+    "CHN",
+    "PRK",
+    "IRN"
+  ],
+  "rivals": [
+    "USA",
+    "GBR",
+    "FRA"
+  ],
+  "_meta": {
+    "data_quality": "demo; military spending %GDP and arms exports now sourced from real World Bank WDI data",
+    "source": "see data/sources/",
+    "confidence": "low-demo",
+    "last_updated": "2026-08-27"
+  }
+}
