@@ -4,16 +4,16 @@
 
 :root { color-scheme: dark; }
 html, body, #root { min-height: 100%; }
-body { background-color: #0a0a0a; color: #e5e5e5; font-family: 'DM Sans', sans-serif; }
+body { background: #0a0a0a; color: #e5e5e5; font-family: 'DM Sans', sans-serif; line-height: 1.55; }
 button, a { -webkit-tap-highlight-color: transparent; }
+button:focus-visible, a:focus-visible { outline: 2px solid #ff9933; outline-offset: 3px; }
 h1, h2, h3, .font-display { font-family: 'Cormorant Garamond', serif; }
-.status-dot { width: 8px; height: 8px; border-radius: 999px; background: #ff9933; display: inline-block; box-shadow: 0 0 8px rgba(255, 153, 51, .7); }
-.network-ring { animation: orbit 12s linear infinite; }
-.network-ring-delayed { animation-direction: reverse; animation-duration: 18s; }
-@keyframes orbit { from { transform: rotate(0deg) scale(1); } 50% { transform: rotate(180deg) scale(1.04); } to { transform: rotate(360deg) scale(1); } }
+.status-dot { width: 7px; height: 7px; border-radius: 999px; background: #ff9933; display: inline-block; }
+.workspace-rule { border-color: rgba(255,255,255,.11); }
 @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; } }
 @media (max-width: 640px) { h1 { letter-spacing: -.02em; } }
-
-@layer utilities {
-  .text-balance { text-wrap: balance; }
+@layer utilities { .text-balance { text-wrap: balance; } }
+@layer components {
+  .section-kicker { @apply font-mono text-[10px] uppercase tracking-[0.18em] text-trinetra-saffron; }
+  .data-meta { @apply font-mono text-[10px] uppercase tracking-[0.12em] text-neutral-500; }
 }
