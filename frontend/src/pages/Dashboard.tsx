@@ -1,71 +1,22 @@
-import { useCallback, useEffect, useState } from "react";
-import { ArrowUpRight, ChevronRight, Network, RefreshCw } from "lucide-react";
+import { useCallback, useEffect, useMemo, useState } from "react";
+import { ArrowUpRight, RefreshCw } from "lucide-react";
 import Header from "../components/dashboard/Header";
 import Footer from "../components/dashboard/Footer";
 import GlobalMap from "../components/network/GlobalMap";
 import { api } from "../services/api";
 
-interface NetworkData {
-  nodes: { id: string; label: string }[];
-  edges: { source: string; target: string; type: string }[];
-}
-
-const pathways = [
-  { title: "Nations", copy: "Country profiles and strategic context.", to: "/countries" },
-  { title: "Network", copy: "Declared relationships across the system.", to: "/network" },
-  { title: "Compare", copy: "Frame a focused rivalry analysis.", to: "/analyze" },
-];
+interface NetworkData { nodes: { id: string; label: string }[]; edges: { source: string; target: string; type: string }[]; }
 
 export default function Dashboard() {
   const [network, setNetwork] = useState<NetworkData | null>(null);
   const [error, setError] = useState(false);
-
-  const load = useCallback(() => {
-    setError(false);
-    api.getNetwork().then(setNetwork).catch(() => setError(true));
-  }, []);
-
+  const load = useCallback(() => { setError(false); api.getNetwork().then(setNetwork).catch(() => setError(true)); }, []);
   useEffect(() => { load(); }, [load]);
-
-  return (
-    <div className="min-h-screen bg-trinetra-bg text-neutral-200">
-      <Header />
-      <main className="mx-auto max-w-[1800px] px-5 py-7 lg:px-8 lg:py-9">
-        <section className="flex flex-col gap-5 border-b workspace-rule pb-7 md:flex-row md:items-end md:justify-between">
-          <div>
-            <p className="section-kicker mb-3">Overview / 01 September 2026</p>
-            <h1 className="max-w-2xl font-display text-4xl leading-[1.02] text-white md:text-6xl">Strategic intelligence for a changing world.</h1>
-            <p className="mt-4 max-w-xl text-sm leading-6 text-neutral-400">Trace the relationships, pressures, and dependencies shaping the international system.</p>
-          </div>
-          <button onClick={() => window.location.assign("/analyze")} className="flex w-fit items-center gap-2 rounded-sm bg-trinetra-saffron px-4 py-3 text-sm font-semibold text-black transition-colors hover:bg-trinetra-saffronDim focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-trinetra-saffron focus-visible:ring-offset-2 focus-visible:ring-offset-trinetra-bg">
-            Ask Trinetra <ArrowUpRight data-icon="inline-end" />
-          </button>
-        </section>
-
-        <section className="mt-8" aria-labelledby="situation-title">
-          <div className="mb-4 flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between">
-            <div><p className="section-kicker">Primary view</p><h2 id="situation-title" className="mt-1 font-display text-3xl text-white">Global situation</h2></div>
-            <p className="data-meta">Relationship dataset · select a nation to focus</p>
-          </div>
-          {error ? (
-            <div className="flex flex-col gap-4 border border-trinetra-border px-4 py-5 sm:flex-row sm:items-center sm:justify-between" role="alert">
-              <div><p className="font-medium text-white">TRINETRA data service unavailable</p><p className="mt-1 text-sm text-neutral-500">The relationship network could not be retrieved. Try again when the service is available.</p></div>
-              <button onClick={load} className="flex items-center gap-2 text-xs font-medium text-trinetra-saffron hover:text-white"><RefreshCw data-icon="inline-start" /> Retry</button>
-            </div>
-          ) : network ? <GlobalMap nodes={network.nodes} edges={network.edges} /> : (
-            <div className="flex min-h-[360px] items-center justify-center border border-trinetra-border text-sm text-neutral-500" role="status">Building relationship network…</div>
-          )}
-        </section>
-
-        <section className="mt-12 border-t workspace-rule pt-6" aria-labelledby="explore-title">
-          <div><p className="section-kicker">Continue analysis</p><h2 id="explore-title" className="mt-1 font-display text-3xl text-white">Explore the system</h2></div>
-          <div className="mt-5 grid border-y border-trinetra-border md:grid-cols-3">
-            {pathways.map((item) => <a key={item.title} href={item.to} className="group flex items-center justify-between border-b border-trinetra-border px-1 py-5 last:border-0 md:border-b-0 md:border-r md:px-5 md:first:pl-0 md:last:border-r-0"><span><span className="block font-display text-2xl text-white transition-colors group-hover:text-trinetra-saffron">{item.title}</span><span className="mt-1 block text-sm text-neutral-500">{item.copy}</span></span><ChevronRight className="text-neutral-600 transition-colors group-hover:text-trinetra-saffron" /></a>)}
-          </div>
-        </section>
-        <p className="mt-8 flex items-center gap-2 text-xs text-neutral-500"><Network data-icon="inline-start" /> Structured intelligence, not a live operational feed. Verify source context before drawing conclusions.</p>
-      </main>
-      <Footer />
-    </div>
-  );
+  const edgeTypes = useMemo(() => [...new Set(network?.edges.map((edge) => edge.type) ?? [])], [network]);
+  return <div className="min-h-screen bg-trinetra-bg text-neutral-200"><Header /><main className="mx-auto w-full max-w-[1920px] px-4 py-5 sm:px-6 lg:px-8 lg:py-7">
+    <section className="border-b workspace-rule pb-5"><div className="flex flex-wrap items-end justify-between gap-5"><div><p className="section-kicker mb-2">Command center / Situation brief</p><h1 className="font-display text-4xl leading-none text-white md:text-5xl">Global strategic situation</h1><p className="mt-3 max-w-2xl text-sm leading-6 text-neutral-400">A continuously structured view of geopolitical power, relationships, dependencies, strategic assets and emerging pressure points.</p></div><div className="flex items-center gap-3"><div className="hidden text-right sm:block"><p className="data-meta">As of</p><p className="mt-1 text-xs text-neutral-300">02 September 2026</p></div><a href="/analyze" className="flex items-center gap-2 rounded-sm bg-trinetra-saffron px-4 py-2.5 text-xs font-semibold text-black hover:bg-trinetra-saffronDim">Ask Trinetra <ArrowUpRight data-icon="inline-end" /></a></div></div><div className="mt-5 flex flex-wrap gap-x-5 gap-y-2 border-t border-trinetra-border pt-3 data-meta"><span>Structured country set</span><span>Strategic relationships</span><span>Chokepoints</span><span>Dependencies</span><span>Evidence-led</span></div></section>
+    <section className="mt-6" aria-labelledby="map-title"><div className="mb-3 flex flex-wrap items-end justify-between gap-3"><div><p className="section-kicker">Level 1 / Geographic view</p><h2 id="map-title" className="mt-1 font-display text-3xl text-white">Global strategic map</h2></div><p className="data-meta">Power · military · energy · trade · conflict</p></div>{error ? <div className="flex flex-col gap-4 border border-trinetra-border px-4 py-5 sm:flex-row sm:items-center sm:justify-between" role="alert"><div><p className="font-medium text-white">TRINETRA data service unavailable</p><p className="mt-1 text-sm text-neutral-500">The strategic relationship layer could not be retrieved.</p></div><button onClick={load} className="flex items-center gap-2 text-xs text-trinetra-saffron hover:text-white"><RefreshCw data-icon="inline-start" /> Retry</button></div> : network ? <GlobalMap nodes={network.nodes} edges={network.edges} /> : <div className="flex min-h-[430px] items-center justify-center border border-trinetra-border text-sm text-neutral-500" role="status">Preparing geographic analysis…</div>}</section>
+    <section className="mt-8 grid border-y border-trinetra-border lg:grid-cols-[1.3fr_.7fr]" aria-labelledby="signals-title"><div className="py-5 lg:border-r lg:border-trinetra-border lg:pr-7"><div className="flex items-end justify-between gap-4"><div><p className="section-kicker">Level 2 / Intelligence stream</p><h2 id="signals-title" className="mt-1 font-display text-3xl text-white">Strategic signals</h2></div><span className="data-meta">Verified events only</span></div><div className="mt-5 border-t border-trinetra-border py-8"><p className="font-display text-2xl text-neutral-300">No verified recent signals</p><p className="mt-2 max-w-lg text-sm leading-6 text-neutral-500">Event-level intelligence is not available from the connected dataset. TRINETRA will not fill this view with unsourced developments.</p></div></div><div className="py-5 lg:pl-7"><p className="section-kicker">System coverage</p><div className="mt-4 flex flex-col gap-3 text-sm">{network ? <><p className="flex justify-between border-b border-trinetra-border pb-3"><span className="text-neutral-400">Countries in set</span><span className="font-mono text-neutral-200">{network.nodes.length}</span></p><p className="flex justify-between border-b border-trinetra-border pb-3"><span className="text-neutral-400">Relationship records</span><span className="font-mono text-neutral-200">{network.edges.length}</span></p><p className="flex justify-between"><span className="text-neutral-400">Relationship types</span><span className="font-mono text-neutral-200">{edgeTypes.length}</span></p></> : <p className="text-neutral-500">Awaiting verified network data.</p>}</div></div></section>
+    <section className="mt-8" aria-labelledby="network-title"><div className="flex flex-wrap items-end justify-between gap-3 border-b border-trinetra-border pb-4"><div><p className="section-kicker">Level 3 / Structural view</p><h2 id="network-title" className="mt-1 font-display text-3xl text-white">Global power network</h2></div><a href="/network" className="text-xs text-trinetra-saffron hover:text-white">Open full network <ArrowUpRight className="ml-1 inline" /></a></div><p className="mt-4 max-w-2xl text-sm leading-6 text-neutral-500">Major strategic relationships across the TRINETRA country set. Select a nation to inspect the ties represented in the available data.</p></section>
+  </main><Footer /></div>;
 }
