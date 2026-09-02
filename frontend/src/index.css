@@ -14,6 +14,9 @@ h1, h2, h3, .font-display { font-family: 'Cormorant Garamond', serif; }
 @media (max-width: 640px) { h1 { letter-spacing: -.02em; } }
 @layer utilities { .text-balance { text-wrap: balance; } }
 @layer components {
+  .trinetra-sidebar { @apply fixed inset-y-0 left-0 z-30 hidden w-64 flex-col border-r border-trinetra-border bg-trinetra-bg lg:flex; }
+  .trinetra-topbar { margin-left: 0; }
+  @media (min-width: 1024px) { .trinetra-topbar { margin-left: 16rem; } main, footer { margin-left: 16rem; } }
   .section-kicker { @apply font-mono text-[10px] uppercase tracking-[0.18em] text-trinetra-saffron; }
   .data-meta { @apply font-mono text-[10px] uppercase tracking-[0.12em] text-neutral-500; }
   .view-switch { @apply flex border border-trinetra-border p-1; }

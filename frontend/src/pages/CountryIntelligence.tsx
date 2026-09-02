@@ -37,10 +37,6 @@ export default function CountryIntelligence() {
   const [history, setHistory] = useState<any | null>(null);
   const [politics, setPolitics] = useState<any | null>(null);
   const [foreignPolicy, setForeignPolicy] = useState<any | null>(null);
-  const audioRef = useState(() => new Audio())[0];
-  const [audioPlaying, setAudioPlaying] = useState(false);
-  const [audioAvailable, setAudioAvailable] = useState(true);
-
   // Inline full-width comparison — no sidebar box. Opening it reveals a
   // full-page-width section below the profile and scrolls there.
   const [compareOpen, setCompareOpen] = useState(false);
@@ -73,37 +69,6 @@ export default function CountryIntelligence() {
       if (available_modules.includes("foreign_policy")) api.getCountryModule(selected, "foreign_policy").then(setForeignPolicy);
     });
   }, [selected]);
-
-  // Ambient per-nation audio — plays /audio/<ID>.mp3 if present, stops when
-  // the nation changes or the page is left. No audio is bundled by default
-  // (copyrighted music/movie audio can't be sourced) — drop files into
-  // frontend/public/audio/<ID>.mp3 and this wires up automatically.
-  useEffect(() => {
-    if (!selected) return;
-    audioRef.pause();
-    audioRef.currentTime = 0;
-    audioRef.src = `/audio/${selected}.mp3`;
-    audioRef.loop = true;
-    setAudioPlaying(false);
-    setAudioAvailable(true);
-    audioRef.play().then(() => setAudioPlaying(true)).catch(() => setAudioPlaying(false));
-    return () => audioRef.pause();
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [selected]);
-
-  useEffect(() => {
-    return () => audioRef.pause();
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
-
-  function toggleAudio() {
-    if (audioPlaying) {
-      audioRef.pause();
-      setAudioPlaying(false);
-    } else {
-      audioRef.play().then(() => setAudioPlaying(true)).catch(() => setAudioAvailable(false));
-    }
-  }
 
   function openCompare() {
     setCompareOpen(true);
@@ -165,13 +130,6 @@ export default function CountryIntelligence() {
               <option key={c.id} value={c.id}>{c.name}</option>
             ))}
           </select>
-          <button
-            onClick={toggleAudio}
-            title={audioAvailable ? (audioPlaying ? "Pause ambient briefing audio" : "Play ambient briefing audio") : "No audio file found for this nation"}
-            className="border border-trinetra-border text-neutral-400 px-4 py-3 rounded hover:border-trinetra-saffron hover:text-trinetra-saffron transition-colors whitespace-nowrap"
-          >
-            {audioPlaying ? "🔊 Playing" : "🔈 Ambient Audio"}
-          </button>
           <button
             onClick={openCompare}
             className="border border-trinetra-border text-trinetra-saffron px-5 py-3 rounded hover:border-trinetra-saffron transition-colors whitespace-nowrap"

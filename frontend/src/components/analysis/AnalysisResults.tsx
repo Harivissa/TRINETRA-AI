@@ -1,213 +1,45 @@
-import { Shield, TrendingUp, Globe2, GitBranch, Anchor, BookOpen, Radio } from "lucide-react";
-import ResilienceRadar from "../charts/ResilienceRadar";
-import CompareBarChart from "../charts/CompareBarChart";
+import { useState, type ReactNode } from "react";
+import { ChevronDown, ChevronRight } from "lucide-react";
 import type { RivalryAnalysis as RivalryAnalysisType } from "../../types";
 
-function SectionHeader({ icon: Icon, title }: { icon: any; title: string }) {
-  return (
-    <div className="flex items-center gap-3 mb-4">
-      <div className="w-9 h-9 rounded bg-trinetra-saffron/10 border border-trinetra-saffron/30 flex items-center justify-center">
-        <Icon size={18} className="text-trinetra-saffron" />
-      </div>
-      <h2 className="font-display text-2xl text-trinetra-saffron">{title}</h2>
-    </div>
-  );
+type SectionProps = { title: string; note?: string; children: ReactNode };
+function Section({ title, note, children }: SectionProps) {
+  return <section className="border-b border-trinetra-border py-9 last:border-b-0"><div className="mb-5 flex flex-col gap-2 md:flex-row md:items-baseline md:justify-between"><h2 className="font-display text-2xl text-neutral-100">{title}</h2>{note && <p className="max-w-xl text-sm leading-6 text-neutral-500">{note}</p>}</div>{children}</section>;
 }
+function Evidence({ confidence, reason }: { confidence?: string; reason?: string }) {
+  if (!confidence && !reason) return null;
+  return <p className="mt-4 text-xs text-neutral-500">Assessment confidence: {confidence || "not stated"}{reason ? ` — ${reason}` : ""}</p>;
+}
+function EmptyData({ children }: { children: React.ReactNode }) { return <p className="border-l border-trinetra-border py-2 pl-4 text-sm leading-6 text-neutral-500">NO VERIFIED DATA AVAILABLE <span className="block normal-case">{children}</span></p>; }
 
 export default function AnalysisResults({ analysis }: { analysis: RivalryAnalysisType }) {
-  return (
-    <div className="space-y-14">
-      {/* RESILIENCE RADAR — the pictorial centerpiece */}
-      <section>
-        <SectionHeader icon={Shield} title="Strategic Resilience Profile" />
-        <p className="text-sm text-neutral-500 mb-4">{analysis.resilience_profile.note}</p>
-        <div className="border border-trinetra-border rounded-lg p-6 bg-trinetra-panel">
-          <div className="grid md:grid-cols-2 gap-6 items-center">
-            <ResilienceRadar
-              dimensions={analysis.resilience_profile.dimensions}
-              aLabel={analysis.country_a.id}
-              bLabel={analysis.country_b.id}
-            />
-            <div className="space-y-3">
-              {analysis.resilience_profile.dimensions.map((d) => (
-                <div key={d.dimension} className="border-b border-trinetra-border pb-2 last:border-0">
-                  <div className="flex justify-between text-sm">
-                    <span className="text-neutral-300">{d.dimension}</span>
-                    <span className="text-trinetra-saffron font-semibold">
-                      {d.country_a_value} <span className="text-neutral-600">vs</span> {d.country_b_value}
-                    </span>
-                  </div>
-                  <p className="text-xs text-neutral-600 mt-0.5">{d.explains}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
+  const [openEvidence, setOpenEvidence] = useState<string | null>(null);
+  const a = analysis.country_a;
+  const b = analysis.country_b;
+  const militaryRows = [
+    ["Composite score", analysis.military?.country_a?.composite_score, analysis.military?.country_b?.composite_score],
+    ["Active personnel", analysis.military?.country_a?.active_troops, analysis.military?.country_b?.active_troops],
+    ["Defence spending (USD bn)", analysis.military?.country_a?.defence_spending_usd_billion, analysis.military?.country_b?.defence_spending_usd_billion],
+  ];
+  const economicRows = [
+    ["GDP (USD tn)", analysis.economic?.country_a?.gdp_usd_trillion, analysis.economic?.country_b?.gdp_usd_trillion],
+    ["GDP growth (%)", analysis.economic?.country_a?.gdp_growth_pct, analysis.economic?.country_b?.gdp_growth_pct],
+    ["Energy vulnerability", analysis.energy?.country_a?.energy_vulnerability_score, analysis.energy?.country_b?.energy_vulnerability_score],
+  ];
 
-      {/* MILITARY + ECONOMIC BAR CHARTS */}
-      <section>
-        <SectionHeader icon={TrendingUp} title="Head-to-Head Metrics" />
-        <div className="grid md:grid-cols-2 gap-6">
-          <div className="border border-trinetra-border rounded-lg p-6 bg-trinetra-panel">
-            <h3 className="text-sm uppercase tracking-wide text-neutral-500 mb-3">Military</h3>
-            <CompareBarChart
-              aLabel={analysis.country_a.id}
-              bLabel={analysis.country_b.id}
-              data={[
-                { metric: "Composite score", a: analysis.military.country_a.composite_score, b: analysis.military.country_b.composite_score },
-                { metric: "Troops (K)", a: Math.round((analysis.military.country_a.active_troops || 0) / 1000), b: Math.round((analysis.military.country_b.active_troops || 0) / 1000) },
-                { metric: "Budget ($bn)", a: analysis.military.country_a.defence_spending_usd_billion || 0, b: analysis.military.country_b.defence_spending_usd_billion || 0 },
-              ]}
-            />
-          </div>
-          <div className="border border-trinetra-border rounded-lg p-6 bg-trinetra-panel">
-            <h3 className="text-sm uppercase tracking-wide text-neutral-500 mb-3">Economy & Energy</h3>
-            <CompareBarChart
-              aLabel={analysis.country_a.id}
-              bLabel={analysis.country_b.id}
-              data={[
-                { metric: "GDP ($tn)", a: analysis.economic.country_a.gdp_usd_trillion || 0, b: analysis.economic.country_b.gdp_usd_trillion || 0 },
-                { metric: "Growth %", a: analysis.economic.country_a.gdp_growth_pct || 0, b: analysis.economic.country_b.gdp_growth_pct || 0 },
-                { metric: "Energy vulnerability", a: analysis.energy.country_a.energy_vulnerability_score, b: analysis.energy.country_b.energy_vulnerability_score },
-              ]}
-            />
-          </div>
-        </div>
-      </section>
+  return <div>
+    <div className="flex flex-col gap-2 border-b border-trinetra-border pb-7 md:flex-row md:items-end md:justify-between"><div><p className="eyebrow mb-3">ASSESSMENT RESULT</p><h2 className="font-display text-3xl text-neutral-100">{a.name} <span className="text-neutral-600">/</span> {b.name}</h2></div><p className="text-xs text-neutral-500">Structured comparison · source fields preserved</p></div>
 
-      {/* EXTERNAL ACTORS */}
-      <section>
-        <SectionHeader icon={Globe2} title="External Actors" />
-        <p className="text-sm text-neutral-500 mb-4">{analysis.geopolitical.note}</p>
-        <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-3">
-          {analysis.geopolitical.external_actors.map((a) => (
-            <div key={a.country} className="border border-trinetra-border rounded-lg p-4 bg-trinetra-panel">
-              <div className="flex justify-between items-center mb-1">
-                <span className="font-display text-lg text-neutral-100">{a.country}</span>
-                <span className="text-xs uppercase tracking-wide text-trinetra-saffron border border-trinetra-saffron rounded px-2 py-1">
-                  {a.role}
-                </span>
-              </div>
-              <p className="text-sm text-neutral-400">{a.reason}</p>
-            </div>
-          ))}
-          {analysis.geopolitical.external_actors.length === 0 && (
-            <p className="text-sm text-neutral-500">No third-party relationship data on file for this pair yet.</p>
-          )}
-        </div>
-      </section>
+    <Section title="Relationship context" note={analysis.geopolitical.note}><div className="grid gap-8 md:grid-cols-2"><div><p className="eyebrow mb-2">RECORDED RELATIONSHIP</p><p className="text-lg text-trinetra-saffron">{analysis.geopolitical.relationship?.relationship_type || analysis.geopolitical.relationship?.type || "Relationship type not stated"}</p></div><div><p className="eyebrow mb-2">EXTERNAL ACTORS</p>{analysis.geopolitical.external_actors?.length ? <ul className="flex flex-col gap-3">{analysis.geopolitical.external_actors.map((actor) => <li key={actor.country} className="border-b border-trinetra-border pb-3 last:border-0"><span className="text-neutral-200">{actor.country}</span><span className="ml-3 text-xs text-trinetra-saffron">{actor.role}</span><p className="mt-1 text-sm leading-6 text-neutral-400">{actor.reason}</p></li>)}</ul> : <EmptyData>No third-party relationship data is on file for this pair.</EmptyData>}</div></div></Section>
 
-      {/* CHOKEPOINTS */}
-      <section>
-        <SectionHeader icon={Anchor} title="Chokepoint Leverage" />
-        <p className="text-sm text-neutral-500 mb-4">{analysis.chokepoints.note}</p>
-        {analysis.chokepoints.relevant_chokepoints.length === 0 && (
-          <p className="text-sm text-neutral-500">No maritime/energy chokepoints in the current dataset apply directly to this pair.</p>
-        )}
-        <div className="space-y-4">
-          {analysis.chokepoints.relevant_chokepoints.map((cp) => (
-            <div key={cp.chokepoint} className="border border-trinetra-border rounded-lg p-5 bg-trinetra-panel">
-              <h3 className="font-display text-xl text-trinetra-saffron mb-2">{cp.chokepoint}</h3>
-              <p className="text-sm text-neutral-400 mb-4">{cp.why_it_matters}</p>
-              <div className="grid grid-cols-2 gap-4 text-sm">
-                <div>
-                  <div className="text-neutral-500 text-xs uppercase mb-1">{analysis.country_a.id} exposure/leverage</div>
-                  {cp.country_a_exposure && <p className="text-neutral-300 mb-1"><span className="text-red-400">Exposed:</span> {cp.country_a_exposure.reason}</p>}
-                  {cp.country_a_leverage && <p className="text-neutral-300"><span className="text-trinetra-saffron">Leverage:</span> {cp.country_a_leverage.reason}</p>}
-                  {!cp.country_a_exposure && !cp.country_a_leverage && <p className="text-neutral-600">Not directly implicated</p>}
-                </div>
-                <div>
-                  <div className="text-neutral-500 text-xs uppercase mb-1">{analysis.country_b.id} exposure/leverage</div>
-                  {cp.country_b_exposure && <p className="text-neutral-300 mb-1"><span className="text-red-400">Exposed:</span> {cp.country_b_exposure.reason}</p>}
-                  {cp.country_b_leverage && <p className="text-neutral-300"><span className="text-trinetra-saffron">Leverage:</span> {cp.country_b_leverage.reason}</p>}
-                  {!cp.country_b_exposure && !cp.country_b_leverage && <p className="text-neutral-600">Not directly implicated</p>}
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
-      </section>
+    <Section title="Material comparison" note="Raw values from the assessment response. No normalized scores or winner logic added."><div className="overflow-x-auto"><table className="w-full min-w-[520px] text-left text-sm"><thead><tr className="border-b border-trinetra-border text-xs text-neutral-500"><th className="pb-3 font-normal">MEASURE</th><th className="pb-3 font-normal">{a.id}</th><th className="pb-3 font-normal">{b.id}</th></tr></thead><tbody>{[...militaryRows, ...economicRows].map(([label, av, bv]) => <tr key={String(label)} className="border-b border-trinetra-border/70 transition-colors hover:bg-trinetra-panel"><td className="py-3 text-neutral-300">{label}</td><td className="py-3 text-trinetra-saffron">{av ?? "—"}</td><td className="py-3 text-neutral-200">{bv ?? "—"}</td></tr>)}</tbody></table></div></Section>
 
-      {/* CONSEQUENCE CHAIN */}
-      <section>
-        <SectionHeader icon={GitBranch} title="Strategic Consequence Chain" />
-        <p className="text-sm text-neutral-500 mb-4">{analysis.consequence_chain.note}</p>
-        <div className="space-y-1">
-          {analysis.consequence_chain.steps.map((s, i) => (
-            <div key={s.step} className="flex gap-4">
-              <div className="flex flex-col items-center">
-                <div className="w-8 h-8 rounded-full bg-trinetra-saffron/10 border-2 border-trinetra-saffron flex items-center justify-center text-trinetra-saffron font-display text-sm shrink-0">
-                  {s.step}
-                </div>
-                {i < analysis.consequence_chain.steps.length - 1 && <div className="w-0.5 flex-1 bg-trinetra-border my-1" />}
-              </div>
-              <div className="pb-5">
-                <div className="text-xs uppercase tracking-wide text-neutral-500">{s.domain}</div>
-                <div className="text-sm text-neutral-200">{s.description}</div>
-              </div>
-            </div>
-          ))}
-        </div>
-      </section>
+    <Section title="Leverage and dependencies" note={analysis.chokepoints.note}><div className="flex flex-col gap-7">{analysis.chokepoints.relevant_chokepoints?.length ? analysis.chokepoints.relevant_chokepoints.map((cp) => <article key={cp.chokepoint} className="border-l border-trinetra-saffron pl-5"><h3 className="text-lg text-neutral-100">{cp.chokepoint}</h3><p className="mt-1 text-sm leading-6 text-neutral-400">{cp.why_it_matters}</p><div className="mt-4 grid gap-5 text-sm md:grid-cols-2"><div><p className="eyebrow mb-2">{a.id}</p><p className="leading-6 text-neutral-300">{cp.country_a_exposure?.reason || cp.country_a_leverage?.reason || "No direct implication recorded."}</p></div><div><p className="eyebrow mb-2">{b.id}</p><p className="leading-6 text-neutral-300">{cp.country_b_exposure?.reason || cp.country_b_leverage?.reason || "No direct implication recorded."}</p></div></div></article>) : <EmptyData>No maritime or energy chokepoints in the current dataset apply directly to this pair.</EmptyData>}</div></Section>
 
-      {/* DEEP DIVE ANALYSES */}
-      {analysis.deep_dive_analyses.length > 0 && (
-        <section>
-          <SectionHeader icon={BookOpen} title="Deep-Dive Strategic Analysis" />
-          <div className="space-y-6">
-            {analysis.deep_dive_analyses.map((a) => (
-              <div key={a.subject} className="border border-trinetra-border rounded-lg p-5 bg-trinetra-panel">
-                <h3 className="font-display text-xl text-white mb-1">{a.subject}</h3>
-                <p className="text-xs text-neutral-600 mb-4">Confidence: {a.confidence} — {a.confidence_reason}</p>
+    <Section title="Consequence chain" note={analysis.consequence_chain.note}><div className="flex flex-col">{analysis.consequence_chain.steps?.length ? analysis.consequence_chain.steps.map((step, index) => <div key={step.step} className="flex gap-5 border-l border-trinetra-border pb-7 pl-5 last:pb-0"><div className="-ml-[29px] flex size-5 shrink-0 items-center justify-center rounded-full border border-trinetra-saffron bg-trinetra-bg text-[10px] text-trinetra-saffron">{step.step}</div><div><p className="eyebrow mb-1">{step.domain}</p><p className="text-sm leading-6 text-neutral-300">{step.description}</p></div></div>) : <EmptyData>No consequence chain is available for this comparison.</EmptyData>}</div></Section>
 
-                {a.facts && (
-                  <div className="mb-4">
-                    <div className="text-xs uppercase tracking-wide text-neutral-500 mb-2">Facts</div>
-                    {a.facts.map((f, i) => (
-                      <p key={i} className="text-sm text-neutral-300 mb-2">• {f.statement}</p>
-                    ))}
-                  </div>
-                )}
+    {analysis.deep_dive_analyses?.length > 0 && <Section title="Deep-dive assessments"><div className="flex flex-col gap-3">{analysis.deep_dive_analyses.map((item) => { const open = openEvidence === item.subject; return <article key={item.subject} className="border-b border-trinetra-border last:border-0"><button onClick={() => setOpenEvidence(open ? null : item.subject)} className="flex w-full items-center justify-between gap-4 py-4 text-left"><span className="text-neutral-200">{item.subject}</span><span className="flex items-center gap-3 text-xs text-neutral-500">{item.confidence}{open ? <ChevronDown size={16} /> : <ChevronRight size={16} />}</span></button>{open && <div className="pb-5 text-sm leading-6 text-neutral-400">{item.facts?.map((fact) => <p key={fact.statement} className="mb-2">{fact.statement}</p>)}{item.assessment && <div className="mt-4 border-l border-trinetra-saffron pl-4"><p className="text-neutral-200">{item.assessment.statement}</p><p className="mt-2 text-xs text-neutral-500">{item.assessment.reasoning}</p></div>}{item.scenario_note && <p className="mt-4">{item.scenario_note.statement} <span className="text-xs text-neutral-500">{item.scenario_note.caveat}</span></p>}<Evidence confidence={item.confidence} reason={item.confidence_reason} /></div>}</article>; })}</div></Section>}
 
-                {a.assessment && (
-                  <div className="mb-4 border-t border-trinetra-border pt-4">
-                    <div className="text-xs uppercase tracking-wide text-trinetra-saffron mb-2">Analytical Assessment</div>
-                    <p className="text-sm text-neutral-200 mb-2">{a.assessment.statement}</p>
-                    <p className="text-xs text-neutral-500">{a.assessment.reasoning}</p>
-                  </div>
-                )}
-
-                {a.scenario_note && (
-                  <div className="border-t border-trinetra-border pt-4">
-                    <div className="text-xs uppercase tracking-wide text-neutral-500 mb-2">Scenario (not a prediction)</div>
-                    <p className="text-sm text-neutral-300 mb-2">{a.scenario_note.statement}</p>
-                    <p className="text-xs text-neutral-600 italic">{a.scenario_note.caveat}</p>
-                  </div>
-                )}
-              </div>
-            ))}
-          </div>
-        </section>
-      )}
-
-      {/* SCENARIOS */}
-      <section>
-        <SectionHeader icon={Radio} title="Scenarios" />
-        <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-3">
-          {analysis.scenarios.map((s) => (
-            <div key={s.scenario} className="border border-trinetra-border rounded-lg p-4 bg-trinetra-panel flex justify-between items-center">
-              <div>
-                <div className="font-semibold text-neutral-200">{s.scenario}</div>
-                <div className="text-xs text-neutral-500">{s.trigger_factors.join(", ")}</div>
-              </div>
-              <span className="text-xs uppercase tracking-wide text-trinetra-saffron border border-trinetra-saffron rounded px-2 py-1 shrink-0 ml-3">
-                {s.probability_estimate}
-              </span>
-            </div>
-          ))}
-        </div>
-      </section>
-    </div>
-  );
+    <Section title="Scenarios" note="Scenario framing is not a prediction."><div className="overflow-x-auto"><table className="w-full min-w-[520px] text-left text-sm"><thead><tr className="border-b border-trinetra-border text-xs text-neutral-500"><th className="pb-3 font-normal">SCENARIO</th><th className="pb-3 font-normal">TRIGGERS</th><th className="pb-3 font-normal">ESTIMATE</th></tr></thead><tbody>{analysis.scenarios?.map((scenario) => <tr key={scenario.scenario} className="border-b border-trinetra-border/70"><td className="py-3 text-neutral-200">{scenario.scenario}</td><td className="py-3 text-neutral-400">{scenario.trigger_factors?.join(", ") || "—"}</td><td className="py-3 text-trinetra-saffron">{scenario.probability_estimate || "Not stated"}</td></tr>)}</tbody></table></div></Section>
+  </div>;
 }
