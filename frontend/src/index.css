@@ -16,4 +16,25 @@ h1, h2, h3, .font-display { font-family: 'Cormorant Garamond', serif; }
 @layer components {
   .section-kicker { @apply font-mono text-[10px] uppercase tracking-[0.18em] text-trinetra-saffron; }
   .data-meta { @apply font-mono text-[10px] uppercase tracking-[0.12em] text-neutral-500; }
+  .view-switch { @apply flex border border-trinetra-border p-1; }
+  .view-switch button { @apply px-4 py-2 text-xs capitalize text-neutral-500 transition-colors hover:text-white; }
+  .view-switch button[aria-selected="true"] { @apply bg-trinetra-saffron text-black; }
+  .map-shell { @apply border-t border-trinetra-border; }
+  .map-toolbar { @apply flex flex-wrap items-center justify-between gap-3 border-b border-trinetra-border py-3; }
+  .map-search { @apply relative flex min-w-[240px] flex-1 items-center gap-2 text-neutral-500; }
+  .map-search input { @apply w-full bg-transparent text-sm text-neutral-200 outline-none placeholder:text-neutral-600; }
+  .map-results { @apply absolute left-0 top-8 z-[1000] w-full max-w-sm border border-trinetra-border bg-trinetra-panel shadow-xl; }
+  .map-results button { @apply flex w-full items-center justify-between border-b border-trinetra-border px-3 py-2 text-left text-sm text-neutral-200 last:border-0 hover:bg-neutral-800; }
+  .map-results span { @apply font-mono text-[9px] uppercase tracking-wider text-neutral-500; }
+  .map-layers { @apply flex flex-wrap items-center gap-3 text-xs text-neutral-400; }
+  .map-layers label { @apply flex items-center gap-1.5; }
+  .map-layers input { accent-color: #ff9933; }
+  .map-frame { @apply relative h-[min(68vh,720px)] min-h-[430px] overflow-hidden border border-trinetra-border bg-[#101315]; }
+  .map-frame .leaflet-container { background: #101315; font-family: 'DM Sans', sans-serif; }
+  .map-frame .leaflet-control-zoom { border: 1px solid #444 !important; }
+  .map-frame .leaflet-control-zoom a, .map-control { background: #111 !important; color: #ddd !important; border-color: #444 !important; }
+  .map-control { @apply flex size-[30px] items-center justify-center border text-neutral-300; }
+  .map-notice, .map-loading { @apply absolute left-4 top-4 z-[500] border border-trinetra-border bg-trinetra-panel/95 px-3 py-2 font-mono text-[10px] uppercase tracking-wider text-neutral-400; }
+  .map-loading span { @apply text-neutral-600; }
+  @media (max-width: 640px) { .map-frame { @apply min-h-[calc(100vh-290px)] h-[calc(100vh-290px)]; } .map-layers { @apply w-full; } }
 }
