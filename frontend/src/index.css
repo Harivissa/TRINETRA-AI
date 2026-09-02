@@ -14,12 +14,6 @@ h1, h2, h3, .font-display { font-family: 'Cormorant Garamond', serif; }
 @media (max-width: 640px) { h1 { letter-spacing: -.02em; } }
 @layer utilities { .text-balance { text-wrap: balance; } }
 @layer components {
-  .sidebar-edge-zone { @apply fixed inset-y-0 left-0 z-40 w-5; }
-  .trinetra-sidebar { @apply fixed inset-y-0 left-0 z-50 flex w-64 -translate-x-full flex-col border-r border-trinetra-border bg-trinetra-bg shadow-2xl transition-transform duration-300 ease-out; }
-  .trinetra-sidebar.is-open { @apply translate-x-0; }
-  .trinetra-topbar, main, footer { margin-left: 0; }
-  @media (max-width: 1023px) { .trinetra-sidebar { @apply hidden; } .trinetra-sidebar.is-open { @apply flex; } .sidebar-edge-zone { @apply hidden; } }
-  @media (prefers-reduced-motion: reduce) { .trinetra-sidebar { transition-duration: .01ms; } }
   .section-kicker { @apply font-mono text-[10px] uppercase tracking-[0.18em] text-trinetra-saffron; }
   .data-meta { @apply font-mono text-[10px] uppercase tracking-[0.12em] text-neutral-500; }
   .view-switch { @apply flex border border-trinetra-border p-1; }
