@@ -5,6 +5,7 @@ import Footer from "../components/dashboard/Footer";
 import CountrySelect from "../components/country/CountrySelect";
 import LoadingEngine from "../components/analysis/LoadingEngine";
 import AnalysisResults from "../components/analysis/AnalysisResults";
+import { playLoadingAudio } from "../lib/audio";
 import { api } from "../services/api";
 import type { CountryIndexEntry, RivalryAnalysis as RivalryAnalysisType } from "../types";
 
@@ -27,6 +28,7 @@ export default function RivalryAnalysis() {
       setError("Select two different countries to compare.");
       return;
     }
+    playLoadingAudio();
     setError(null);
     setAnalysis(null);
     setEngineDone(false);
