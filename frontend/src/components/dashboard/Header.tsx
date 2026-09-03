@@ -27,7 +27,7 @@ export default function Header() {
   }, []);
 
   return <header className="sticky top-0 z-20 border-b border-trinetra-border bg-trinetra-bg/95 backdrop-blur">
-    <div className="mx-auto flex min-h-[68px] max-w-[1920px] items-center justify-between gap-5 px-4 sm:px-6 lg:px-8">
+    <div className="mx-auto flex min-h-[62px] max-w-[1920px] items-center justify-between gap-5 px-4 sm:px-6 lg:px-8">
       <Link to="/" className="flex shrink-0 items-center gap-3" aria-label="TRINETRA overview">
         <span className="flex size-9 items-center justify-center rounded-sm bg-trinetra-saffron text-xs font-bold text-black">TN</span>
         <span><span className="block font-display text-[22px] leading-none text-white">TRINETRA</span><span className="hidden font-mono text-[9px] uppercase tracking-[.14em] text-neutral-600 sm:block">Strategic intelligence</span></span>
