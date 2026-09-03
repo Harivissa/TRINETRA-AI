@@ -54,7 +54,7 @@ export default function RivalryAnalysis() {
   return (
     <div className="min-h-screen bg-trinetra-bg text-neutral-200">
       <Header />
-      <main className="mx-auto max-w-[1500px] px-5 py-10 md:px-8 md:py-14">
+      <main className="mx-auto max-w-[1500px] px-5 py-5 md:px-8 md:py-7">
         <div className="border-b border-trinetra-border pb-8">
           <p className="eyebrow mb-4">COMPARE / STRATEGIC ASSESSMENT</p>
           <h1 className="font-display text-4xl text-neutral-100 md:text-6xl">Compare national positions</h1>
