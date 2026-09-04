@@ -9,30 +9,48 @@ import type { Country, CountryIndexEntry } from "../types";
 type ViewMode = "grid" | "list";
 type Profile = CountryIndexEntry & { detail?: Country };
 
-const crops = ["0% 18%", "50% 18%", "100% 18%", "0% 82%", "50% 82%", "100% 82%"];
+type CountryPresentation = { image: string; landmark: string };
+
+// Presentation-only metadata. It is intentionally separate from country intelligence data.
+const countryPresentation: Record<string, CountryPresentation> = {
+  IND: { image: "https://images.unsplash.com/photo-1587474260584-136574528ed5?auto=format&fit=crop&w=1200&q=80", landmark: "India Gate, New Delhi" },
+  CHN: { image: "https://images.unsplash.com/photo-1508804185872-d7badad00f7d?auto=format&fit=crop&w=1200&q=80", landmark: "The Great Wall, China" },
+  USA: { image: "https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?auto=format&fit=crop&w=1200&q=80", landmark: "United States Capitol, Washington D.C." },
+  RUS: { image: "https://images.unsplash.com/photo-1513326738677-b964603b136d?auto=format&fit=crop&w=1200&q=80", landmark: "Saint Basil's Cathedral, Moscow" },
+  JPN: { image: "https://images.unsplash.com/photo-1528360983277-13d401cdc186?auto=format&fit=crop&w=1200&q=80", landmark: "Fushimi Inari Shrine, Kyoto" },
+  DEU: { image: "https://images.unsplash.com/photo-1560969184-10fe8719e047?auto=format&fit=crop&w=1200&q=80", landmark: "Brandenburg Gate, Berlin" },
+  GBR: { image: "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?auto=format&fit=crop&w=1200&q=80", landmark: "Big Ben, London" },
+  FRA: { image: "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=1200&q=80", landmark: "Eiffel Tower, Paris" },
+  KOR: { image: "https://images.unsplash.com/photo-1538485399081-7c897a1e6fce?auto=format&fit=crop&w=1200&q=80", landmark: "Gyeongbokgung Palace, Seoul" },
+  TUR: { image: "https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?auto=format&fit=crop&w=1200&q=80", landmark: "Hagia Sophia, Istanbul" },
+  SAU: { image: "https://images.unsplash.com/photo-1539650116574-75c0c6d73f6e?auto=format&fit=crop&w=1200&q=80", landmark: "Kingdom Centre, Riyadh" },
+  IRN: { image: "https://images.unsplash.com/photo-1576485290814-1c72aa4bbb8e?auto=format&fit=crop&w=1200&q=80", landmark: "Azadi Tower, Tehran" },
+  ISR: { image: "https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=1200&q=80", landmark: "Western Wall, Jerusalem" },
+  PAK: { image: "https://images.unsplash.com/photo-1567606409415-9e7b7b8a1f16?auto=format&fit=crop&w=1200&q=80", landmark: "Badshahi Mosque, Lahore" },
+  AUS: { image: "https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?auto=format&fit=crop&w=1200&q=80", landmark: "Sydney Opera House, Sydney" },
+  CAN: { image: "https://images.unsplash.com/photo-1517935706615-2717063c2225?auto=format&fit=crop&w=1200&q=80", landmark: "CN Tower, Toronto" },
+  BRA: { image: "https://images.unsplash.com/photo-1483729558449-99ef09a8c325?auto=format&fit=crop&w=1200&q=80", landmark: "Christ the Redeemer, Rio de Janeiro" },
+  IDN: { image: "https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=1200&q=80", landmark: "Borobudur Temple, Java" },
+  ITA: { image: "https://images.unsplash.com/photo-1552832230-c0197dd311b5?auto=format&fit=crop&w=1200&q=80", landmark: "Colosseum, Rome" },
+  ARE: { image: "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=1200&q=80", landmark: "Burj Khalifa, Dubai" },
+  BGD: { image: "https://images.unsplash.com/photo-1627894483216-2138af692e32?auto=format&fit=crop&w=1200&q=80", landmark: "National Parliament Building, Dhaka" },
+};
 
 function regionOf(country: Country | undefined) {
   return country?.region || "Region not available";
 }
 
-function locationOf(country: Country | undefined) {
-  const geography = country?.geography;
-  if (!geography || typeof geography !== "object") return null;
-  const values = Object.values(geography).flatMap((value) => Array.isArray(value) ? value : [value]);
-  return values.find((value): value is string => typeof value === "string" && value.trim().length > 0) || null;
-}
-
 function Card({ profile, index, mode }: { profile: Profile; index: number; mode: ViewMode }) {
   const region = regionOf(profile.detail);
-  const location = locationOf(profile.detail);
+  const presentation = countryPresentation[profile.id] || { image: "https://images.unsplash.com/photo-1521292270410-a8c4d716d518?auto=format&fit=crop&w=1200&q=80", landmark: "Representative location not available" };
   return <Link to={`/country?id=${profile.id}`} className={`group relative overflow-hidden rounded-md border border-trinetra-border bg-trinetra-panel text-left transition-all hover:border-trinetra-saffron focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-trinetra-saffron ${mode === "list" ? "flex min-h-32" : "aspect-[16/9] min-h-[174px]"}`}>
-    <div className={`${mode === "list" ? "w-36 shrink-0" : "absolute inset-0"} bg-cover bg-center opacity-50 transition duration-500 group-hover:scale-105 group-hover:opacity-65`} style={{ backgroundImage: "url('/chokepoints-atlas.png')", backgroundPosition: crops[index % crops.length], backgroundSize: "300% 220%" }} aria-hidden="true" />
+    <div className={`${mode === "list" ? "w-36 shrink-0" : "absolute inset-0"} bg-cover bg-center opacity-50 transition duration-500 group-hover:scale-105 group-hover:opacity-65`} style={{ backgroundImage: `url(${presentation.image})` }} aria-hidden="true" />
     <div className="absolute inset-0 bg-gradient-to-t from-trinetra-bg via-trinetra-bg/80 to-trinetra-bg/35" aria-hidden="true" />
     <div className={`relative flex min-w-0 flex-1 flex-col justify-between gap-4 p-4 ${mode === "list" ? "sm:flex-row sm:items-center" : "min-h-full"}`}>
       <div className="min-w-0">
         <div className="mb-3 flex items-start justify-between gap-3"><h2 className="font-display text-[25px] leading-none text-neutral-100 transition-colors group-hover:text-trinetra-saffron">{profile.name}</h2><span className="rounded-sm bg-trinetra-bg/85 px-2 py-1 font-mono text-[10px] text-neutral-300">{profile.id}</span></div>
         <p className="text-xs text-neutral-300">Region: {region}</p>
-        <p className="mt-3 flex items-start gap-1.5 text-xs leading-5 text-neutral-300"><MapPin className="mt-0.5 size-3 shrink-0 text-trinetra-saffron" aria-hidden="true" />{location || "Geographic detail not available"}</p>
+        <p className="mt-3 flex items-start gap-1.5 text-xs leading-5 text-neutral-300"><MapPin className="mt-0.5 size-3 shrink-0 text-trinetra-saffron" aria-hidden="true" />{presentation.landmark}</p>
       </div>
       <div className="flex items-center justify-between border-t border-trinetra-border pt-3 text-xs text-trinetra-saffron">View full intelligence profile <ArrowRight className="size-3" aria-hidden="true" /></div>
     </div>
@@ -51,7 +69,7 @@ export default function CountriesGrid() {
   useEffect(() => { load(); }, []);
 
   const regions = useMemo(() => ["All Regions", ...Array.from(new Set(countries.map((profile) => regionOf(profile.detail)).filter((item) => item !== "Region not available"))).sort()], [countries]);
-  const filtered = useMemo(() => countries.filter((profile) => { const haystack = `${profile.name} ${profile.id} ${regionOf(profile.detail)} ${locationOf(profile.detail) || ""}`.toLowerCase(); return haystack.includes(query.toLowerCase()) && (region === "All Regions" || regionOf(profile.detail) === region); }), [countries, query, region]);
+  const filtered = useMemo(() => countries.filter((profile) => { const haystack = `${profile.name} ${profile.id} ${regionOf(profile.detail)} ${countryPresentation[profile.id]?.landmark || ""}`.toLowerCase(); return haystack.includes(query.toLowerCase()) && (region === "All Regions" || regionOf(profile.detail) === region); }), [countries, query, region]);
 
   return <div className="min-h-screen bg-trinetra-bg text-neutral-200"><Header /><main className="mx-auto max-w-[1540px] px-5 py-6 sm:px-8 sm:py-8"><div className="mb-6 flex flex-col gap-5 lg:flex-row lg:items-end lg:justify-between"><div><div className="section-kicker">TRINETRA <span>/</span> COUNTRIES</div><h1 className="mt-3 font-display text-5xl leading-none text-neutral-100 sm:text-6xl">COUNTRIES</h1><p className="mt-3 text-sm text-neutral-400">Intelligence profiles of 20 major states shaping the global order.</p></div><div className="flex flex-wrap items-center gap-3"><div className="view-switch" role="group" aria-label="View mode"><button aria-selected={view === "grid"} onClick={() => setView("grid")}><Grid2X2 className="size-3.5" />Grid</button><button aria-selected={view === "list"} onClick={() => setView("list")}><List className="size-3.5" />List</button></div><label className="control-button"><Search className="size-3.5" /><span className="sr-only">Search countries</span><input value={query} onChange={(event) => setQuery(event.target.value)} placeholder="Search countries..." className="w-36 bg-transparent outline-none placeholder:text-neutral-600" /></label><select value={region} onChange={(event) => setRegion(event.target.value)} className="control-button min-w-40 appearance-none bg-trinetra-bg"><option value="All Regions">All Regions</option>{regions.slice(1).map((item) => <option key={item}>{item}</option>)}</select></div></div>
       {loading && <div className="grid gap-3 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5">{Array.from({ length: 10 }).map((_, index) => <div key={index} className="aspect-[16/9] animate-pulse rounded-md border border-trinetra-border bg-trinetra-panel" />)}</div>}
