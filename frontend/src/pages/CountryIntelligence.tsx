@@ -14,7 +14,7 @@ import type { CountryIndexEntry, Country, RivalryAnalysis as RivalryAnalysisType
 
 function List({ items }: { items?: string[] }) {
   if (!items || items.length === 0) {
-    return <div className="text-sm text-neutral-500">Data unavailable for this section.</div>;
+    return <div className="text-sm text-neutral-500">No data yet for this section.</div>;
   }
   return (
     <ul className="space-y-2">
@@ -203,7 +203,7 @@ export default function CountryIntelligence() {
                   <div className="border border-trinetra-border rounded-lg p-4 bg-black/20">
                     <Radiation size={20} className={country.nuclear?.weapons_state ? "text-trinetra-saffron mb-2" : "text-neutral-600 mb-2"} />
                     <div className="text-neutral-500 text-xs uppercase">Nuclear</div>
-                    <div className="text-neutral-100 font-display text-lg">{country.nuclear?.weapons_state ? "Yes" : "Data unavailable"}</div>
+                    <div className="text-neutral-100 font-display text-lg">{country.nuclear?.weapons_state ? "Yes" : "No"}</div>
                   </div>
                 </div>
               </ProfileSection>
