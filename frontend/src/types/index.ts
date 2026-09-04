@@ -72,4 +72,10 @@ export interface RivalryAnalysis {
   country_a_profile?: Country;
   country_b_profile?: Country;
   source_relationship?: Record<string, any> | null;
+  comparison_data?: {
+    chokepoints: any[];
+    pair_modules: any[];
+    external_actor_records: any[];
+    availability: Record<string, boolean>;
+  };
 }

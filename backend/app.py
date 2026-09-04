@@ -110,6 +110,31 @@ def run_rivalry():
     relationship = repository.get_relationship(a_id, b_id)
     analysis = strategic_engine.run_rivalry_analysis(country_a, country_b, relationship)
 
+    pair = {a_id.upper(), b_id.upper()}
+    chokepoints = []
+    for checkpoint in repository.get_chokepoints():
+        exposed = {item.get("country") for item in checkpoint.get("countries_most_exposed", [])}
+        leverage = {item.get("country") for item in checkpoint.get("countries_with_leverage", [])}
+        if (exposed | leverage) & pair:
+            chokepoints.append(checkpoint)
+    modules = repository.get_modules_for_pair(a_id, b_id)
+    analysis["country_a_profile"] = country_a
+    analysis["country_b_profile"] = country_b
+    analysis["source_relationship"] = relationship
+    analysis["comparison_data"] = {
+        "chokepoints": chokepoints,
+        "pair_modules": modules,
+        "external_actor_records": repository.get_external_actor_records(a_id, b_id),
+        "availability": {
+            "country_profiles": True,
+            "bilateral_relationship": relationship is not None,
+            "chokepoints": bool(chokepoints),
+            "pair_modules": bool(modules),
+            "source_metadata": bool(country_a.get("_meta") or country_b.get("_meta")),
+            "external_actor_records": bool(repository.get_external_actor_records(a_id, b_id)),
+        },
+    }
+
     include_ai = body.get("include_ai_summary", False)
     if include_ai:
         try:
