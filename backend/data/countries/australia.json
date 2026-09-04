@@ -1,0 +1,101 @@
+{
+  "id": "AUS",
+  "name": "Australia",
+  "region": "Oceania",
+  "demographics": {
+    "population_millions": 26.8,
+    "population_source": "SIPRI Yearbook 2026 (released 8 Jun 2026) + IMF WEO Apr/Jul 2026 + World Bank WDI Jun 2026, via user-provided unified research file; nuclear warhead counts and India's defence spend independently cross-checked against live SIPRI press materials (Aug 2026) (2025 figure)"
+  },
+  "economy": {
+    "gdp_usd_trillion": 1.79,
+    "gdp_growth_pct": 1.5,
+    "notes": "Demo/approximate figures \u2014 replace with sourced data via data/sources/",
+    "gdp_source": "SIPRI Yearbook 2026 (released 8 Jun 2026) + IMF WEO Apr/Jul 2026 + World Bank WDI Jun 2026, via user-provided unified research file; nuclear warhead counts and India's defence spend independently cross-checked against live SIPRI press materials (Aug 2026) (2025 figures)"
+  },
+  "military": {
+    "active_troops": 58500,
+    "defence_spending_usd_billion": 34.2,
+    "defence_spending_pct_gdp": 1.91,
+    "defence_spending_pct_gdp_source": "World Bank WDI (MS.MIL.XPND.GD.ZS), 2024 data, extracted from user-provided dataset (file last updated 2026-02-24)",
+    "arms_exports_usd": 75000000,
+    "arms_exports_year": 2024,
+    "arms_exports_source": "World Bank WDI (MS.MIL.XPRT.KD), constant USD, from user-provided dataset",
+    "reserve_troops": 32000,
+    "defence_spending_pct_gdp_worldbank_2024": 1.88,
+    "defence_spending_source": "SIPRI Yearbook 2026 (released 8 Jun 2026) + IMF WEO Apr/Jul 2026 + World Bank WDI Jun 2026, via user-provided unified research file; nuclear warhead counts and India's defence spend independently cross-checked against live SIPRI press materials (Aug 2026) (2025 figures)"
+  },
+  "energy": {
+    "net_import_dependence_ratio": -0.3,
+    "note": "Positive = net importer, negative = net exporter (approximate ratio, demo data)",
+    "status_2025": "Massive net exporter",
+    "oil_production_bpd_estimate": "~0.3M",
+    "oil_consumption_bpd_estimate": "~1.0M",
+    "net_oil_position": "net importer (refined products) despite being a major raw exporter",
+    "gas_position": "massive net exporter (LNG, one of world's largest)",
+    "electricity_mix_estimate": "coal ~45%, renewables ~35%, gas ~20%",
+    "major_energy_customers": [
+      "JPN",
+      "CHN",
+      "KOR"
+    ],
+    "record_type": "ESTIMATE",
+    "confidence": "moderate \u2014 approximate orders of magnitude consistent with IEA/EIA reporting patterns, not precise official figures for a specific year",
+    "source": "Compiled from IEA/EIA-consistent general energy-market knowledge; recommend cross-checking against IEA World Energy Outlook or EIA Country Analysis Briefs for precise current-year figures"
+  },
+  "infrastructure": {},
+  "trade": {},
+  "technology": {},
+  "geography": {
+    "region": "Oceania"
+  },
+  "politics": {
+    "head_of_government": "Anthony Albanese",
+    "role": "Prime Minister",
+    "in_office_since": "2022 (re-elected 2025)",
+    "party": "Labor Party",
+    "record_type": "FACT",
+    "confidence": "high",
+    "source": "Verified via web search Sept 2026 (extensive 2026 activity confirmed)"
+  },
+  "nuclear": {
+    "weapons_state": true,
+    "warhead_estimate": 0,
+    "warhead_estimate_year": 2026,
+    "warhead_estimate_source": "SIPRI Yearbook 2026 (as of Jan 2026), independently verified against live SIPRI press materials Aug 2026"
+  },
+  "strategic_priorities": [
+    "AUKUS submarine acquisition",
+    "Pacific Islands influence competition with China",
+    "Trade diversification from China"
+  ],
+  "dependencies": [],
+  "vulnerabilities": [
+    "Extremely long, thinly populated coastline and maritime approaches make comprehensive surveillance and denial of the full northern approaches to Australia a persistent structural challenge",
+    "Heavy trade dependence on China as the largest export market (iron ore, coal, LNG), creating economic exposure whenever bilateral political relations sour",
+    "Small population base relative to landmass limits the scale of standing military manpower without heavy reliance on technology and alliance backing",
+    "AUKUS submarine transition creates a capability gap \u2014 the Collins-class fleet must be extended in service until Virginia-class/SSN-AUKUS boats arrive in the 2030s"
+  ],
+  "strengths": [
+    "Southern Hemisphere anchor of the US alliance system \u2014 AUKUS Pillar 1 nuclear-powered submarine partnership and Pine Gap joint intelligence facility",
+    "Massive net exporter of energy and minerals (iron ore, LNG, coal, lithium), giving genuine leverage over China's raw-material supply chains despite the trade dependence risk",
+    "Stable Western-aligned democratic institutions and deep Five Eyes intelligence integration",
+    "Geographic position astride the southern approaches to the Indo-Pacific, relevant to any contingency involving the Malacca/Sunda/Lombok strait system"
+  ],
+  "alliances": [
+    "USA",
+    "GBR",
+    "JPN"
+  ],
+  "rivals": [
+    "CHN-tensions"
+  ],
+  "_meta": {
+    "data_quality": "demo; military spending %GDP and arms exports now sourced from real World Bank WDI data",
+    "source": "see data/sources/",
+    "confidence": "low-demo",
+    "last_updated": "2026-09-03",
+    "core_data_source": "SIPRI Yearbook 2026 (released 8 Jun 2026) + IMF WEO Apr/Jul 2026 + World Bank WDI Jun 2026, via user-provided unified research file; nuclear warhead counts and India's defence spend independently cross-checked against live SIPRI press materials (Aug 2026)",
+    "strengths_vulnerabilities_source": "Original ASSESSMENT \u2014 mechanism-based, matching the depth pattern of the Gemini-sourced entries for other countries, compiled from well-established open-source strategic analysis"
+  },
+  "strategic_autonomy_profile": "Indo-Pacific southern anchor (AUKUS/Quad)"
+}

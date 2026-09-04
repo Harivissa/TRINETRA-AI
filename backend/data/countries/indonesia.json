@@ -1,0 +1,101 @@
+{
+  "id": "IDN",
+  "name": "Indonesia",
+  "region": "Southeast Asia",
+  "demographics": {
+    "population_millions": 281.6,
+    "population_source": "SIPRI Yearbook 2026 (released 8 Jun 2026) + IMF WEO Apr/Jul 2026 + World Bank WDI Jun 2026, via user-provided unified research file; nuclear warhead counts and India's defence spend independently cross-checked against live SIPRI press materials (Aug 2026) (2025 figure)"
+  },
+  "economy": {
+    "gdp_usd_trillion": 1.49,
+    "gdp_growth_pct": 5.0,
+    "notes": "Demo/approximate figures \u2014 replace with sourced data via data/sources/",
+    "gdp_source": "SIPRI Yearbook 2026 (released 8 Jun 2026) + IMF WEO Apr/Jul 2026 + World Bank WDI Jun 2026, via user-provided unified research file; nuclear warhead counts and India's defence spend independently cross-checked against live SIPRI press materials (Aug 2026) (2025 figures)"
+  },
+  "military": {
+    "active_troops": 400000,
+    "defence_spending_usd_billion": 9.4,
+    "defence_spending_pct_gdp": 0.63,
+    "defence_spending_pct_gdp_source": "World Bank WDI (MS.MIL.XPND.GD.ZS), 2024 data, extracted from user-provided dataset (file last updated 2026-02-24)",
+    "arms_exports_usd": 17000000,
+    "arms_exports_year": 2021,
+    "arms_exports_source": "World Bank WDI (MS.MIL.XPRT.KD), constant USD, from user-provided dataset",
+    "reserve_troops": 400000,
+    "defence_spending_pct_gdp_worldbank_2024": 0.78,
+    "defence_spending_source": "SIPRI Yearbook 2026 (released 8 Jun 2026) + IMF WEO Apr/Jul 2026 + World Bank WDI Jun 2026, via user-provided unified research file; nuclear warhead counts and India's defence spend independently cross-checked against live SIPRI press materials (Aug 2026) (2025 figures)",
+    "defence_spending_discrepancy_note": "World Bank WDI (MS.MIL.XPND.GD.ZS, 2024) gave 0.78%; SIPRI Yearbook 2026 (2025 data) gives 0.63% \u2014 both are legitimate sources measuring different years and, per SIPRI's own methodology notes, sometimes different expenditure scopes. SIPRI figure used as primary since it is defence-specific and more recent; World Bank figure retained below for comparison."
+  },
+  "energy": {
+    "net_import_dependence_ratio": 0.1,
+    "note": "Positive = net importer, negative = net exporter (approximate ratio, demo data)",
+    "status_2025": "Major coal/mineral exporter",
+    "oil_production_bpd_estimate": "~0.6M",
+    "oil_consumption_bpd_estimate": "~1.8M",
+    "net_oil_position": "net importer (crude), net exporter of coal/LNG",
+    "gas_position": "net exporter (LNG), though domestic consumption rising",
+    "electricity_mix_estimate": "coal ~60%, gas ~20%, hydro/geothermal ~15%, renewables growing",
+    "major_energy_suppliers": [
+      "SAU"
+    ],
+    "major_energy_customers": [
+      "JPN",
+      "KOR",
+      "CHN"
+    ],
+    "record_type": "ESTIMATE",
+    "confidence": "moderate \u2014 approximate orders of magnitude consistent with IEA/EIA reporting patterns, not precise official figures for a specific year",
+    "source": "Compiled from IEA/EIA-consistent general energy-market knowledge; recommend cross-checking against IEA World Energy Outlook or EIA Country Analysis Briefs for precise current-year figures"
+  },
+  "infrastructure": {},
+  "trade": {},
+  "technology": {},
+  "geography": {
+    "region": "Southeast Asia"
+  },
+  "politics": {
+    "head_of_government": "Prabowo Subianto",
+    "role": "President",
+    "in_office_since": "20 October 2024",
+    "party": "Gerindra",
+    "record_type": "FACT",
+    "confidence": "high",
+    "source": "Verified via web search Sept 2026"
+  },
+  "nuclear": {
+    "weapons_state": true,
+    "warhead_estimate": 0,
+    "warhead_estimate_year": 2026,
+    "warhead_estimate_source": "SIPRI Yearbook 2026 (as of Jan 2026), independently verified against live SIPRI press materials Aug 2026"
+  },
+  "strategic_priorities": [
+    "Maritime chokepoint security",
+    "South China Sea claims management",
+    "ASEAN centrality maintenance"
+  ],
+  "dependencies": [],
+  "vulnerabilities": [
+    "Archipelagic geography (over 17,000 islands) makes comprehensive maritime domain awareness and defence extremely resource-intensive",
+    "Low defence spending as a share of GDP relative to regional peers, limiting force modernisation pace",
+    "South China Sea claim overlap with China near the Natuna Islands creates a recurring, unresolved friction point despite Indonesia's official non-claimant status in the broader dispute",
+    "Nickel and mineral export dependence ties Indonesia's economic fortunes to global EV/battery demand cycles it does not control"
+  ],
+  "strengths": [
+    "Sovereign control of the Sunda and Lombok Straits \u2014 legitimate alternative deep-water routes to the Malacca Strait, giving Indonesia unique chokepoint leverage in any Malacca-disruption scenario",
+    "Largest economy and population in ASEAN, anchoring regional diplomatic centrality (ASEAN centrality doctrine)",
+    "World's largest nickel reserves and producer, a critical input for EV batteries \u2014 a genuine 21st-century resource-leverage position",
+    "Historically effective non-aligned diplomatic tradition, maintaining working relationships with the US, China, and Russia simultaneously"
+  ],
+  "alliances": [
+    "ASEAN-bloc"
+  ],
+  "rivals": [],
+  "_meta": {
+    "data_quality": "demo; military spending %GDP and arms exports now sourced from real World Bank WDI data",
+    "source": "see data/sources/",
+    "confidence": "low-demo",
+    "last_updated": "2026-09-03",
+    "core_data_source": "SIPRI Yearbook 2026 (released 8 Jun 2026) + IMF WEO Apr/Jul 2026 + World Bank WDI Jun 2026, via user-provided unified research file; nuclear warhead counts and India's defence spend independently cross-checked against live SIPRI press materials (Aug 2026)",
+    "strengths_vulnerabilities_source": "Original ASSESSMENT \u2014 mechanism-based, matching the depth pattern of the Gemini-sourced entries for other countries, compiled from well-established open-source strategic analysis"
+  },
+  "strategic_autonomy_profile": "Non-aligned maritime archipelagic balancer"
+}

@@ -1,0 +1,66 @@
+{
+  "country_id": "IND",
+  "political_system": {
+    "type": "Federal parliamentary constitutional republic",
+    "executive": "President is ceremonial head of state; Prime Minister (leader of the majority party/coalition in the Lok Sabha) is head of government and holds executive power in practice.",
+    "legislature": "Bicameral Parliament — Lok Sabha (directly elected lower house, 543 seats) and Rajya Sabha (indirectly elected upper house representing states).",
+    "judiciary": "Independent judiciary headed by the Supreme Court, with a system of High Courts and subordinate courts; known for judicial review powers.",
+    "structure": "Federal, with power divided between the Union government and 28 states plus union territories.",
+    "election_system": "First-past-the-post for Lok Sabha and most state assembly elections; the Election Commission of India administers elections.",
+    "confidence": "high"
+  },
+  "current_government": {
+    "ruling_coalition": "National Democratic Alliance (NDA), led by the Bharatiya Janata Party (BJP)",
+    "prime_minister": "Narendra Modi, serving a third consecutive term following the 2024 general election",
+    "context": "The 2024 election was the first time since 2014 that the BJP did not win an outright majority on its own (240 of 543 seats), making Modi's third term dependent on coalition partners — notably the Telugu Desam Party (TDP) under N. Chandrababu Naidu and Janata Dal (United) under Nitish Kumar. The NDA overall holds 293 seats.",
+    "main_opposition": "INDIA bloc, an opposition alliance led by the Indian National Congress under Rahul Gandhi, which won over 230 seats in 2024 — a stronger-than-expected result.",
+    "source": "Congress.gov CRS reports (IF10298); Wikipedia 2024 Indian general election",
+    "confidence": "high",
+    "as_of": "2026-08-22"
+  },
+  "major_parties": [
+    {
+      "name": "Bharatiya Janata Party (BJP)",
+      "ideology": "Hindu nationalist, right-of-centre",
+      "status": "Largest party in the Lok Sabha, leads the NDA coalition government"
+    },
+    {
+      "name": "Indian National Congress (INC)",
+      "ideology": "Centre-left, historically the dominant post-independence party",
+      "status": "Leads the opposition INDIA bloc"
+    },
+    {
+      "name": "Dravida Munnetra Kazhagam (DMK)",
+      "ideology": "Social democratic, Tamil regional party",
+      "status": "Governs Tamil Nadu; part of the INDIA opposition bloc"
+    },
+    {
+      "name": "Telugu Desam Party (TDP)",
+      "ideology": "Regional, Andhra Pradesh-based",
+      "status": "Key NDA coalition partner; leader N. Chandrababu Naidu is Andhra Pradesh Chief Minister"
+    },
+    {
+      "name": "Janata Dal (United) (JDU)",
+      "ideology": "Secularist, social democratic, Bihar-based",
+      "status": "NDA coalition partner; leader Nitish Kumar is Bihar Chief Minister"
+    }
+  ],
+  "political_movements_and_dynamics": [
+    {
+      "name": "Hindu nationalism / Hindutva",
+      "description": "A long-running ideological movement emphasizing Hindu cultural and political identity, most closely associated with the BJP and its ideological affiliates (RSS and related organisations). The 2024 Ram Mandir consecration in Ayodhya was a landmark moment for this movement.",
+      "current_relevance": "Remains a central feature of BJP messaging, though the 2024 election result suggested economic issues (unemployment, prices) mattered more to voters than religious mobilisation, per CSDS pre-poll survey data."
+    },
+    {
+      "name": "Federal-state political dynamics",
+      "description": "Regional parties (DMK, TDP, JDU, and others) hold significant leverage in a coalition-dependent Parliament, giving state-level political concerns more national weight than during the BJP's single-party-majority years (2014-2024).",
+      "current_relevance": "Coalition partners' regional priorities now shape national policy and budget allocations more directly than in the previous decade."
+    }
+  ],
+  "_meta": {
+    "data_quality": "sourced",
+    "source": "Congress.gov CRS IF10298 (2026); Wikipedia (BJP, 2024 Indian general election); SPF.org analysis; CSDS-Lokniti pre-poll survey (The Hindu)",
+    "confidence": "high",
+    "last_updated": "2026-08-22"
+  }
+}

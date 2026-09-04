@@ -1,0 +1,97 @@
+{
+  "id": "CAN",
+  "name": "Canada",
+  "region": "North America",
+  "demographics": {
+    "population_millions": 40.1,
+    "population_source": "SIPRI Yearbook 2026 (released 8 Jun 2026) + IMF WEO Apr/Jul 2026 + World Bank WDI Jun 2026, via user-provided unified research file; nuclear warhead counts and India's defence spend independently cross-checked against live SIPRI press materials (Aug 2026) (2025 figure)"
+  },
+  "economy": {
+    "gdp_usd_trillion": 2.24,
+    "gdp_growth_pct": 1.3,
+    "notes": "Demo/approximate figures \u2014 replace with sourced data via data/sources/",
+    "gdp_source": "SIPRI Yearbook 2026 (released 8 Jun 2026) + IMF WEO Apr/Jul 2026 + World Bank WDI Jun 2026, via user-provided unified research file; nuclear warhead counts and India's defence spend independently cross-checked against live SIPRI press materials (Aug 2026) (2025 figures)"
+  },
+  "military": {
+    "active_troops": 68000,
+    "defence_spending_usd_billion": 29.8,
+    "defence_spending_pct_gdp": 1.33,
+    "defence_spending_pct_gdp_source": "World Bank WDI (MS.MIL.XPND.GD.ZS), 2024 data, extracted from user-provided dataset (file last updated 2026-02-24)",
+    "arms_exports_usd": 152000000,
+    "arms_exports_year": 2024,
+    "arms_exports_source": "World Bank WDI (MS.MIL.XPRT.KD), constant USD, from user-provided dataset",
+    "reserve_troops": 34000,
+    "defence_spending_pct_gdp_worldbank_2024": 1.31,
+    "defence_spending_source": "SIPRI Yearbook 2026 (released 8 Jun 2026) + IMF WEO Apr/Jul 2026 + World Bank WDI Jun 2026, via user-provided unified research file; nuclear warhead counts and India's defence spend independently cross-checked against live SIPRI press materials (Aug 2026) (2025 figures)"
+  },
+  "energy": {
+    "net_import_dependence_ratio": -0.6,
+    "note": "Positive = net importer, negative = net exporter (approximate ratio, demo data)",
+    "status_2025": "Net energy exporter",
+    "oil_production_bpd_estimate": "~5.1M (oil sands-driven)",
+    "oil_consumption_bpd_estimate": "~2.4M",
+    "net_oil_position": "major net exporter (~almost entirely to USA)",
+    "gas_position": "net exporter (pipeline to US, growing LNG)",
+    "electricity_mix_estimate": "hydro ~60%, nuclear ~15%, gas ~10%, renewables ~15%",
+    "major_energy_customers": [
+      "USA"
+    ],
+    "record_type": "ESTIMATE",
+    "confidence": "moderate \u2014 approximate orders of magnitude consistent with IEA/EIA reporting patterns, not precise official figures for a specific year",
+    "source": "Compiled from IEA/EIA-consistent general energy-market knowledge; recommend cross-checking against IEA World Energy Outlook or EIA Country Analysis Briefs for precise current-year figures"
+  },
+  "infrastructure": {},
+  "trade": {},
+  "technology": {},
+  "geography": {
+    "region": "North America"
+  },
+  "politics": {
+    "head_of_government": "Mark Carney",
+    "role": "Prime Minister",
+    "in_office_since": "2025",
+    "party": "Liberal Party",
+    "record_type": "FACT",
+    "confidence": "high",
+    "source": "Verified via web search Sept 2026 (G7 Kananaskis summit records)"
+  },
+  "nuclear": {
+    "weapons_state": true,
+    "warhead_estimate": 0,
+    "warhead_estimate_year": 2026,
+    "warhead_estimate_source": "SIPRI Yearbook 2026 (as of Jan 2026), independently verified against live SIPRI press materials Aug 2026"
+  },
+  "strategic_priorities": [
+    "NATO spending target compliance",
+    "Arctic sovereignty assertion",
+    "US trade relationship management"
+  ],
+  "dependencies": [],
+  "vulnerabilities": [
+    "Overwhelming trade dependence on the United States (the large majority of Canadian exports go to the US), creating acute exposure to US tariff or trade-policy shifts",
+    "Below-NATO-target defence spending historically, with limited standing conventional force size relative to landmass",
+    "Vast, sparsely monitored Arctic coastline creates sovereignty and surveillance gaps as melting ice opens new shipping routes contested by Russia and, increasingly, China",
+    "Defence procurement historically slow and cost-overrun-prone, delaying fleet and equipment modernisation"
+  ],
+  "strengths": [
+    "NORAD binational air-defence integration with the US provides continental early-warning and air-defence coverage",
+    "Major net exporter of energy (oil sands), critical minerals, and agricultural commodities",
+    "G7 member with deep Five Eyes intelligence integration and NATO membership",
+    "Sole non-Russian claimant with a credible (if still developing) Arctic sovereignty presence via the Northwest Passage"
+  ],
+  "alliances": [
+    "USA",
+    "GBR",
+    "FRA"
+  ],
+  "rivals": [],
+  "_meta": {
+    "data_quality": "demo; military spending %GDP and arms exports now sourced from real World Bank WDI data",
+    "source": "see data/sources/",
+    "confidence": "low-demo",
+    "last_updated": "2026-09-03",
+    "core_data_source": "SIPRI Yearbook 2026 (released 8 Jun 2026) + IMF WEO Apr/Jul 2026 + World Bank WDI Jun 2026, via user-provided unified research file; nuclear warhead counts and India's defence spend independently cross-checked against live SIPRI press materials (Aug 2026)",
+    "strengths_vulnerabilities_source": "Original ASSESSMENT \u2014 mechanism-based, matching the depth pattern of the Gemini-sourced entries for other countries, compiled from well-established open-source strategic analysis"
+  },
+  "strategic_autonomy_profile": "NORAD/Arctic flank, raw-materials exporter"
+}

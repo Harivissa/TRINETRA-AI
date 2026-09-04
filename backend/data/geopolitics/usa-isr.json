@@ -1,0 +1,23 @@
+{
+  "country_a": "USA",
+  "country_b": "ISR",
+  "relationship_type": "strategic_ally",
+  "classification": {
+    "category": "strategic_ally",
+    "strength": 0.95,
+    "strength_note": "Analyst judgment on a 0-1 scale, from the user-provided unified research file (Gemini/Perplexity synthesis) \u2014 not a precise measurement."
+  },
+  "strategic_issues": [
+    "Formal military assistance MOU (~$3.8B/year)",
+    "Iron Dome/Arrow missile-defence integration",
+    "intelligence sharing"
+  ],
+  "dominant_leverage": "Complete US diplomatic/military backstop; Israel retains full operational autonomy in regional operations.",
+  "trend_2022_2026": "Resilient strategic foundation",
+  "record_type": "ASSESSMENT",
+  "confidence": "medium-high",
+  "_meta": {
+    "source": "User-provided unified research file (Perplexity OSINT + Gemini strategic analysis), Section 6 Bilateral Relationship Directory",
+    "last_updated": "2026-09-01"
+  }
+}

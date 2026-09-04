@@ -1,0 +1,52 @@
+{
+  "country_a": "IND",
+  "country_b": "RUS",
+  "relationship_type": "strategic_partner",
+  "classification": {
+    "category": "strategic_partner",
+    "strength": "high",
+    "direction": "mutual",
+    "economic_importance": "medium",
+    "military_importance": "high",
+    "energy_importance": "high",
+    "diplomatic_importance": "high",
+    "reason": "Russia remains India's largest single source of major arms imports and discounted crude oil (since Western sanctions redirected Russian oil eastward). India also values Russia as a hedge against overdependence on the US.",
+    "confidence": "high",
+    "source": "SIPRI arms transfer data; multiple India-Russia oil trade reports 2022-2026"
+  },
+  "strategic_issues": [
+    "India balances its Russia ties against its deepening US/Quad partnership",
+    "Western sanctions on Russia complicate payment and shipping for Indian buyers"
+  ],
+  "trade_dependencies": [
+    "India is a major buyer of discounted Russian crude oil since 2022",
+    "India remains reliant on Russian-origin spare parts for a large share of its legacy military hardware"
+  ],
+  "energy_relationship": {
+    "direct_dependency": "high",
+    "notes": "Russia became one of India's top crude oil suppliers after 2022 due to discounted pricing following Western sanctions"
+  },
+  "military_relationship": {
+    "posture": "longstanding defence supplier relationship",
+    "notes": "Russia remains India's largest cumulative arms supplier historically, though India has diversified toward France, the US, and Israel in recent years"
+  },
+  "diplomatic_relationship": {
+    "posture": "warm, pragmatic",
+    "notes": "Both are members of BRICS and SCO; India has avoided formally condemning Russia over Ukraine, preferring a neutral, interest-based stance"
+  },
+  "major_disputes": [],
+  "areas_of_cooperation": [
+    "Defence equipment and co-production (e.g. BrahMos missile, licensed manufacturing)",
+    "Discounted energy trade",
+    "BRICS/SCO coordination"
+  ],
+  "escalation_factors": [],
+  "deescalation_factors": [
+    "Both sides have strong incentives to keep this relationship stable regardless of India's other partnerships"
+  ],
+  "_meta": {
+    "data_quality": "demo/approximate baseline with sourced general trend",
+    "confidence": "moderate",
+    "last_updated": "2026-08-22"
+  }
+}

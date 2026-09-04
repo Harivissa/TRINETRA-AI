@@ -1,0 +1,12 @@
+{
+  "id": "ORG_BRICS",
+  "entity_type": "organisation",
+  "name": "BRICS",
+  "members": ["BRA", "RUS", "IND", "CHN", "ZAF"],
+  "type": "intergovernmental economic/diplomatic grouping, expanded since 2024 to include additional members beyond the original five",
+  "purpose": "Coordination among major emerging economies; increasingly framed by Russia and China as a counterweight to Western-led institutions, though India and Brazil resist that framing and maintain close Western ties simultaneously.",
+  "founded": "2009 (as BRIC; South Africa added 2010)",
+  "record_type": "FACT",
+  "confidence": "high",
+  "_meta": {"sources": [], "last_updated": "2026-08-22"}
+}

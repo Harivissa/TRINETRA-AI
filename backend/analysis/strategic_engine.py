@@ -12,6 +12,7 @@ from backend.analysis import (
     resilience_engine,
     consequence_chain_engine,
     chokepoint_engine,
+    dependency_engine,
 )
 
 DEEP_DIVE_DIR = os.path.join(os.path.dirname(__file__), "..", "..", "data", "relationships", "strategic")
@@ -44,6 +45,7 @@ def run_rivalry_analysis(country_a: dict, country_b: dict, relationship: dict | 
     resilience_profile = resilience_engine.build_profile(military, economic, energy, infrastructure)
     consequence_chain = consequence_chain_engine.build_chain(country_a, country_b, relationship)
     chokepoints = chokepoint_engine.analyze(country_a, country_b)
+    dependencies = dependency_engine.analyze(country_a, country_b)
     deep_dive_analyses = _load_deep_dive_analyses(country_a, country_b)
 
     return {
@@ -58,5 +60,6 @@ def run_rivalry_analysis(country_a: dict, country_b: dict, relationship: dict | 
         "resilience_profile": resilience_profile,
         "consequence_chain": consequence_chain,
         "chokepoints": chokepoints,
+        "dependencies": dependencies,
         "deep_dive_analyses": deep_dive_analyses,
     }

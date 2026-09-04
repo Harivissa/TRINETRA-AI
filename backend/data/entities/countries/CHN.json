@@ -1,0 +1,17 @@
+{
+  "id": "CHN",
+  "entity_type": "country",
+  "name": "China",
+  "official_name": "People's Republic of China",
+  "linked_profile": "data/countries/china.json",
+  "linked_modules": [],
+  "key_people": ["PERSON_CHN_GENSEC_001"],
+  "key_organisations_member_of": ["ORG_SCO", "ORG_BRICS", "ORG_UN_SECURITY_COUNCIL"],
+  "governance_note": "China's head of state (President), head of the Communist Party (General Secretary), and Chairman of the Central Military Commission are, since 1993, the same individual — this concentration of the three top posts in one person is a structural feature distinct from most other systems in this dataset.",
+  "_meta": {
+    "data_quality": "sourced for leadership/structure, demo for economic/military baseline figures elsewhere in data/countries/china.json",
+    "confidence": "high",
+    "last_updated": "2026-08-22",
+    "sources": []
+  }
+}

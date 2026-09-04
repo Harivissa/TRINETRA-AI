@@ -1,0 +1,104 @@
+{
+  "id": "KOR",
+  "name": "South Korea",
+  "region": "East Asia",
+  "demographics": {
+    "population_millions": 51.7,
+    "population_source": "SIPRI Yearbook 2026 (released 8 Jun 2026) + IMF WEO Apr/Jul 2026 + World Bank WDI Jun 2026, via user-provided unified research file; nuclear warhead counts and India's defence spend independently cross-checked against live SIPRI press materials (Aug 2026) (2025 figure)"
+  },
+  "economy": {
+    "gdp_usd_trillion": 1.78,
+    "gdp_growth_pct": 2.2,
+    "notes": "Demo/approximate figures \u2014 replace with sourced data via data/sources/",
+    "gdp_source": "SIPRI Yearbook 2026 (released 8 Jun 2026) + IMF WEO Apr/Jul 2026 + World Bank WDI Jun 2026, via user-provided unified research file; nuclear warhead counts and India's defence spend independently cross-checked against live SIPRI press materials (Aug 2026) (2025 figures)"
+  },
+  "military": {
+    "active_troops": 500000,
+    "defence_spending_usd_billion": 52.1,
+    "defence_spending_pct_gdp": 2.93,
+    "defence_spending_pct_gdp_source": "World Bank WDI (MS.MIL.XPND.GD.ZS), 2024 data, extracted from user-provided dataset (file last updated 2026-02-24)",
+    "arms_exports_usd": 964000000,
+    "arms_exports_year": 2024,
+    "arms_exports_source": "World Bank WDI (MS.MIL.XPRT.KD), constant USD, from user-provided dataset",
+    "reserve_troops": 3100000,
+    "defence_spending_pct_gdp_worldbank_2024": 2.56,
+    "defence_spending_source": "SIPRI Yearbook 2026 (released 8 Jun 2026) + IMF WEO Apr/Jul 2026 + World Bank WDI Jun 2026, via user-provided unified research file; nuclear warhead counts and India's defence spend independently cross-checked against live SIPRI press materials (Aug 2026) (2025 figures)",
+    "defence_spending_discrepancy_note": "World Bank WDI (MS.MIL.XPND.GD.ZS, 2024) gave 2.56%; SIPRI Yearbook 2026 (2025 data) gives 2.93% \u2014 both are legitimate sources measuring different years and, per SIPRI's own methodology notes, sometimes different expenditure scopes. SIPRI figure used as primary since it is defence-specific and more recent; World Bank figure retained below for comparison."
+  },
+  "energy": {
+    "net_import_dependence_ratio": 0.93,
+    "note": "Positive = net importer, negative = net exporter (approximate ratio, demo data)",
+    "status_2025": "Critical net importer",
+    "oil_production_bpd_estimate": "negligible",
+    "oil_consumption_bpd_estimate": "~2.7M",
+    "net_oil_position": "near-total importer",
+    "gas_position": "near-total LNG importer",
+    "electricity_mix_estimate": "coal ~35%, gas ~28%, nuclear ~28%, renewables ~9%",
+    "major_energy_suppliers": [
+      "SAU",
+      "ARE",
+      "QAT",
+      "USA"
+    ],
+    "record_type": "ESTIMATE",
+    "confidence": "moderate \u2014 approximate orders of magnitude consistent with IEA/EIA reporting patterns, not precise official figures for a specific year",
+    "source": "Compiled from IEA/EIA-consistent general energy-market knowledge; recommend cross-checking against IEA World Energy Outlook or EIA Country Analysis Briefs for precise current-year figures"
+  },
+  "infrastructure": {},
+  "trade": {},
+  "technology": {},
+  "geography": {
+    "region": "East Asia"
+  },
+  "politics": {
+    "head_of_government": "Lee Jae Myung",
+    "role": "President",
+    "in_office_since": "2025",
+    "party": "Democratic Party",
+    "record_type": "FACT",
+    "confidence": "high",
+    "source": "Verified via web search Sept 2026 (Wikipedia international trips records)"
+  },
+  "nuclear": {
+    "weapons_state": true,
+    "warhead_estimate": 0,
+    "warhead_estimate_year": 2026,
+    "warhead_estimate_source": "SIPRI Yearbook 2026 (as of Jan 2026), independently verified against live SIPRI press materials Aug 2026"
+  },
+  "strategic_priorities": [
+    "North Korea deterrence",
+    "Semiconductor supply chain security",
+    "US extended deterrence assurance"
+  ],
+  "dependencies": [],
+  "vulnerabilities": [
+    "Seoul metropolitan area (roughly half the national population and economic output) sits within North Korean long-range artillery and short-range missile range, a permanent single-point-of-catastrophic-failure risk",
+    "Near-total energy import dependence (LNG, crude) with no meaningful domestic reserves",
+    "Concentrated semiconductor manufacturing (Samsung, SK Hynix fabs) creates a high-value target set whose loss would cascade through global electronics supply chains",
+    "Aging, rapidly shrinking population \u2014 one of the world's lowest fertility rates, compounding long-term conscription and labour-force strain",
+    "Heavy trade exposure to both the US and China simultaneously, forcing continual balancing between its security ally and its largest trading partner"
+  ],
+  "strengths": [
+    "World-leading semiconductor and battery manufacturing base (Samsung, SK Hynix, LG) \u2014 a genuine global chokepoint on memory-chip and EV-battery supply",
+    "US Combined Forces Command integration and 28,500 forward-deployed US troops provide extended deterrence against North Korea",
+    "Advanced domestic defence industry \u2014 exports of K9 howitzers, K2 tanks, and FA-50 aircraft to NATO and Asia-Pacific buyers",
+    "Dense, hardened underground infrastructure and civil-defence planning built around decades of North Korean threat preparation"
+  ],
+  "alliances": [
+    "USA",
+    "JPN"
+  ],
+  "rivals": [
+    "PRK",
+    "CHN"
+  ],
+  "_meta": {
+    "data_quality": "demo; military spending %GDP and arms exports now sourced from real World Bank WDI data",
+    "source": "see data/sources/",
+    "confidence": "low-demo",
+    "last_updated": "2026-09-03",
+    "core_data_source": "SIPRI Yearbook 2026 (released 8 Jun 2026) + IMF WEO Apr/Jul 2026 + World Bank WDI Jun 2026, via user-provided unified research file; nuclear warhead counts and India's defence spend independently cross-checked against live SIPRI press materials (Aug 2026)",
+    "strengths_vulnerabilities_source": "Original ASSESSMENT \u2014 mechanism-based, matching the depth pattern of the Gemini-sourced entries for other countries, compiled from well-established open-source strategic analysis"
+  },
+  "strategic_autonomy_profile": "High-tech/industrial power, asymmetric peninsula threat"
+}

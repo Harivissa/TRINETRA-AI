@@ -1,0 +1,16 @@
+{
+  "id": "IND",
+  "entity_type": "country",
+  "name": "India",
+  "official_name": "Republic of India",
+  "linked_profile": "data/countries/india.json",
+  "linked_modules": ["history", "politics", "foreign_policy", "sources"],
+  "key_people": ["PERSON_IND_PM_001"],
+  "key_organisations_member_of": ["ORG_QUAD", "ORG_BRICS", "ORG_SCO", "ORG_G20"],
+  "_meta": {
+    "data_quality": "sourced",
+    "confidence": "high",
+    "last_updated": "2026-08-22",
+    "sources": ["SRC_CRS_IF10298"]
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "country_a": "SAU",
+  "country_b": "IRN",
+  "relationship_type": "strategic_hedging",
+  "classification": {
+    "category": "neutral",
+    "strength": 0.4,
+    "strength_note": "Analyst judgment on a 0-1 scale, from the user-provided unified research file (Gemini/Perplexity synthesis) \u2014 not a precise measurement."
+  },
+  "strategic_issues": [
+    "China-brokered 2023 diplomatic normalisation",
+    "regional proxy friction (Yemen, Iraq)"
+  ],
+  "dominant_leverage": "Mutual vulnerability \u2014 both sides' critical oil infrastructure is exposed to drone/ballistic missile strikes.",
+  "trend_2022_2026": "Fragile d\u00e9tente / managed competition",
+  "record_type": "ASSESSMENT",
+  "confidence": "medium-high",
+  "_meta": {
+    "source": "User-provided unified research file (Perplexity OSINT + Gemini strategic analysis), Section 6 Bilateral Relationship Directory",
+    "last_updated": "2026-09-01"
+  }
+}

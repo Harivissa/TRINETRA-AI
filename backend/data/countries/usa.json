@@ -1,0 +1,100 @@
+{
+  "id": "USA",
+  "name": "United States",
+  "region": "North America",
+  "demographics": {
+    "population_millions": 341.8,
+    "population_source": "SIPRI Yearbook 2026 (released 8 Jun 2026) + IMF WEO Apr/Jul 2026 + World Bank WDI Jun 2026, via user-provided unified research file; nuclear warhead counts and India's defence spend independently cross-checked against live SIPRI press materials (Aug 2026) (2025 figure)"
+  },
+  "economy": {
+    "gdp_usd_trillion": 29.17,
+    "gdp_growth_pct": 2.4,
+    "notes": "Demo/approximate figures \u2014 replace with sourced data via data/sources/",
+    "gdp_source": "SIPRI Yearbook 2026 (released 8 Jun 2026) + IMF WEO Apr/Jul 2026 + World Bank WDI Jun 2026, via user-provided unified research file; nuclear warhead counts and India's defence spend independently cross-checked against live SIPRI press materials (Aug 2026) (2025 figures)"
+  },
+  "military": {
+    "active_troops": 1328000,
+    "defence_spending_usd_billion": 967.7,
+    "defence_spending_pct_gdp": 3.32,
+    "defence_spending_pct_gdp_source": "World Bank WDI (MS.MIL.XPND.GD.ZS), 2024 data, extracted from user-provided dataset (file last updated 2026-02-24)",
+    "arms_exports_usd": 13512000000,
+    "arms_exports_year": 2024,
+    "arms_exports_source": "World Bank WDI (MS.MIL.XPRT.KD), constant USD, from user-provided dataset",
+    "reserve_troops": 799500,
+    "defence_spending_pct_gdp_worldbank_2024": 3.42,
+    "defence_spending_source": "SIPRI Yearbook 2026 (released 8 Jun 2026) + IMF WEO Apr/Jul 2026 + World Bank WDI Jun 2026, via user-provided unified research file; nuclear warhead counts and India's defence spend independently cross-checked against live SIPRI press materials (Aug 2026) (2025 figures)"
+  },
+  "energy": {
+    "net_import_dependence_ratio": -0.05,
+    "note": "Positive = net importer, negative = net exporter (approximate ratio, demo data)",
+    "status_2025": "Net exporter (LNG/oil)",
+    "oil_production_bpd_estimate": "~13.2M",
+    "oil_consumption_bpd_estimate": "~20.3M",
+    "net_oil_position": "net exporter (shale-driven since ~2019)",
+    "gas_position": "major net exporter (LNG)",
+    "electricity_mix_estimate": "gas ~40%, nuclear ~19%, coal ~16%, renewables ~25%",
+    "major_energy_customers": [
+      "EU",
+      "JPN",
+      "KOR"
+    ],
+    "record_type": "ESTIMATE",
+    "confidence": "moderate \u2014 approximate orders of magnitude consistent with IEA/EIA reporting patterns, not precise official figures for a specific year",
+    "source": "Compiled from IEA/EIA-consistent general energy-market knowledge; recommend cross-checking against IEA World Energy Outlook or EIA Country Analysis Briefs for precise current-year figures"
+  },
+  "infrastructure": {},
+  "trade": {},
+  "technology": {},
+  "geography": {
+    "region": "North America"
+  },
+  "politics": {},
+  "nuclear": {
+    "weapons_state": true,
+    "warhead_estimate": 5042,
+    "warhead_estimate_year": 2026,
+    "warhead_estimate_source": "SIPRI Yearbook 2026 (as of Jan 2026), independently verified against live SIPRI press materials Aug 2026"
+  },
+  "strategic_priorities": [
+    "Indo-Pacific deterrence of China",
+    "Alliance cohesion (NATO/AUKUS)",
+    "Tech export controls",
+    "Domestic semiconductor reshoring"
+  ],
+  "dependencies": [],
+  "vulnerabilities": [
+    "Concentration of advanced semiconductor manufacturing in Taiwan (TSMC) \u2014 a Chinese military action targeting or blockading Taiwan would immediately shock advanced tech manufacturing worldwide, the US included",
+    "Defence industrial base capacity bottlenecks \u2014 atrophied shipbuilding capacity and slow munitions replenishment compared to peer adversaries constrain sustained high-rate precision-munition expenditure in a long multi-theatre conflict",
+    "Highly digitised, privately operated critical infrastructure (electrical grid, water treatment, financial systems) is exposed to state-sponsored cyber interdiction from China, Russia, and Iran",
+    "Large and growing sovereign debt load creates exposure to shifts in international debt-buyer reserve allocation, with knock-on inflation/interest-rate/defence-budget crowding-out risk",
+    "Extended Indo-Pacific lines of communication \u2014 logistical support for forward-deployed forces in East Asia spans thousands of miles of open ocean, exposed to Chinese long-range missile and submarine interdiction forces in the opening stage of any conflict"
+  ],
+  "strengths": [
+    "Global blue-water naval force projection \u2014 11 carrier strike groups plus 750+ military facilities across every major theatre",
+    "Dollar hegemony and financial-sanctions leverage \u2014 control of USD clearing systems, SWIFT routing, and dominant foreign-reserve currency status",
+    "Effective monopoly on advanced high-end semiconductor design and IP (chip architectures, EDA design software, leading AI platforms), though physical fabrication is offshored to Taiwan and South Korea",
+    "Deep alliance-network architecture (NATO, Quad, AUKUS, Five Eyes) institutionalising collective defence, interoperability, and intelligence sharing",
+    "North American energy and agricultural self-sufficiency \u2014 net exporter of LNG, crude oil, and primary agricultural commodities"
+  ],
+  "alliances": [
+    "GBR",
+    "JPN",
+    "AUS",
+    "KOR",
+    "ISR"
+  ],
+  "rivals": [
+    "CHN",
+    "RUS",
+    "IRN"
+  ],
+  "_meta": {
+    "data_quality": "demo; military spending %GDP and arms exports now sourced from real World Bank WDI data",
+    "source": "see data/sources/",
+    "confidence": "low-demo",
+    "last_updated": "2026-09-01",
+    "core_data_source": "SIPRI Yearbook 2026 (released 8 Jun 2026) + IMF WEO Apr/Jul 2026 + World Bank WDI Jun 2026, via user-provided unified research file; nuclear warhead counts and India's defence spend independently cross-checked against live SIPRI press materials (Aug 2026)",
+    "strengths_vulnerabilities_source": "SOURCE B (Gemini strategic analysis) via user-provided unified research file \u2014 mechanism-based ASSESSMENT, not raw fact"
+  },
+  "strategic_autonomy_profile": "Hegemonic coalition anchor, global reach"
+}

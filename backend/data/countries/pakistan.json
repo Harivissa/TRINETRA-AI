@@ -1,0 +1,108 @@
+{
+  "id": "PAK",
+  "name": "Pakistan",
+  "region": "South Asia",
+  "demographics": {
+    "population_millions": 245.2,
+    "population_source": "SIPRI Yearbook 2026 (released 8 Jun 2026) + IMF WEO Apr/Jul 2026 + World Bank WDI Jun 2026, via user-provided unified research file; nuclear warhead counts and India's defence spend independently cross-checked against live SIPRI press materials (Aug 2026) (2025 figure)"
+  },
+  "economy": {
+    "gdp_usd_trillion": 0.39,
+    "gdp_growth_pct": 2.8,
+    "notes": "Demo/approximate figures \u2014 replace with sourced data via data/sources/",
+    "gdp_source": "SIPRI Yearbook 2026 (released 8 Jun 2026) + IMF WEO Apr/Jul 2026 + World Bank WDI Jun 2026, via user-provided unified research file; nuclear warhead counts and India's defence spend independently cross-checked against live SIPRI press materials (Aug 2026) (2025 figures)"
+  },
+  "military": {
+    "active_troops": 654000,
+    "defence_spending_usd_billion": 9.8,
+    "defence_spending_pct_gdp": 2.51,
+    "defence_spending_pct_gdp_source": "World Bank WDI (MS.MIL.XPND.GD.ZS), 2024 data, extracted from user-provided dataset (file last updated 2026-02-24)",
+    "arms_exports_usd": 6000000,
+    "arms_exports_year": 2024,
+    "arms_exports_source": "World Bank WDI (MS.MIL.XPRT.KD), constant USD, from user-provided dataset",
+    "reserve_troops": 550000,
+    "defence_spending_pct_gdp_worldbank_2024": 2.67,
+    "defence_spending_source": "SIPRI Yearbook 2026 (released 8 Jun 2026) + IMF WEO Apr/Jul 2026 + World Bank WDI Jun 2026, via user-provided unified research file; nuclear warhead counts and India's defence spend independently cross-checked against live SIPRI press materials (Aug 2026) (2025 figures)",
+    "defence_spending_discrepancy_note": "World Bank WDI (MS.MIL.XPND.GD.ZS, 2024) gave 2.67%; SIPRI Yearbook 2026 (2025 data) gives 2.51% \u2014 both are legitimate sources measuring different years and, per SIPRI's own methodology notes, sometimes different expenditure scopes. SIPRI figure used as primary since it is defence-specific and more recent; World Bank figure retained below for comparison."
+  },
+  "energy": {
+    "net_import_dependence_ratio": 0.7,
+    "note": "Positive = net importer, negative = net exporter (approximate ratio, demo data)",
+    "status_2025": "Severe net importer",
+    "oil_production_bpd_estimate": "~0.08M",
+    "oil_consumption_bpd_estimate": "~0.5M",
+    "net_oil_position": "severe net importer",
+    "gas_position": "net importer (declining domestic production, growing LNG reliance)",
+    "electricity_mix_estimate": "gas ~30%, hydro ~25%, coal ~15%, nuclear ~10%, renewables ~15%",
+    "major_energy_suppliers": [
+      "SAU",
+      "ARE",
+      "QAT (LNG)"
+    ],
+    "record_type": "ESTIMATE",
+    "confidence": "moderate \u2014 approximate orders of magnitude consistent with IEA/EIA reporting patterns, not precise official figures for a specific year",
+    "source": "Compiled from IEA/EIA-consistent general energy-market knowledge; recommend cross-checking against IEA World Energy Outlook or EIA Country Analysis Briefs for precise current-year figures"
+  },
+  "infrastructure": {},
+  "trade": {},
+  "technology": {},
+  "geography": {
+    "region": "South Asia"
+  },
+  "politics": {
+    "head_of_government": "Shehbaz Sharif",
+    "role": "Prime Minister",
+    "in_office_since": "2024",
+    "party": "Pakistan Muslim League (N)",
+    "head_of_state": "Asif Ali Zardari",
+    "record_type": "FACT",
+    "confidence": "high",
+    "source": "Verified via web search Sept 2026 (2026 Bangladesh election congratulatory records)"
+  },
+  "nuclear": {
+    "weapons_state": true,
+    "warhead_estimate": 170,
+    "warhead_estimate_year": 2026,
+    "warhead_estimate_source": "SIPRI Yearbook 2026 (as of Jan 2026), independently verified against live SIPRI press materials Aug 2026"
+  },
+  "strategic_priorities": [
+    "India deterrence (Kashmir, post Operation Sindoor / May 2025 conflict)",
+    "China alignment (CPEC, ~63% of Chinese arms exports 2020-24 went to Pakistan per SIPRI)",
+    "Deepening Turkey defence ties (drones, MILGEM corvettes, T129 helicopters)",
+    "Mecca Joint Defence Agreement with Saudi Arabia and Turkey (signed 7 Aug 2026 - mutual-defence clause)",
+    "Economic stabilisation via IMF/China"
+  ],
+  "dependencies": [
+    "Heavy reliance on Chinese arms imports (~63-80% of major weapons per SIPRI, varying by estimate)",
+    "Growing reliance on Turkish co-production (MILGEM corvettes, ADVENT combat systems, drones)"
+  ],
+  "vulnerabilities": [
+    "Chronic economic/debt crisis",
+    "IMF dependency",
+    "Domestic militant insurgencies",
+    "Reported loss of at least one Chinese-supplied HQ-9B air-defence battery during the May 2025 conflict with India (per Indian and open-source reporting; not confirmed by Pakistan)"
+  ],
+  "strengths": [
+    "Nuclear deterrent vs India",
+    "China strategic partnership (CPEC + majority of arms imports)",
+    "Turkey defence partnership (drones, naval co-production)",
+    "New Saudi Arabia-Turkey mutual defence pact (Aug 2026)",
+    "Large standing army"
+  ],
+  "alliances": [
+    "CHN",
+    "TUR",
+    "SAU"
+  ],
+  "rivals": [
+    "IND"
+  ],
+  "_meta": {
+    "data_quality": "mixed - core economic/military stats are still demo/approximate, but the 2025-2026 events noted above are sourced; military spending %GDP and arms exports now sourced from real World Bank WDI data",
+    "source": "see data/sources/; recent events sourced from SIPRI Trends in International Arms Transfers 2024, Stimson Center ('Four Days in May', 2025), Al-Monitor (Aug 2026 Mecca pact), Sunday Guardian Live / India.com (Aug 2026 airlift reports)",
+    "confidence": "recent-events: moderate (multiple independent reports, some details unconfirmed); economic/military baseline figures: low-demo",
+    "last_updated": "2026-09-03",
+    "core_data_source": "SIPRI Yearbook 2026 (released 8 Jun 2026) + IMF WEO Apr/Jul 2026 + World Bank WDI Jun 2026, via user-provided unified research file; nuclear warhead counts and India's defence spend independently cross-checked against live SIPRI press materials (Aug 2026)"
+  },
+  "strategic_autonomy_profile": "Dependent balancer (China anchor, IMF reliance)"
+}

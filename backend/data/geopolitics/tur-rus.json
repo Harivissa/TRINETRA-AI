@@ -1,0 +1,24 @@
+{
+  "country_a": "TUR",
+  "country_b": "RUS",
+  "relationship_type": "competitive_cooperation",
+  "classification": {
+    "category": "strategic_partner",
+    "strength": 0.5,
+    "strength_note": "Analyst judgment on a 0-1 scale, from the user-provided unified research file (Gemini/Perplexity synthesis) \u2014 not a precise measurement."
+  },
+  "strategic_issues": [
+    "Montreux Convention straits enforcement",
+    "Syria/Libya balancing",
+    "Akkuyu nuclear plant construction",
+    "Turkish S-400 acquisition (from Russia, despite NATO membership)"
+  ],
+  "dominant_leverage": "T\u00fcrkiye controls Black Sea maritime transit; Russia controls gas supply and tourism flows to T\u00fcrkiye.",
+  "trend_2022_2026": "Tactical transactional balancing",
+  "record_type": "ASSESSMENT",
+  "confidence": "medium-high",
+  "_meta": {
+    "source": "User-provided unified research file (Perplexity OSINT + Gemini strategic analysis), Section 6 Bilateral Relationship Directory",
+    "last_updated": "2026-09-01"
+  }
+}

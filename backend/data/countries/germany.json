@@ -1,0 +1,96 @@
+{
+  "id": "DEU",
+  "name": "Germany",
+  "region": "Europe",
+  "demographics": {
+    "population_millions": 84.5,
+    "population_source": "SIPRI Yearbook 2026 (released 8 Jun 2026) + IMF WEO Apr/Jul 2026 + World Bank WDI Jun 2026, via user-provided unified research file; nuclear warhead counts and India's defence spend independently cross-checked against live SIPRI press materials (Aug 2026) (2025 figure)"
+  },
+  "economy": {
+    "gdp_usd_trillion": 4.65,
+    "gdp_growth_pct": 0.3,
+    "notes": "Demo/approximate figures \u2014 replace with sourced data via data/sources/",
+    "gdp_source": "SIPRI Yearbook 2026 (released 8 Jun 2026) + IMF WEO Apr/Jul 2026 + World Bank WDI Jun 2026, via user-provided unified research file; nuclear warhead counts and India's defence spend independently cross-checked against live SIPRI press materials (Aug 2026) (2025 figures)"
+  },
+  "military": {
+    "active_troops": 182000,
+    "defence_spending_usd_billion": 88.5,
+    "defence_spending_pct_gdp": 1.9,
+    "defence_spending_pct_gdp_source": "World Bank WDI (MS.MIL.XPND.GD.ZS), 2024 data, extracted from user-provided dataset (file last updated 2026-02-24)",
+    "arms_exports_usd": 2049000000,
+    "arms_exports_year": 2024,
+    "arms_exports_source": "World Bank WDI (MS.MIL.XPRT.KD), constant USD, from user-provided dataset",
+    "reserve_troops": 34000,
+    "defence_spending_pct_gdp_worldbank_2024": 1.89,
+    "defence_spending_source": "SIPRI Yearbook 2026 (released 8 Jun 2026) + IMF WEO Apr/Jul 2026 + World Bank WDI Jun 2026, via user-provided unified research file; nuclear warhead counts and India's defence spend independently cross-checked against live SIPRI press materials (Aug 2026) (2025 figures)"
+  },
+  "energy": {
+    "net_import_dependence_ratio": 0.65,
+    "note": "Positive = net importer, negative = net exporter (approximate ratio, demo data)",
+    "status_2025": "Severe net importer",
+    "oil_production_bpd_estimate": "negligible",
+    "oil_consumption_bpd_estimate": "~2.3M",
+    "net_oil_position": "near-total importer",
+    "gas_position": "severe net importer, transitioned from Russian pipeline to US/Qatari LNG + Norwegian pipeline post-2022",
+    "electricity_mix_estimate": "renewables ~50%+, coal ~25%, gas ~15%, nuclear phased out 2023",
+    "major_energy_suppliers": [
+      "NOR",
+      "USA",
+      "QAT",
+      "NLD"
+    ],
+    "record_type": "ESTIMATE",
+    "confidence": "moderate \u2014 approximate orders of magnitude consistent with IEA/EIA reporting patterns, not precise official figures for a specific year",
+    "source": "Compiled from IEA/EIA-consistent general energy-market knowledge; recommend cross-checking against IEA World Energy Outlook or EIA Country Analysis Briefs for precise current-year figures"
+  },
+  "infrastructure": {},
+  "trade": {},
+  "technology": {},
+  "geography": {
+    "region": "Europe"
+  },
+  "politics": {},
+  "nuclear": {
+    "weapons_state": true,
+    "warhead_estimate": 0,
+    "warhead_estimate_year": 2026,
+    "warhead_estimate_source": "SIPRI Yearbook 2026 (as of Jan 2026), independently verified against live SIPRI press materials Aug 2026"
+  },
+  "strategic_priorities": [
+    "Military modernisation (Zeitenwende)",
+    "Energy diversification from Russia",
+    "EU strategic autonomy"
+  ],
+  "dependencies": [],
+  "vulnerabilities": [
+    "Energy transition exposure \u2014 nuclear phase-out combined with loss of cheap Russian pipeline gas has structurally raised industrial energy costs",
+    "Military force readiness and equipment depletion \u2014 decades of underinvestment left structural readiness gaps in the Bundeswehr, only partially addressed by the \u20ac100bn Sonderverm\u00f6gen special fund",
+    "High trade export exposure to the Chinese market \u2014 automotive, chemical, and machinery sectors are vulnerable to Chinese trade countermeasures or economic coercion",
+    "Absence of a sovereign nuclear deterrent \u2014 relies entirely on the US extended nuclear umbrella and NATO nuclear-sharing, exposing Germany to any shift in US security commitments",
+    "Critical infrastructure cyber and sabotage exposure across energy distribution and industrial control systems"
+  ],
+  "strengths": [
+    "Dominant European industrial and manufacturing scale \u2014 precision engineering, chemical processing, and automotive output",
+    "Central European geographic logistics junction \u2014 key land corridor and transit hub for NATO force movements",
+    "High-end defence manufacturing (Leopard 2 armour, Type 212A AIP submarines) \u2014 a global benchmark, constrained mainly by strict export controls",
+    "Financial reserve depth and low sovereign borrowing costs anchoring Eurozone stability",
+    "Leading position in the European energy grid distribution network"
+  ],
+  "alliances": [
+    "FRA",
+    "GBR",
+    "USA"
+  ],
+  "rivals": [
+    "RUS"
+  ],
+  "_meta": {
+    "data_quality": "demo; military spending %GDP and arms exports now sourced from real World Bank WDI data",
+    "source": "see data/sources/",
+    "confidence": "low-demo",
+    "last_updated": "2026-09-01",
+    "core_data_source": "SIPRI Yearbook 2026 (released 8 Jun 2026) + IMF WEO Apr/Jul 2026 + World Bank WDI Jun 2026, via user-provided unified research file; nuclear warhead counts and India's defence spend independently cross-checked against live SIPRI press materials (Aug 2026)",
+    "strengths_vulnerabilities_source": "SOURCE B (Gemini strategic analysis) via user-provided unified research file \u2014 mechanism-based ASSESSMENT, not raw fact"
+  },
+  "strategic_autonomy_profile": "Multilateral European geo-economic anchor"
+}

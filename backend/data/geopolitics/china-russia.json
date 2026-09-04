@@ -1,0 +1,50 @@
+{
+  "country_a": "CHN",
+  "country_b": "RUS",
+  "relationship_type": "strategic_partner",
+  "classification": {
+    "category": "strategic_partner",
+    "strength": "high",
+    "direction": "mutual",
+    "economic_importance": "high",
+    "military_importance": "medium",
+    "energy_importance": "high",
+    "diplomatic_importance": "high",
+    "reason": "China is Russia's most important economic lifeline following Western sanctions, buying discounted energy and supplying goods that substitute for Western imports. Both frame this as a 'no limits' partnership, though China avoids direct military entanglement in Ukraine.",
+    "confidence": "high",
+    "source": "General reporting on China-Russia trade volumes post-2022 sanctions"
+  },
+  "strategic_issues": [
+    "China has avoided providing direct lethal military aid to Russia to limit Western secondary-sanctions exposure",
+    "The relationship is asymmetric — Russia is increasingly the junior, dependent partner"
+  ],
+  "trade_dependencies": [
+    "China is Russia's largest trading partner and export market for energy since Western sanctions",
+    "Russia depends on Chinese electronics, machinery, and vehicles to replace Western suppliers"
+  ],
+  "energy_relationship": {
+    "direct_dependency": "high",
+    "notes": "China imports large volumes of discounted Russian crude and gas, especially since 2022"
+  },
+  "military_relationship": {
+    "posture": "close but not a formal mutual-defence alliance",
+    "notes": "Joint military exercises and arms cooperation exist, but China has stopped short of direct involvement in Russia's war in Ukraine"
+  },
+  "diplomatic_relationship": {
+    "posture": "closely aligned",
+    "notes": "Both coordinate closely at the UN and in BRICS/SCO to counterbalance Western-led institutions"
+  },
+  "major_disputes": [],
+  "areas_of_cooperation": [
+    "Discounted energy trade",
+    "Trade substitution for Western goods",
+    "Coordinated diplomatic positioning against Western-led sanctions regimes"
+  ],
+  "escalation_factors": [],
+  "deescalation_factors": [],
+  "_meta": {
+    "data_quality": "demo/approximate baseline with sourced general trend",
+    "confidence": "moderate",
+    "last_updated": "2026-08-22"
+  }
+}

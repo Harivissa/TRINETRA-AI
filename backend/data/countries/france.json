@@ -1,0 +1,95 @@
+{
+  "id": "FRA",
+  "name": "France",
+  "region": "Europe",
+  "demographics": {
+    "population_millions": 68.2,
+    "population_source": "SIPRI Yearbook 2026 (released 8 Jun 2026) + IMF WEO Apr/Jul 2026 + World Bank WDI Jun 2026, via user-provided unified research file; nuclear warhead counts and India's defence spend independently cross-checked against live SIPRI press materials (Aug 2026) (2025 figure)"
+  },
+  "economy": {
+    "gdp_usd_trillion": 3.16,
+    "gdp_growth_pct": 1.1,
+    "notes": "Demo/approximate figures \u2014 replace with sourced data via data/sources/",
+    "gdp_source": "SIPRI Yearbook 2026 (released 8 Jun 2026) + IMF WEO Apr/Jul 2026 + World Bank WDI Jun 2026, via user-provided unified research file; nuclear warhead counts and India's defence spend independently cross-checked against live SIPRI press materials (Aug 2026) (2025 figures)"
+  },
+  "military": {
+    "active_troops": 203000,
+    "defence_spending_usd_billion": 64.7,
+    "defence_spending_pct_gdp": 2.05,
+    "defence_spending_pct_gdp_source": "World Bank WDI (MS.MIL.XPND.GD.ZS), 2024 data, extracted from user-provided dataset (file last updated 2026-02-24)",
+    "arms_exports_usd": 2272000000,
+    "arms_exports_year": 2024,
+    "arms_exports_source": "World Bank WDI (MS.MIL.XPRT.KD), constant USD, from user-provided dataset",
+    "reserve_troops": 41000,
+    "defence_spending_pct_gdp_worldbank_2024": 2.05,
+    "defence_spending_source": "SIPRI Yearbook 2026 (released 8 Jun 2026) + IMF WEO Apr/Jul 2026 + World Bank WDI Jun 2026, via user-provided unified research file; nuclear warhead counts and India's defence spend independently cross-checked against live SIPRI press materials (Aug 2026) (2025 figures)"
+  },
+  "energy": {
+    "net_import_dependence_ratio": 0.35,
+    "note": "Positive = net importer, negative = net exporter (approximate ratio, demo data)",
+    "status_2025": "Net importer (nuclear-power dominant grid)",
+    "oil_production_bpd_estimate": "negligible",
+    "oil_consumption_bpd_estimate": "~1.6M",
+    "net_oil_position": "near-total importer",
+    "gas_position": "net importer",
+    "electricity_mix_estimate": "nuclear ~65% (highest nuclear share globally), hydro ~10%, renewables ~15%, gas ~10%",
+    "major_energy_suppliers": [
+      "NOR",
+      "USA",
+      "DZA"
+    ],
+    "record_type": "ESTIMATE",
+    "confidence": "moderate \u2014 approximate orders of magnitude consistent with IEA/EIA reporting patterns, not precise official figures for a specific year",
+    "source": "Compiled from IEA/EIA-consistent general energy-market knowledge; recommend cross-checking against IEA World Energy Outlook or EIA Country Analysis Briefs for precise current-year figures"
+  },
+  "infrastructure": {},
+  "trade": {},
+  "technology": {},
+  "geography": {
+    "region": "Europe"
+  },
+  "politics": {},
+  "nuclear": {
+    "weapons_state": true,
+    "warhead_estimate": 290,
+    "warhead_estimate_year": 2026,
+    "warhead_estimate_source": "SIPRI Yearbook 2026 (as of Jan 2026), independently verified against live SIPRI press materials Aug 2026"
+  },
+  "strategic_priorities": [
+    "Strategic autonomy from US",
+    "Indo-Pacific overseas territories defence",
+    "EU defence-industrial integration"
+  ],
+  "dependencies": [],
+  "vulnerabilities": [
+    "Limited strategic munition and stockpile depth \u2014 industrial base optimized for high-technology production rather than sustained high-rate conventional attrition warfare, risking rapid depletion of precision-guided munitions during initial conflict weeks",
+    "Erosion of traditional influence infrastructure in Africa \u2014 loss of forward military basing and diplomatic backing in the Sahel as Russia and China sponsor regional counter-alignments, with uranium-sourcing risk",
+    "Fiscal deficit and public debt pressures constraining long-term military budget expansion",
+    "Vulnerability of scattered Indo-Pacific overseas territories (La R\u00e9union, New Caledonia, French Polynesia) \u2014 limited self-defence assets against gray-zone tactics or political destabilisation campaigns",
+    "Dependence on foreign critical minerals and raw materials (largely Chinese-processed) for high-tech industrial and defence manufacturing"
+  ],
+  "strengths": [
+    "Independent sovereign nuclear triad (air/submarine) \u2014 Triomphant-class SSBNs with M51 SLBMs, entirely free from foreign operational veto",
+    "World's second-largest Exclusive Economic Zone via global overseas territories across the Atlantic, Indian, and Pacific Oceans",
+    "Comprehensive sovereign defence industrial base \u2014 domestic capability to build fighter aircraft (Rafale), nuclear submarines, and missile systems without foreign dependency",
+    "Permanent UN Security Council veto combined with EU strategic leadership",
+    "Nuclear energy infrastructure autonomy \u2014 over 60% of domestic power from nuclear reactors, insulating against fossil-fuel shocks"
+  ],
+  "alliances": [
+    "DEU",
+    "GBR",
+    "USA"
+  ],
+  "rivals": [
+    "RUS"
+  ],
+  "_meta": {
+    "data_quality": "demo; military spending %GDP and arms exports now sourced from real World Bank WDI data",
+    "source": "see data/sources/",
+    "confidence": "low-demo",
+    "last_updated": "2026-09-01",
+    "core_data_source": "SIPRI Yearbook 2026 (released 8 Jun 2026) + IMF WEO Apr/Jul 2026 + World Bank WDI Jun 2026, via user-provided unified research file; nuclear warhead counts and India's defence spend independently cross-checked against live SIPRI press materials (Aug 2026)",
+    "strengths_vulnerabilities_source": "SOURCE B (Gemini strategic analysis) via user-provided unified research file \u2014 mechanism-based ASSESSMENT, not raw fact"
+  },
+  "strategic_autonomy_profile": "European strategic autonomy proponent"
+}

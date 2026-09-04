@@ -1,0 +1,277 @@
+{
+  "chokepoints": [
+    {
+      "id": "CHOKEPOINT_HORMUZ",
+      "name": "Strait of Hormuz",
+      "location": "Between Iran and Oman/UAE",
+      "why_it_matters": "Flow control over an estimated ~21 million barrels per day of crude oil and condensate \u2014 roughly a fifth of global supply.",
+      "countries_most_exposed": [
+        {
+          "country": "CHN",
+          "exposure": "high",
+          "reason": "Major buyer of Gulf crude oil, shipped through Hormuz then Malacca.",
+          "record_type": "ESTIMATE",
+          "confidence": "high"
+        },
+        {
+          "country": "IND",
+          "exposure": "high",
+          "reason": "Major buyer of Gulf crude oil, including from Iraq and Saudi Arabia.",
+          "record_type": "ESTIMATE",
+          "confidence": "high"
+        },
+        {
+          "country": "JPN",
+          "exposure": "very high",
+          "reason": ">80% crude dependency on Gulf exporters per unified research estimate; near-zero domestic geological substitutes.",
+          "record_type": "ESTIMATE",
+          "confidence": "high"
+        },
+        {
+          "country": "KOR",
+          "exposure": "very high",
+          "reason": ">80% crude dependency on Gulf exporters; strategic reserves cover roughly 90-120 days.",
+          "record_type": "ESTIMATE",
+          "confidence": "high"
+        }
+      ],
+      "countries_with_leverage": [
+        {
+          "country": "IRN",
+          "leverage": "high \u2014 northern coastal control via anti-ship batteries, fast-attack craft, and island bases (Abu Musa, the Tunbs)",
+          "record_type": "ASSESSMENT",
+          "confidence": "medium",
+          "caveat": "Iran has repeatedly threatened closure during periods of tension but has never actually sustained a full closure \u2014 Oman shares southern-shore control and global naval powers (notably the US Fifth Fleet, based in Bahrain) actively deter unilateral closure."
+        }
+      ],
+      "alternative_routes": "Saudi East-West Petroline (~5M bpd capacity) and UAE's Abu Dhabi Crude Oil Pipeline/ADCOP (~1.5M bpd) allow some crude to bypass Hormuz entirely \u2014 a real but partial mitigation, covering a minority of total Gulf export volume.",
+      "record_type": "FACT",
+      "confidence": "high",
+      "source": "EIA Monthly Energy Review 2025-2026, via user-provided unified research",
+      "_meta": {
+        "last_updated": "2026-09-01"
+      },
+      "active_crisis_2026": {
+        "statement": "Since the 2026 Iran War began (28 Feb 2026), the Strait of Hormuz has seen repeated real disruption \u2014 Iran has fired on commercial vessels (e.g. 6-7 Jul 2026) and asserted fee-collection/routing control attempts, testing the limits of an Apr-Jul 2026 ceasefire memorandum. This is no longer a purely hypothetical chokepoint risk for this conflict \u2014 it is an active, ongoing crisis.",
+        "record_type": "FACT",
+        "confidence": "high \u2014 verified via live sources (Britannica, Wikipedia), September 2026"
+      }
+    },
+    {
+      "id": "CHOKEPOINT_MALACCA",
+      "name": "Strait of Malacca",
+      "location": "Between Malaysia/Singapore and Indonesia (Sumatra)",
+      "why_it_matters": "Chokepoint for an estimated ~16 million barrels/day of crude oil and roughly 60% of China's maritime trade flows. Named the 'Malacca Dilemma' by Chinese leadership (Hu Jintao, 2003) precisely because of this dependency.",
+      "countries_most_exposed": [
+        {
+          "country": "CHN",
+          "exposure": "very high",
+          "reason": "~72% of China's crude oil imports transit this route per the unified research estimate (a commonly cited range is 70-85% depending on year/source); no comparable-scale alternative exists.",
+          "record_type": "ESTIMATE",
+          "confidence": "high"
+        },
+        {
+          "country": "JPN",
+          "exposure": "high",
+          "reason": "Heavily energy-import-dependent economy relying on Gulf oil shipped through this route.",
+          "record_type": "ESTIMATE",
+          "confidence": "high"
+        },
+        {
+          "country": "KOR",
+          "exposure": "high",
+          "reason": "Near-total energy import dependence, similar route reliance to Japan.",
+          "record_type": "ESTIMATE",
+          "confidence": "high"
+        }
+      ],
+      "countries_with_leverage": [
+        {
+          "country": "IND",
+          "leverage": "moderate \u2014 geographic proximity, not a blockade capability",
+          "reason": "India's Andaman & Nicobar Command sits at the northern approach, commanding the Six Degree, Eight Degree, and Nine Degree Channels near the strait's entrance \u2014 a genuine forward position for surveillance and, in a severe crisis, interdiction risk.",
+          "record_type": "ASSESSMENT",
+          "confidence": "medium",
+          "caveat": "The strait itself is legally administered under UNCLOS transit-passage rules by Indonesia, Malaysia, and Singapore \u2014 not India. India's leverage is proximity-based deterrence and surveillance, not sovereign control, and a full blockade would be an act of war against global shipping broadly, not a targeted move against one country."
+        }
+      ],
+      "alternative_routes": "Sunda Strait and Lombok-Makassar Strait (Indonesia) can absorb rerouted traffic, particularly deep-draft vessels \u2014 at the cost of an additional 3-5 shipping days and higher fuel costs.",
+      "record_type": "FACT",
+      "confidence": "high",
+      "source": "IEA World Energy Outlook & Critical Minerals Market Review 2025/2026, via user-provided unified research",
+      "_meta": {
+        "last_updated": "2026-09-01"
+      }
+    },
+    {
+      "id": "CHOKEPOINT_TURKISH_STRAITS",
+      "name": "Turkish Straits (Bosphorus / Dardanelles)",
+      "location": "T\u00fcrkiye, connecting the Black Sea to the Mediterranean",
+      "why_it_matters": "Sole natural maritime passage between the Black Sea and the Mediterranean \u2014 controls all Black Sea naval ingress/egress.",
+      "countries_most_exposed": [
+        {
+          "country": "RUS",
+          "exposure": "high",
+          "reason": "Black Sea Fleet's only route to the Mediterranean/open ocean.",
+          "record_type": "ASSESSMENT",
+          "confidence": "high"
+        }
+      ],
+      "countries_with_leverage": [
+        {
+          "country": "TUR",
+          "leverage": "very high \u2014 full legal and physical control",
+          "reason": "Administered under the 1936 Montreux Convention; T\u00fcrkiye regulates naval and commercial transit and has invoked Article 19 (restricting non-riparian warship transit during wartime) during the Russia-Ukraine war (2022-2026).",
+          "record_type": "FACT",
+          "confidence": "high"
+        }
+      ],
+      "alternative_routes": "None \u2014 this is the sole natural maritime passage from the Black Sea to the Mediterranean.",
+      "record_type": "FACT",
+      "confidence": "high",
+      "source": "IISS Military Balance 2026, via user-provided unified research",
+      "_meta": {
+        "last_updated": "2026-09-01"
+      }
+    },
+    {
+      "id": "CHOKEPOINT_BAB_EL_MANDEB",
+      "name": "Bab el-Mandeb",
+      "location": "Between Yemen and Djibouti/Eritrea, gateway to the Red Sea and Suez Canal",
+      "why_it_matters": "Gateway to the Red Sea and Suez Canal; disruption here forces rerouting around the Cape of Good Hope.",
+      "countries_most_exposed": [
+        {
+          "country": "ISR",
+          "exposure": "high",
+          "reason": "Red Sea shipping access affected.",
+          "record_type": "ASSESSMENT",
+          "confidence": "medium"
+        },
+        {
+          "country": "CHN",
+          "exposure": "moderate-high",
+          "reason": "A meaningful share of China-Europe container traffic transits this route via Suez.",
+          "record_type": "ASSESSMENT",
+          "confidence": "medium"
+        }
+      ],
+      "countries_with_leverage": [
+        {
+          "country": "non-state actors (Houthi movement, Yemen)",
+          "leverage": "high but asymmetric \u2014 interdiction, not sovereign control",
+          "reason": "Demonstrated capability to threaten shipping via anti-ship ballistic/cruise missiles and drones (2023-2026 Red Sea shipping disruptions).",
+          "record_type": "FACT",
+          "confidence": "high",
+          "caveat": "This is asymmetric interdiction by a non-state armed actor, not a government exercising legal chokepoint control \u2014 a materially different kind of leverage than T\u00fcrkiye's at the Turkish Straits."
+        }
+      ],
+      "alternative_routes": "Cape of Good Hope detour \u2014 adds an estimated 10-14 days transit time and a significant freight cost increase (commonly cited estimates cluster around 30%, though this varies by route and vessel).",
+      "record_type": "FACT",
+      "confidence": "high",
+      "source": "WTO Global Trade Outlook and Statistics 2026, via user-provided unified research",
+      "_meta": {
+        "last_updated": "2026-09-01"
+      }
+    },
+    {
+      "id": "CHOKEPOINT_ANDAMAN_NICOBAR",
+      "name": "Andaman & Nicobar Islands approach",
+      "location": "India, at the eastern approach to the Bay of Bengal / northern Strait of Malacca",
+      "why_it_matters": "Forward surveillance and potential interdiction position over the Six Degree and Ten Degree Channels \u2014 the northern approach to the Malacca Strait.",
+      "countries_most_exposed": [
+        {
+          "country": "CHN",
+          "exposure": "indirect \u2014 via Malacca Strait dependency",
+          "reason": "See CHOKEPOINT_MALACCA \u2014 this entry is India's specific asset enabling leverage there, not a separate dependency.",
+          "record_type": "ASSESSMENT",
+          "confidence": "medium"
+        }
+      ],
+      "countries_with_leverage": [
+        {
+          "country": "IND",
+          "leverage": "moderate \u2014 surveillance and interdiction-risk, not sovereign strait control",
+          "reason": "India's only tri-service unified military command (Andaman & Nicobar Command, headquartered at Port Blair) operates deep surveillance of the Six Degree and Ten Degree Channels in the eastern Bay of Bengal.",
+          "record_type": "FACT",
+          "confidence": "high"
+        }
+      ],
+      "alternative_routes": "A vessel could reroute south of Sumatra into the Lombok/Ombai-Wetar straits to avoid the immediate ANC surveillance zone, at a cost in transit time.",
+      "record_type": "FACT",
+      "confidence": "high",
+      "source": "IISS Military Balance 2026, via user-provided unified research",
+      "_meta": {
+        "last_updated": "2026-09-01"
+      }
+    },
+    {
+      "id": "CHOKEPOINT_SUNDA_LOMBOK",
+      "name": "Sunda / Lombok Straits",
+      "location": "Indonesia",
+      "why_it_matters": "Deep-water bypass routes for ultra-large crude carriers and submarines that cannot transit the shallower Malacca Strait.",
+      "countries_most_exposed": [
+        {
+          "country": "AUS",
+          "exposure": "moderate",
+          "reason": "Regional trade route relevance.",
+          "record_type": "ASSESSMENT",
+          "confidence": "medium"
+        },
+        {
+          "country": "CHN",
+          "exposure": "moderate",
+          "reason": "Alternative route if Malacca is disrupted, so relevant to China's contingency planning specifically.",
+          "record_type": "ASSESSMENT",
+          "confidence": "medium"
+        }
+      ],
+      "countries_with_leverage": [
+        {
+          "country": "IDN",
+          "leverage": "high \u2014 full sovereign control",
+          "reason": "Complete physical control within Indonesian Archipelagic Waters under Indonesia's declared Archipelagic Sea Lanes (ASL).",
+          "record_type": "FACT",
+          "confidence": "high"
+        }
+      ],
+      "alternative_routes": "Long-distance open Pacific transit, or the shallower Torres Strait as a less practical alternative.",
+      "record_type": "FACT",
+      "confidence": "high",
+      "source": "USGS Mineral Commodity Summaries 2026 / user-provided unified research",
+      "_meta": {
+        "last_updated": "2026-09-01"
+      }
+    },
+    {
+      "id": "CHOKEPOINT_GIUK_GAP",
+      "name": "GIUK Gap (Greenland-Iceland-UK)",
+      "location": "North Atlantic",
+      "why_it_matters": "Chokepoint for Russian Northern Fleet nuclear and attack submarines attempting to break into the North Atlantic.",
+      "countries_most_exposed": [
+        {
+          "country": "RUS",
+          "exposure": "high",
+          "reason": "Northern Fleet egress to the open Atlantic is constrained by NATO monitoring here.",
+          "record_type": "ASSESSMENT",
+          "confidence": "high"
+        }
+      ],
+      "countries_with_leverage": [
+        {
+          "country": "GBR",
+          "leverage": "high, as part of a NATO multilateral effort",
+          "reason": "SOSUS/IUSS undersea acoustic sensor arrays plus P-8A Poseidon maritime patrol aircraft provide persistent NATO monitoring of this gap, in cooperation with Norway, Iceland, and the US.",
+          "record_type": "FACT",
+          "confidence": "high"
+        }
+      ],
+      "alternative_routes": "Arctic trans-polar under-ice transit \u2014 technically possible for submarines but operationally specialized and monitored by its own dedicated sensor networks.",
+      "record_type": "FACT",
+      "confidence": "high",
+      "source": "IISS Military Balance 2026, via user-provided unified research",
+      "_meta": {
+        "last_updated": "2026-09-01"
+      }
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "country_a": "CHN",
+  "country_b": "PAK",
+  "relationship_type": "strategic_ally",
+  "classification": {
+    "category": "strategic_ally",
+    "strength": "very_high",
+    "direction": "mutual",
+    "economic_importance": "high",
+    "military_importance": "very_high",
+    "energy_importance": "low",
+    "diplomatic_importance": "high",
+    "reason": "China supplies the large majority of Pakistan's major arms imports (SIPRI estimates 63-80% depending on period) and has invested heavily in Pakistan through CPEC. For China, Pakistan offers a reliable land route to the Arabian Sea (Gwadar) and a strategic counterweight tying down India's military attention on two fronts.",
+    "confidence": "high",
+    "source": "SIPRI Trends in International Arms Transfers 2024"
+  },
+  "strategic_issues": [
+    "CPEC investments face periodic security threats from militant groups inside Pakistan",
+    "Pakistan's debt exposure to Chinese loans has become a recurring point of economic strain"
+  ],
+  "trade_dependencies": [
+    "Pakistan is heavily dependent on Chinese loans and infrastructure financing (CPEC)"
+  ],
+  "energy_relationship": {
+    "direct_dependency": "low",
+    "notes": "Limited direct energy trade; cooperation is centered on infrastructure and arms rather than energy"
+  },
+  "military_relationship": {
+    "posture": "very close, described by both sides as an all-weather partnership",
+    "notes": "China supplies the majority of Pakistan's fighter aircraft, air-defence systems, and naval vessels; joint military exercises are frequent"
+  },
+  "diplomatic_relationship": {
+    "posture": "closely aligned, described by both governments as 'higher than the mountains, deeper than the seas'",
+    "notes": "China has historically shielded Pakistan diplomatically at the UN Security Council on Kashmir-related and terrorism-designation issues"
+  },
+  "major_disputes": [],
+  "areas_of_cooperation": [
+    "China-Pakistan Economic Corridor (CPEC)",
+    "Defence co-production (JF-17 fighter jets)",
+    "Gwadar port development"
+  ],
+  "escalation_factors": [
+    "Continued Chinese arms resupply to Pakistan directly affects the India-Pakistan military balance"
+  ],
+  "deescalation_factors": [],
+  "_meta": {
+    "data_quality": "sourced for arms-trade share, demo for other figures",
+    "confidence": "moderate-high",
+    "source": "SIPRI Trends in International Arms Transfers 2024",
+    "last_updated": "2026-08-22"
+  }
+}

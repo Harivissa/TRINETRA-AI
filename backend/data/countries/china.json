@@ -1,0 +1,103 @@
+{
+  "id": "CHN",
+  "name": "China",
+  "region": "East Asia",
+  "demographics": {
+    "population_millions": 1408.3,
+    "population_source": "SIPRI Yearbook 2026 (released 8 Jun 2026) + IMF WEO Apr/Jul 2026 + World Bank WDI Jun 2026, via user-provided unified research file; nuclear warhead counts and India's defence spend independently cross-checked against live SIPRI press materials (Aug 2026) (2025 figure)"
+  },
+  "economy": {
+    "gdp_usd_trillion": 18.94,
+    "gdp_growth_pct": 4.6,
+    "notes": "Demo/approximate figures \u2014 replace with sourced data via data/sources/",
+    "gdp_source": "SIPRI Yearbook 2026 (released 8 Jun 2026) + IMF WEO Apr/Jul 2026 + World Bank WDI Jun 2026, via user-provided unified research file; nuclear warhead counts and India's defence spend independently cross-checked against live SIPRI press materials (Aug 2026) (2025 figures)"
+  },
+  "military": {
+    "active_troops": 2035000,
+    "defence_spending_usd_billion": 314.0,
+    "defence_spending_pct_gdp": 1.66,
+    "defence_spending_pct_gdp_source": "World Bank WDI (MS.MIL.XPND.GD.ZS), 2024 data, extracted from user-provided dataset (file last updated 2026-02-24)",
+    "arms_exports_usd": 1131000000,
+    "arms_exports_year": 2024,
+    "arms_exports_source": "World Bank WDI (MS.MIL.XPRT.KD), constant USD, from user-provided dataset",
+    "reserve_troops": 510000,
+    "defence_spending_pct_gdp_worldbank_2024": 1.71,
+    "defence_spending_source": "SIPRI Yearbook 2026 (released 8 Jun 2026) + IMF WEO Apr/Jul 2026 + World Bank WDI Jun 2026, via user-provided unified research file; nuclear warhead counts and India's defence spend independently cross-checked against live SIPRI press materials (Aug 2026) (2025 figures)"
+  },
+  "energy": {
+    "net_import_dependence_ratio": 0.72,
+    "note": "Positive = net importer, negative = net exporter (approximate ratio, demo data)",
+    "status_2025": "Net importer \u2014 ~72% of crude oil consumption imported",
+    "oil_production_bpd_estimate": "~4.1M",
+    "oil_consumption_bpd_estimate": "~15.9M",
+    "net_oil_position": "importer (~72% of consumption)",
+    "gas_position": "net importer, growing LNG + pipeline (RUS, Central Asia)",
+    "electricity_mix_estimate": "coal ~60%, hydro/renewables/nuclear ~40%, rapidly expanding solar/wind",
+    "major_energy_suppliers": [
+      "SAU",
+      "RUS",
+      "IRQ",
+      "ARE"
+    ],
+    "record_type": "ESTIMATE",
+    "confidence": "moderate \u2014 approximate orders of magnitude consistent with IEA/EIA reporting patterns, not precise official figures for a specific year",
+    "source": "Compiled from IEA/EIA-consistent general energy-market knowledge; recommend cross-checking against IEA World Energy Outlook or EIA Country Analysis Briefs for precise current-year figures"
+  },
+  "infrastructure": {},
+  "trade": {},
+  "technology": {},
+  "geography": {
+    "region": "East Asia"
+  },
+  "politics": {},
+  "nuclear": {
+    "weapons_state": true,
+    "warhead_estimate": 620,
+    "warhead_estimate_year": 2026,
+    "warhead_estimate_source": "SIPRI Yearbook 2026 (as of Jan 2026), independently verified against live SIPRI press materials Aug 2026"
+  },
+  "strategic_priorities": [
+    "Taiwan reunification posture",
+    "South China Sea control",
+    "Tech self-sufficiency (semiconductors)",
+    "Belt & Road consolidation"
+  ],
+  "dependencies": [],
+  "vulnerabilities": [
+    "The 'Malacca Dilemma' \u2014 a term Chinese strategists themselves have used (attributed to Hu Jintao, 2003) \u2014 roughly 72% of China's crude oil imports transit the Strait of Malacca, a single chokepoint China does not control and cannot easily bypass at scale",
+    "Himalayan/Tibetan plateau terrain (average 4,000+ metres altitude along the LAC) imposes severe logistics, acclimatisation, and sustained-offensive constraints on Chinese ground forces relative to fighting at lower altitude",
+    "First Island Chain geographic containment \u2014 maritime access to the open Pacific is bottlenecked by island chains held by US-aligned states (Japan, Taiwan, the Philippines), limiting unmonitored naval and submarine transit",
+    "Advanced semiconductor manufacturing sanctions \u2014 domestic reliance on foreign lithography equipment (EUV/advanced DUV) and chip-design software from the US, Japan, and the Netherlands bottlenecks scaling of advanced AI compute and military-grade microprocessors",
+    "Financial exposure to Western sanctions \u2014 continued reliance on USD-denominated trade channels and SWIFT for international commerce creates vulnerability to asset seizures or trade interdiction in a systemic crisis",
+    "Aging population and shrinking workforce, reducing long-term fiscal capacity for simultaneous domestic spending and defence expansion",
+    "Property-sector debt overhang",
+    "Export dependence on Western markets"
+  ],
+  "strengths": [
+    "Manufacturing/industrial base \u2014 world's largest shipbuilding and manufacturing infrastructure enables rapid naval construction and ammunition production",
+    "Global supply chain centrality; near-monopoly on raw-material processing (graphite, lithium refining, rare-earth permanent magnets, polysilicon)",
+    "Anti-Access/Area-Denial (A2/AD) missile umbrella \u2014 dense array of anti-ship ballistic missiles (DF-21D, DF-26) and hypersonic strike systems capable of targeting naval assets beyond the First Island Chain",
+    "Eurasian overland transport corridors (Belt & Road Initiative infrastructure) bypass Western-controlled maritime chokepoints, linking Central Asia, Russia, and EU trade networks by land",
+    "Integrated cyber operations and electronic-warfare architecture targeting foreign critical infrastructure, satellite networks, and intelligence channels",
+    "Belt & Road strategic reach"
+  ],
+  "alliances": [
+    "RUS",
+    "PAK",
+    "PRK"
+  ],
+  "rivals": [
+    "USA",
+    "IND",
+    "JPN"
+  ],
+  "_meta": {
+    "data_quality": "demo; military spending %GDP and arms exports now sourced from real World Bank WDI data",
+    "source": "see data/sources/",
+    "confidence": "low-demo",
+    "last_updated": "2026-09-01",
+    "core_data_source": "SIPRI Yearbook 2026 (released 8 Jun 2026) + IMF WEO Apr/Jul 2026 + World Bank WDI Jun 2026, via user-provided unified research file; nuclear warhead counts and India's defence spend independently cross-checked against live SIPRI press materials (Aug 2026)",
+    "strengths_vulnerabilities_source": "SOURCE B (Gemini strategic analysis) via user-provided unified research file, cross-checked against SOURCE A (Perplexity OSINT) chokepoint/dependency data \u2014 mechanism-based ASSESSMENT, not raw fact"
+  },
+  "strategic_autonomy_profile": "Revisionist power, comprehensive national power"
+}

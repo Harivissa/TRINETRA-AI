@@ -1,0 +1,45 @@
+{
+  "id": "REL_CHN_RUS_STRATEGIC",
+  "source": "CHN",
+  "target": "RUS",
+  "relationship_type": "strategic_partnership",
+  "domain": ["energy", "trade", "diplomacy", "military"],
+  "strength": 0.8,
+  "strength_note": "Analyst judgment. High and rising since 2022, but structurally asymmetric — Russia is increasingly the dependent junior partner economically.",
+  "direction": "asymmetric",
+  "status": "active",
+  "history": [
+    {
+      "period": "1950s",
+      "state": "allied",
+      "note": "Sino-Soviet Treaty of Friendship (1950); close alignment during the early Cold War.",
+      "record_type": "HISTORICAL_FACT",
+      "confidence": "high"
+    },
+    {
+      "period": "1960s-1980s",
+      "state": "rupture",
+      "note": "Sino-Soviet split — ideological and border disputes led to a major rift, including a 1969 border clash.",
+      "record_type": "HISTORICAL_FACT",
+      "confidence": "high"
+    },
+    {
+      "period": "1989-2010s",
+      "state": "normalisation_and_deepening",
+      "note": "Relations normalised in 1989; expanded gradually through the SCO (founded 2001) and growing trade.",
+      "record_type": "HISTORICAL_FACT",
+      "confidence": "high"
+    },
+    {
+      "period": "2022-2026",
+      "state": "deep_strategic_alignment",
+      "note": "Declared a 'no limits' partnership shortly before Russia's 2022 invasion of Ukraine; China became Russia's primary economic lifeline against Western sanctions (energy purchases, trade substitution for Western goods), while stopping short of providing direct lethal military aid to avoid secondary-sanctions exposure.",
+      "record_type": "ANALYTICAL_ASSESSMENT",
+      "confidence": "high"
+    }
+  ],
+  "evidence": [],
+  "confidence": "high",
+  "record_type": "ANALYTICAL_ASSESSMENT",
+  "_meta": {"last_updated": "2026-08-22"}
+}

@@ -1,0 +1,99 @@
+{
+  "id": "RUS",
+  "name": "Russia",
+  "region": "Eurasia",
+  "demographics": {
+    "population_millions": 143.8,
+    "population_source": "SIPRI Yearbook 2026 (released 8 Jun 2026) + IMF WEO Apr/Jul 2026 + World Bank WDI Jun 2026, via user-provided unified research file; nuclear warhead counts and India's defence spend independently cross-checked against live SIPRI press materials (Aug 2026) (2025 figure)"
+  },
+  "economy": {
+    "gdp_usd_trillion": 2.18,
+    "gdp_growth_pct": 3.2,
+    "notes": "Demo/approximate figures \u2014 replace with sourced data via data/sources/",
+    "gdp_source": "SIPRI Yearbook 2026 (released 8 Jun 2026) + IMF WEO Apr/Jul 2026 + World Bank WDI Jun 2026, via user-provided unified research file; nuclear warhead counts and India's defence spend independently cross-checked against live SIPRI press materials (Aug 2026) (2025 figures)"
+  },
+  "military": {
+    "active_troops": 1320000,
+    "defence_spending_usd_billion": 149.0,
+    "defence_spending_pct_gdp": 6.83,
+    "defence_spending_pct_gdp_source": "World Bank WDI (MS.MIL.XPND.GD.ZS), 2024 data, extracted from user-provided dataset (file last updated 2026-02-24)",
+    "arms_exports_usd": 1339000000,
+    "arms_exports_year": 2024,
+    "arms_exports_source": "World Bank WDI (MS.MIL.XPRT.KD), constant USD, from user-provided dataset",
+    "reserve_troops": 2000000,
+    "defence_spending_pct_gdp_worldbank_2024": 7.05,
+    "defence_spending_source": "SIPRI Yearbook 2026 (released 8 Jun 2026) + IMF WEO Apr/Jul 2026 + World Bank WDI Jun 2026, via user-provided unified research file; nuclear warhead counts and India's defence spend independently cross-checked against live SIPRI press materials (Aug 2026) (2025 figures)",
+    "defence_spending_discrepancy_note": "World Bank WDI (MS.MIL.XPND.GD.ZS, 2024) gave 7.05%; SIPRI Yearbook 2026 (2025 data) gives 6.83% \u2014 both are legitimate sources measuring different years and, per SIPRI's own methodology notes, sometimes different expenditure scopes. SIPRI figure used as primary since it is defence-specific and more recent; World Bank figure retained below for comparison."
+  },
+  "energy": {
+    "net_import_dependence_ratio": -1.2,
+    "note": "Positive = net importer, negative = net exporter (approximate ratio, demo data)",
+    "status_2025": "Major net exporter",
+    "oil_production_bpd_estimate": "~10.5M",
+    "oil_consumption_bpd_estimate": "~3.6M",
+    "net_oil_position": "major net exporter",
+    "gas_position": "major net exporter (pipeline to CHN/Central Asia, reduced pipeline to EU since 2022)",
+    "electricity_mix_estimate": "gas ~45%, nuclear ~20%, hydro ~20%, coal ~15%",
+    "major_energy_customers": [
+      "CHN",
+      "IND",
+      "TUR"
+    ],
+    "record_type": "ESTIMATE",
+    "confidence": "moderate \u2014 approximate orders of magnitude consistent with IEA/EIA reporting patterns, not precise official figures for a specific year",
+    "source": "Compiled from IEA/EIA-consistent general energy-market knowledge; recommend cross-checking against IEA World Energy Outlook or EIA Country Analysis Briefs for precise current-year figures"
+  },
+  "infrastructure": {},
+  "trade": {},
+  "technology": {},
+  "geography": {
+    "region": "Eurasia"
+  },
+  "politics": {},
+  "nuclear": {
+    "weapons_state": true,
+    "warhead_estimate": 5420,
+    "warhead_estimate_year": 2026,
+    "warhead_estimate_source": "SIPRI Yearbook 2026 (as of Jan 2026), independently verified against live SIPRI press materials Aug 2026"
+  },
+  "strategic_priorities": [
+    "Ukraine war objectives",
+    "Energy leverage over Europe",
+    "Deepening China alignment",
+    "Arctic resource access"
+  ],
+  "dependencies": [],
+  "vulnerabilities": [
+    "Asymmetric dependence on China \u2014 heavy reliance on Chinese markets for hydrocarbon sales and Chinese suppliers for microelectronics and industrial machinery reduces Russia's diplomatic and economic manoeuvring room versus core Chinese interests",
+    "Black Sea and Baltic Sea naval bottlenecks \u2014 warm-water access requires transit through the Turkish Straits (Black Sea) or Danish Straits/NATO-dominated waters (Baltic), limiting free fleet deployment or reinforcement during conflict",
+    "Demographic decline compounded by wartime losses and brain drain, creating long-term shortages of specialised labour outside the defence sector",
+    "Western technology sanctions strain \u2014 historical reliance on Western oilfield-services technology, aviation parts, and specialised software has raised maintenance costs and operational inefficiency in civil aviation and deep-sea energy extraction",
+    "Extended northern and Far Eastern border-security burden across thousands of sparsely populated miles, requiring large standing security forces away from primary operational zones"
+  ],
+  "strengths": [
+    "World's largest nuclear arsenal alongside hypersonic strike capability (Avangard glide vehicles) across a complete triad of road-mobile ICBMs, SSBNs, and strategic bombers",
+    "Resource autonomy \u2014 full domestic self-sufficiency in hydrocarbons, agricultural output, and critical industrial metals",
+    "Sole physical/legal authority over the Northern Sea Route, backed by the world's only nuclear-icebreaker fleet",
+    "Defence-industrial scalability in land-warfare systems \u2014 high-volume artillery, armour, EW, and tactical-drone production under war-footing mobilisation",
+    "Diplomatic leverage via energy and defence exports to the Global South (arms sales, Rosatom nuclear-plant construction, discounted crude) to India, African states, and Middle Eastern buyers"
+  ],
+  "alliances": [
+    "CHN",
+    "PRK",
+    "IRN"
+  ],
+  "rivals": [
+    "USA",
+    "GBR",
+    "FRA"
+  ],
+  "_meta": {
+    "data_quality": "demo; military spending %GDP and arms exports now sourced from real World Bank WDI data",
+    "source": "see data/sources/",
+    "confidence": "low-demo",
+    "last_updated": "2026-09-01",
+    "core_data_source": "SIPRI Yearbook 2026 (released 8 Jun 2026) + IMF WEO Apr/Jul 2026 + World Bank WDI Jun 2026, via user-provided unified research file; nuclear warhead counts and India's defence spend independently cross-checked against live SIPRI press materials (Aug 2026)",
+    "strengths_vulnerabilities_source": "SOURCE B (Gemini strategic analysis) via user-provided unified research file \u2014 mechanism-based ASSESSMENT, not raw fact"
+  },
+  "strategic_autonomy_profile": "Eurasian sovereign fortress, war-economy mode"
+}
