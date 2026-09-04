@@ -69,4 +69,7 @@ export interface RivalryAnalysis {
     scenario_note?: { statement: string; record_type: string; confidence: string; caveat: string };
   }[];
   ai_summary?: string;
+  country_a_profile?: Country;
+  country_b_profile?: Country;
+  source_relationship?: Record<string, any> | null;
 }

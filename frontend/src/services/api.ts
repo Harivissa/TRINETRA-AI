@@ -20,6 +20,22 @@ export const api = {
     return res.json();
   },
   runRivalry: async (countryA: string, countryB: string, includeAi = false): Promise<RivalryAnalysis> => {
+    const [res, profileA, profileB, relationship] = await Promise.all([
+      fetch(`${BASE}/analysis/rivalry`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ country_a: countryA, country_b: countryB, include_ai_summary: includeAi }),
+      }),
+      get<Country>(`/countries/${countryA}`),
+      get<Country>(`/countries/${countryB}`),
+      get<any>(`/relationships/${countryA}/${countryB}`).catch(() => null),
+    ]);
+
+    if (!res.ok) throw new Error("Rivalry analysis failed");
+    const analysis = await res.json();
+    return { ...analysis, country_a_profile: profileA, country_b_profile: profileB, source_relationship: relationship } as RivalryAnalysis;
+  },
+  runRivalryLegacy: async (countryA: string, countryB: string, includeAi = false): Promise<RivalryAnalysis> => {
     const res = await fetch(`${BASE}/analysis/rivalry`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
