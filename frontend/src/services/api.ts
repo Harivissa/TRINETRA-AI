@@ -35,13 +35,4 @@ export const api = {
     const analysis = await res.json();
     return { ...analysis, country_a_profile: profileA, country_b_profile: profileB, source_relationship: relationship } as RivalryAnalysis;
   },
-  runRivalryLegacy: async (countryA: string, countryB: string, includeAi = false): Promise<RivalryAnalysis> => {
-    const res = await fetch(`${BASE}/analysis/rivalry`, {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ country_a: countryA, country_b: countryB, include_ai_summary: includeAi }),
-    });
-    if (!res.ok) throw new Error("Rivalry analysis failed");
-    return res.json();
-  },
 };
