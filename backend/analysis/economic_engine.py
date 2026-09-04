@@ -1,24 +1,15 @@
-"""Economic comparison and resilience scoring."""
+"""Factual economic comparison fields from canonical country records."""
 
 
 def analyze(country_a: dict, country_b: dict) -> dict:
-    def resilience(c):
-        e = c.get("economy", {})
-        gdp = e.get("gdp_usd_trillion", 0)
-        growth = e.get("gdp_growth_pct", 0)
-        # larger economy + healthier growth = more resilient to sustained pressure
-        raw = (gdp * 5) + (growth * 2)
-        return round(raw, 1)
-
-    def build(c):
-        e = c.get("economy", {})
+    def build(country: dict) -> dict:
+        economy = country.get("economy", {})
         return {
-            "id": c["id"],
-            "gdp_usd_trillion": e.get("gdp_usd_trillion"),
-            "gdp_growth_pct": e.get("gdp_growth_pct"),
-            "economic_resilience_score": resilience(c),
+            "id": country["id"],
+            "gdp_usd_trillion": economy.get("gdp_usd_trillion"),
+            "gdp_growth_pct": economy.get("gdp_growth_pct"),
+            "notes": economy.get("notes"),
+            "meta": country.get("_meta", {}),
         }
 
-    a, b = build(country_a), build(country_b)
-    edge = country_a["id"] if a["economic_resilience_score"] > b["economic_resilience_score"] else country_b["id"]
-    return {"country_a": a, "country_b": b, "edge": edge}
+    return {"country_a": build(country_a), "country_b": build(country_b), "note": "Factual fields from canonical country profiles; no resilience score."}
