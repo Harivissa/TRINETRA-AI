@@ -104,7 +104,9 @@ def get_all_relationships() -> tuple:
     rels = []
     for fname in sorted(os.listdir(geo_dir)):
         if fname.endswith(".json"):
-            rels.append(_load_json(os.path.join(geo_dir, fname)))
+            record = _load_json(os.path.join(geo_dir, fname))
+            if record.get("country_a") and record.get("country_b"):
+                rels.append(record)
     return tuple(rels)
 
 
@@ -112,6 +114,30 @@ def get_relationships_for(country_id: str) -> list[dict]:
     """All relationship files that mention this country as either party."""
     cid = country_id.upper()
     return [r for r in get_all_relationships() if r.get("country_a") == cid or r.get("country_b") == cid]
+
+
+def get_chokepoints() -> list[dict]:
+    path = os.path.join(DATA_ROOT, "geopolitics", "chokepoints.json")
+    if not os.path.exists(path):
+        return []
+    payload = _load_json(path)
+    return payload if isinstance(payload, list) else payload.get("chokepoints", [])
+
+
+def get_modules_for_pair(country_a: str, country_b: str) -> list[dict]:
+    """Return only modules whose declared pair matches the requested pair."""
+    wanted = {country_a.upper(), country_b.upper()}
+    modules = []
+    for rel in get_all_relationships():
+        parties = {rel.get("country_a", "").upper(), rel.get("country_b", "").upper()}
+        if parties == wanted:
+            modules.append(rel)
+    return modules
+
+
+def get_external_actor_records(country_a: str, country_b: str) -> list[dict]:
+    wanted = {country_a.upper(), country_b.upper()}
+    return [r for r in get_all_relationships() if {r.get("country_a", "").upper(), r.get("country_b", "").upper()} & wanted]
 
 
 def clear_cache():
