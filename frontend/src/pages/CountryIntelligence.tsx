@@ -37,6 +37,12 @@ export default function CountryIntelligence() {
   const [history, setHistory] = useState<any | null>(null);
   const [politics, setPolitics] = useState<any | null>(null);
   const [foreignPolicy, setForeignPolicy] = useState<any | null>(null);
+  const [energy, setEnergy] = useState<Record<string, any> | null>(null);
+  const [infrastructure, setInfrastructure] = useState<Record<string, any> | null>(null);
+  const [profileLoading, setProfileLoading] = useState(true);
+  const [energyLoading, setEnergyLoading] = useState(true);
+  const [infrastructureLoading, setInfrastructureLoading] = useState(true);
+  const [profileError, setProfileError] = useState(false);
   const audioRef = useState(() => new Audio())[0];
   const [audioPlaying, setAudioPlaying] = useState(false);
   const [audioAvailable, setAudioAvailable] = useState(true);
@@ -59,7 +65,15 @@ export default function CountryIntelligence() {
 
   useEffect(() => {
     if (!selected) return;
-    api.getCountry(selected).then(setCountry).catch(() => setCountry(null));
+    setProfileLoading(true);
+    setProfileError(false);
+    setEnergyLoading(true);
+    setInfrastructureLoading(true);
+    setEnergy(null);
+    setInfrastructure(null);
+    api.getCountry(selected).then(setCountry).catch(() => { setCountry(null); setProfileError(true); }).finally(() => setProfileLoading(false));
+    api.getCountryEnergy(selected).then(setEnergy).catch(() => setEnergy(null)).finally(() => setEnergyLoading(false));
+    api.getCountryInfrastructure(selected).then(setInfrastructure).catch(() => setInfrastructure(null)).finally(() => setInfrastructureLoading(false));
     setHistory(null);
     setPolitics(null);
     setForeignPolicy(null);
@@ -175,7 +189,9 @@ export default function CountryIntelligence() {
           </button>
         </div>
 
-        {country && (
+        {profileLoading && <div className="border border-trinetra-border p-6 text-sm text-neutral-500" role="status">Loading country intelligence…</div>}
+        {profileError && !profileLoading && <div className="border border-red-900/60 bg-red-950/20 p-6 text-sm text-red-300" role="alert">Unable to connect to Trinetra intelligence backend.</div>}
+        {country && !profileLoading && (
           <div>
             <div className="mb-10">
               <h2 className="font-display text-5xl text-white">{country.name}</h2>
@@ -279,14 +295,18 @@ export default function CountryIntelligence() {
               <ProfileSection title="Energy — Where It Gets Its Power">
                 <div className="text-sm space-y-2">
                   <p>
-                    {country.energy?.net_import_dependence_ratio !== undefined ? (
-                      country.energy.net_import_dependence_ratio > 0
+                    {energyLoading ? "Loading energy data…" : energy?.net_import_dependence_ratio !== undefined ? (
+                      energy.net_import_dependence_ratio > 0
                         ? "This country buys more energy from abroad than it produces — meaning it depends on other countries for fuel."
                         : "This country produces more energy than it uses — it's a net energy exporter."
-                    ) : "No energy data yet."}
+                    ) : "Data unavailable"}
                   </p>
-                  {country.energy?.note && <p className="text-neutral-500">{country.energy.note}</p>}
+                  {!energyLoading && energy?.note && <p className="text-neutral-500">{energy.note}</p>}
                 </div>
+              </ProfileSection>
+
+              <ProfileSection title="Infrastructure — Critical Systems">
+                {infrastructureLoading ? <div className="text-sm text-neutral-500" role="status">Loading infrastructure data…</div> : infrastructure && Object.keys(infrastructure).length > 0 ? <div className="text-sm space-y-2">{Object.entries(infrastructure).map(([key, value]) => <p key={key}><span className="text-neutral-500 capitalize">{key.replace(/_/g, " ")}: </span>{typeof value === "object" ? JSON.stringify(value) : String(value)}</p>)}</div> : <div className="text-sm text-neutral-500">Data unavailable</div>}
               </ProfileSection>
 
               {country.politics && Object.keys(country.politics).length > 0 && (
