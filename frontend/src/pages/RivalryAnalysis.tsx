@@ -5,6 +5,7 @@ import Footer from "../components/dashboard/Footer";
 import CountrySelect from "../components/country/CountrySelect";
 import LoadingEngine from "../components/analysis/LoadingEngine";
 import AnalysisResults from "../components/analysis/AnalysisResults";
+import { playLoadingAudio } from "../lib/audio";
 import { api } from "../services/api";
 import type { CountryIndexEntry, RivalryAnalysis as RivalryAnalysisType } from "../types";
 
@@ -27,6 +28,7 @@ export default function RivalryAnalysis() {
       setError("Select two different countries to compare.");
       return;
     }
+    playLoadingAudio();
     setError(null);
     setAnalysis(null);
     setEngineDone(false);
@@ -52,7 +54,7 @@ export default function RivalryAnalysis() {
   return (
     <div className="min-h-screen bg-trinetra-bg text-neutral-200">
       <Header />
-      <main className="mx-auto max-w-[1500px] px-5 py-10 md:px-8 md:py-14">
+      <main className="mx-auto max-w-[1500px] px-5 py-5 md:px-8 md:py-7">
         <div className="border-b border-trinetra-border pb-8">
           <p className="eyebrow mb-4">COMPARE / STRATEGIC ASSESSMENT</p>
           <h1 className="font-display text-4xl text-neutral-100 md:text-6xl">Compare national positions</h1>
