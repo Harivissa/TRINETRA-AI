@@ -22,7 +22,8 @@ logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger("trinetra")
 
 app = Flask(__name__)
-CORS(app)
+allowed_origins = [origin.strip() for origin in os.getenv("FRONTEND_ORIGINS", "http://localhost:5173,http://127.0.0.1:5173").split(",") if origin.strip()]
+CORS(app, resources={r"/api/*": {"origins": allowed_origins}})
 
 
 @app.get("/api/countries")
@@ -144,6 +145,11 @@ def run_rivalry():
             analysis["ai_summary_error"] = str(e)
 
     return jsonify(analysis)
+
+
+@app.get("/api/chokepoints")
+def get_chokepoints():
+    return jsonify(repository.get_chokepoints())
 
 
 @app.get("/api/network")

@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { ArrowRight, Grid2X2, Info, List, MapPin, Search } from "lucide-react";
 import Header from "../components/dashboard/Header";
 import Footer from "../components/dashboard/Footer";
+import { DepthCard } from "../components/spatial/SpatialPanel";
 import { api } from "../services/api";
 import type { Country, CountryIndexEntry } from "../types";
 
@@ -43,7 +44,7 @@ function regionOf(country: Country | undefined) {
 function Card({ profile, index, mode }: { profile: Profile; index: number; mode: ViewMode }) {
   const region = regionOf(profile.detail);
   const presentation = countryPresentation[profile.id] || { image: "https://images.unsplash.com/photo-1521292270410-a8c4d716d518?auto=format&fit=crop&w=1200&q=80", landmark: "Representative location not available" };
-  return <Link to={`/country?id=${profile.id}`} className={`group relative overflow-hidden rounded-md border border-trinetra-border bg-trinetra-panel text-left transition-all hover:border-trinetra-saffron focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-trinetra-saffron ${mode === "list" ? "flex min-h-32" : "aspect-[16/9] min-h-[174px]"}`}>
+  return <DepthCard><Link to={`/country?id=${profile.id}`} className={`group relative block overflow-hidden rounded-md border border-trinetra-border bg-trinetra-panel text-left transition-all hover:border-trinetra-saffron focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-trinetra-saffron ${mode === "list" ? "flex min-h-32" : "aspect-[16/9] min-h-[174px]"}`}>
     <div className={`${mode === "list" ? "w-36 shrink-0" : "absolute inset-0"} bg-cover bg-center opacity-50 transition duration-500 group-hover:scale-105 group-hover:opacity-65`} style={{ backgroundImage: `url(${presentation.image})` }} aria-hidden="true" />
     <div className="absolute inset-0 bg-gradient-to-t from-trinetra-bg via-trinetra-bg/80 to-trinetra-bg/35" aria-hidden="true" />
     <div className={`relative flex min-w-0 flex-1 flex-col justify-between gap-4 p-4 ${mode === "list" ? "sm:flex-row sm:items-center" : "min-h-full"}`}>
@@ -54,7 +55,7 @@ function Card({ profile, index, mode }: { profile: Profile; index: number; mode:
       </div>
       <div className="flex items-center justify-between border-t border-trinetra-border pt-3 text-xs text-trinetra-saffron">View full intelligence profile <ArrowRight className="size-3" aria-hidden="true" /></div>
     </div>
-  </Link>;
+  </Link></DepthCard>;
 }
 
 export default function CountriesGrid() {
