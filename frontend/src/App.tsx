@@ -7,10 +7,12 @@ import About from "./pages/About";
 import Modules from "./pages/Modules";
 import NetworkView from "./pages/NetworkView";
 import Contact from "./pages/Contact";
+import EntryExperience from "./components/entry/EntryExperience";
 
 export default function App() {
   return (
     <BrowserRouter>
+      <EntryExperience />
       <Routes>
         <Route path="/" element={<Dashboard />} />
         <Route path="/analyze" element={<RivalryAnalysis />} />

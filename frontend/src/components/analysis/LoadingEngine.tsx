@@ -12,7 +12,6 @@ const LOG_LINES = [
   "REVIEWING ENERGY, TRADE AND INFRASTRUCTURE DEPENDENCIES...",
   "MAPPING STRATEGIC CHOKEPOINTS...",
   "TRACING CONSEQUENCE CHAIN...",
-  "RUNNING SCENARIO PROBABILITY MODEL...",
   "COMPILING STRATEGIC RESILIENCE PROFILE...",
   "FINALIZING INTELLIGENCE BRIEFING...",
 ];
@@ -24,76 +23,56 @@ interface Props {
   onComplete: () => void;
 }
 
-export default function LoadingEngine({ countryA, countryB, durationMs = 9000, onComplete }: Props) {
+export default function LoadingEngine({ countryA, countryB, durationMs = 5000, onComplete }: Props) {
   const [visibleLines, setVisibleLines] = useState(0);
   const [progress, setProgress] = useState(0);
 
   useEffect(() => {
     const stepDelay = durationMs / LOG_LINES.length;
-    const lineTimers = LOG_LINES.map((_, i) =>
-      setTimeout(() => setVisibleLines(i + 1), i * stepDelay)
-    );
-
+    const lineTimers = LOG_LINES.map((_, i) => setTimeout(() => setVisibleLines(i + 1), i * stepDelay));
     const progressStart = Date.now();
     const progressTimer = setInterval(() => {
       const pct = Math.min(100, ((Date.now() - progressStart) / durationMs) * 100);
       setProgress(pct);
-    }, 60);
-
-    const doneTimer = setTimeout(onComplete, durationMs + 400);
-
+    }, 40);
+    const doneTimer = setTimeout(() => {
+      setProgress(100);
+      onComplete();
+    }, durationMs);
     return () => {
       lineTimers.forEach(clearTimeout);
       clearInterval(progressTimer);
       clearTimeout(doneTimer);
     };
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  }, [durationMs, onComplete]);
 
   return (
-    <div className="fixed inset-0 z-50 bg-trinetra-bg flex flex-col items-center justify-center overflow-hidden">
-      {/* scanline texture */}
-      <div
-        className="absolute inset-0 pointer-events-none opacity-[0.04]"
-        style={{
-          backgroundImage: "repeating-linear-gradient(0deg, #ff9933 0px, transparent 1px, transparent 3px)",
-        }}
-      />
-      {/* radial glow */}
-      <div className="absolute inset-0 pointer-events-none" style={{
-        background: "radial-gradient(circle at 50% 40%, rgba(255,153,51,0.08), transparent 60%)",
-      }} />
+    <div className="fixed inset-0 z-50 flex flex-col items-center justify-center overflow-hidden bg-trinetra-bg" role="status" aria-live="polite">
+      <div className="absolute inset-0 pointer-events-none opacity-[0.04]" style={{ backgroundImage: "repeating-linear-gradient(0deg, #ff9933 0px, transparent 1px, transparent 3px)" }} />
+      <div className="absolute inset-0 pointer-events-none" style={{ background: "radial-gradient(circle at 50% 40%, rgba(255,153,51,0.10), transparent 60%)" }} />
+      <div className="comparison-loader-orbit comparison-loader-orbit--one" />
+      <div className="comparison-loader-orbit comparison-loader-orbit--two" />
 
-      <div className="relative w-full max-w-xl px-6">
-        <div className="text-center mb-10">
-          <div className="text-xs tracking-[0.3em] text-trinetra-saffron mb-3">TRINETRA AI · CLASSIFIED PROCESSING</div>
-          <div className="font-display text-4xl text-white">
-            {countryA} <span className="text-trinetra-saffron">vs</span> {countryB}
-          </div>
+      <div className="relative w-full max-w-2xl px-6">
+        <div className="mb-9 text-center">
+          <div className="mb-3 text-xs tracking-[0.3em] text-trinetra-saffron">TRINETRA AI · CLASSIFIED PROCESSING</div>
+          <div className="font-display text-4xl text-white md:text-5xl">{countryA} <span className="text-trinetra-saffron">vs</span> {countryB}</div>
+          <p className="mt-4 font-mono text-[11px] uppercase tracking-[0.22em] text-neutral-500">Ladies and Gentlemen — you're not ready for this.</p>
         </div>
 
-        <div className="h-1 bg-trinetra-border rounded-full overflow-hidden mb-8">
-          <div
-            className="h-full bg-trinetra-saffron transition-all duration-100 ease-linear"
-            style={{ width: `${progress}%`, boxShadow: "0 0 12px #ff9933" }}
-          />
+        <div className="mb-7 h-1 overflow-hidden rounded-full bg-trinetra-border">
+          <div className="h-full bg-trinetra-saffron transition-[width] duration-75 ease-linear" style={{ width: `${progress}%`, boxShadow: "0 0 16px #ff9933" }} />
         </div>
 
-        <div className="font-mono text-xs space-y-1.5 h-64 overflow-hidden">
+        <div className="h-56 overflow-hidden font-mono text-xs space-y-1.5">
           {LOG_LINES.slice(0, visibleLines).map((line, i) => (
-            <div
-              key={i}
-              className={i === visibleLines - 1 ? "text-trinetra-saffron" : "text-neutral-600"}
-            >
+            <div key={line} className={i === visibleLines - 1 ? "text-trinetra-saffron" : "text-neutral-600"}>
               <span className="text-neutral-700">[{String(i + 1).padStart(2, "0")}]</span> {line}
               {i === visibleLines - 1 && <span className="animate-pulse">▊</span>}
             </div>
           ))}
         </div>
-
-        <div className="text-center text-xs text-neutral-700 mt-8 tracking-wide">
-          {Math.round(progress)}% COMPLETE
-        </div>
+        <div className="mt-7 text-center font-mono text-[10px] tracking-[0.18em] text-neutral-600">{Math.round(progress)}% · ANALYSIS REQUEST IN FLIGHT</div>
       </div>
     </div>
   );

@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import { ArrowRight, RefreshCw } from "lucide-react";
 import Header from "../components/dashboard/Header";
 import Footer from "../components/dashboard/Footer";
@@ -16,37 +16,46 @@ export default function RivalryAnalysis() {
   const [analysis, setAnalysis] = useState<RivalryAnalysisType | null>(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
-  const [engineDone, setEngineDone] = useState(false);
-  const [fetchDone, setFetchDone] = useState(false);
+  const [showLoading, setShowLoading] = useState(false);
+  const requestRef = useRef<AbortController | null>(null);
 
   useEffect(() => {
-    api.getCountries().then(setCountries).catch(() => setError("Country index unavailable. Try again when the data service is reachable."));
+    const controller = new AbortController();
+    api.getCountries(controller.signal).then(setCountries).catch((err) => {
+      if (err instanceof DOMException && err.name === "AbortError") return;
+      setError("Country index unavailable. Try again when the data service is reachable.");
+    });
+    return () => controller.abort();
   }, []);
 
-  async function runAnalysis() {
+  const runAnalysis = useCallback(async () => {
     if (!countryA || !countryB || countryA === countryB) {
       setError("Select two different countries to compare.");
       return;
     }
+    requestRef.current?.abort();
+    const controller = new AbortController();
+    requestRef.current = controller;
     playLoadingAudio();
     setError(null);
     setAnalysis(null);
-    setEngineDone(false);
-    setFetchDone(false);
+    setShowLoading(true);
     setLoading(true);
     try {
-      const result = await api.runRivalry(countryA, countryB);
-      setAnalysis(result);
-    } catch {
+      const result = await api.runRivalry(countryA, countryB, false, controller.signal);
+      if (!controller.signal.aborted) setAnalysis(result);
+    } catch (err) {
+      if (controller.signal.aborted) return;
       setError("Comparison service unavailable. Confirm the TRINETRA data service is running, then retry.");
     } finally {
-      setFetchDone(true);
+      if (!controller.signal.aborted) {
+        requestRef.current = null;
+        setLoading(false);
+      }
     }
-  }
+  }, [countryA, countryB]);
 
-  useEffect(() => {
-    if (engineDone && fetchDone) setLoading(false);
-  }, [engineDone, fetchDone]);
+  useEffect(() => () => { requestRef.current?.abort(); }, []);
 
   const labelA = countries.find((country) => country.id === countryA)?.name || countryA;
   const labelB = countries.find((country) => country.id === countryB)?.name || countryB;
@@ -85,7 +94,7 @@ export default function RivalryAnalysis() {
           </div>
         )}
 
-        {loading && <LoadingEngine countryA={countryA} countryB={countryB} onComplete={() => setEngineDone(true)} />}
+        {showLoading && <LoadingEngine countryA={countryA} countryB={countryB} onComplete={() => setShowLoading(false)} />}
         {analysis && <div className="pt-10"><AnalysisResults analysis={analysis} /></div>}
       </main>
       <Footer />
