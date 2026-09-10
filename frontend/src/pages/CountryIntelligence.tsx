@@ -188,22 +188,22 @@ export default function CountryIntelligence() {
                   <div className="border border-trinetra-border rounded-lg p-4 bg-black/20">
                     <Users size={20} className="text-trinetra-saffron mb-2" />
                     <div className="text-neutral-500 text-xs uppercase">Population</div>
-                    <div className="text-neutral-100 font-display text-lg">{country.demographics?.population_millions ? `${country.demographics.population_millions}M` : "N/A"}</div>
+                    <div className="text-neutral-100 font-display text-lg">{country.demographics?.population_millions !== undefined ? `${country.demographics.population_millions}M` : "Data unavailable"}</div>
                   </div>
                   <div className="border border-trinetra-border rounded-lg p-4 bg-black/20">
                     <DollarSign size={20} className="text-trinetra-saffron mb-2" />
                     <div className="text-neutral-500 text-xs uppercase">GDP</div>
-                    <div className="text-neutral-100 font-display text-lg">{country.economy?.gdp_usd_trillion ? `$${country.economy.gdp_usd_trillion}T` : "N/A"}</div>
+                    <div className="text-neutral-100 font-display text-lg">{country.economy?.gdp_usd_trillion !== undefined ? `$${country.economy.gdp_usd_trillion}T` : "Data unavailable"}</div>
                   </div>
                   <div className="border border-trinetra-border rounded-lg p-4 bg-black/20">
                     <TrendingUp size={20} className="text-trinetra-saffron mb-2" />
                     <div className="text-neutral-500 text-xs uppercase">Growth</div>
-                    <div className="text-neutral-100 font-display text-lg">{country.economy?.gdp_growth_pct !== undefined ? `${country.economy.gdp_growth_pct}%` : "N/A"}</div>
+                    <div className="text-neutral-100 font-display text-lg">{country.economy?.gdp_growth_pct !== undefined ? `${country.economy.gdp_growth_pct}%` : "Data unavailable"}</div>
                   </div>
                   <div className="border border-trinetra-border rounded-lg p-4 bg-black/20">
                     <Radiation size={20} className={country.nuclear?.weapons_state ? "text-trinetra-saffron mb-2" : "text-neutral-600 mb-2"} />
                     <div className="text-neutral-500 text-xs uppercase">Nuclear</div>
-                    <div className="text-neutral-100 font-display text-lg">{country.nuclear?.weapons_state ? "Yes" : "No"}</div>
+                    <div className="text-neutral-100 font-display text-lg">{country.nuclear?.weapons_state === true ? "Yes" : country.nuclear?.weapons_state === false ? "No" : "Data unavailable"}</div>
                   </div>
                 </div>
               </ProfileSection>
@@ -283,7 +283,7 @@ export default function CountryIntelligence() {
                       country.energy.net_import_dependence_ratio > 0
                         ? "This country buys more energy from abroad than it produces — meaning it depends on other countries for fuel."
                         : "This country produces more energy than it uses — it's a net energy exporter."
-                    ) : "No energy data yet."}
+                    ) : "Data unavailable"}
                   </p>
                   {country.energy?.note && <p className="text-neutral-500">{country.energy.note}</p>}
                 </div>

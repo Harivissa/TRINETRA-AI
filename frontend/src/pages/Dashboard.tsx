@@ -7,7 +7,7 @@ import { api } from "../services/api";
 
 interface NetworkData { nodes: { id: string; label: string }[]; edges: { source: string; target: string; type: string }[]; }
 const framework = [["01", "GEOGRAPHY", "Where physical position creates strategic advantage."], ["02", "CAPABILITY", "What a state can actually do."], ["03", "RELATIONSHIPS", "Who affects whom."], ["04", "DEPENDENCIES", "What states rely upon."], ["05", "STRATEGIC LEVERAGE", "Where systems combine to create influence."]];
-const chokepoints = [["STRAIT OF MALACCA", "Maritime transit", "India · Indonesia · Malaysia · Singapore · China · Japan"], ["STRAIT OF HORMUZ", "Energy corridor", "Iran · Oman · Saudi Arabia · UAE · United States"], ["TURKISH STRAITS", "Maritime access", "Türkiye · Russia · Ukraine · NATO"], ["BAB-EL-MANDEB", "Maritime transit", "Yemen · Djibouti · Eritrea · Egypt"], ["SUEZ CANAL", "Global shipping", "Egypt · Europe · Asia · United States"], ["PANAMA CANAL", "Interoceanic route", "Panama · United States · East Asia"]];
+const chokepoints: string[][] = [];
 const pressurePoints = ["INDO-PACIFIC", "HIMALAYAN FRONTIER", "TAIWAN STRAIT", "PERSIAN GULF", "RED SEA", "BLACK SEA", "EASTERN MEDITERRANEAN", "ARCTIC"];
 const questions = ["Why does the Strait of Malacca matter to India?", "How can Russia influence India-China relations?", "What gives Türkiye leverage over Black Sea access?", "Compare India's and China's strategic positions.", "Which states are most exposed to Hormuz disruption?", "How does geography become geopolitical power?"];
 

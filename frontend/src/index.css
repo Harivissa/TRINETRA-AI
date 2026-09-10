@@ -13,6 +13,11 @@ h1, h2, h3, .font-display { font-family: 'Cormorant Garamond', serif; }
 @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; } }
 @media (max-width: 640px) { h1 { letter-spacing: -.02em; } }
 @layer utilities { .text-balance { text-wrap: balance; } }
+.spatial-panel, .depth-card { transform-style: preserve-3d; transition: transform 220ms ease, box-shadow 220ms ease, border-color 220ms ease; }
+.spatial-panel { perspective: 1200px; box-shadow: 0 18px 50px rgba(0,0,0,.16); }
+.depth-card:hover, .depth-card:focus-within { transform: translateY(-3px); box-shadow: 0 16px 34px rgba(0,0,0,.22); }
+.parallax-section { transform: translateY(var(--parallax-y, 0px)); }
+@media (prefers-reduced-motion: reduce), (max-width: 640px) { .spatial-panel, .depth-card, .parallax-section { transform: none !important; transition: none !important; } }
 @layer components {
   .section-kicker { @apply font-mono text-[10px] uppercase tracking-[0.18em] text-trinetra-saffron; }
   .data-meta { @apply font-mono text-[10px] uppercase tracking-[0.12em] text-neutral-500; }
