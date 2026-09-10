@@ -1,6 +1,6 @@
 import type { CountryIndexEntry, Country, RivalryAnalysis } from "../types";
 
-const API_ROOT = import.meta.env.VITE_API_BASE_URL || import.meta.env.VITE_API_URL || "http://127.0.0.1:8000";
+const API_ROOT = import.meta.env.VITE_API_BASE_URL || (import.meta.env.DEV ? "http://127.0.0.1:8000" : "");
 const BASE = `${API_ROOT.replace(/\/$/, "")}/api`;
 const REQUEST_TIMEOUT_MS = 12000;
 
@@ -22,6 +22,7 @@ async function request<T>(path: string, init?: RequestInit): Promise<T> {
 const get = <T,>(path: string) => request<T>(path);
 
 export const api = {
+  getHealth: () => get<{ status: string }>("/health"),
   getCountries: () => get<CountryIndexEntry[]>("/countries"),
   getCountry: (id: string) => get<Country>(`/countries/${id}`),
   getRelationship: (a: string, b: string) => get<any>(`/relationships/${a}/${b}`),
