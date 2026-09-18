@@ -1,0 +1,89 @@
+{
+  "id": "ITA",
+  "name": "Italy",
+  "region": "Europe",
+  "demographics": {
+    "population_millions": 59
+  },
+  "economy": {
+    "gdp_usd_trillion": 2.3,
+    "gdp_growth_pct": 0.7,
+    "notes": "Demo/approximate figures \u2014 replace with sourced data via data/sources/"
+  },
+  "military": {
+    "active_troops": 161500,
+    "defence_spending_usd_billion": 33,
+    "defence_spending_pct_gdp": 1.61,
+    "defence_spending_pct_gdp_source": "World Bank WDI (MS.MIL.XPND.GD.ZS), 2024 data, extracted from user-provided dataset (file last updated 2026-02-24)",
+    "arms_exports_usd": 1379000000,
+    "arms_exports_year": 2024,
+    "arms_exports_source": "World Bank WDI (MS.MIL.XPRT.KD), constant USD, from user-provided dataset"
+  },
+  "energy": {
+    "net_import_dependence_ratio": 0.75,
+    "note": "Positive = net importer, negative = net exporter (approximate ratio, demo data)",
+    "oil_production_bpd_estimate": "~0.1M",
+    "oil_consumption_bpd_estimate": "~1.2M",
+    "net_oil_position": "near-total importer",
+    "gas_position": "severe net importer, diversified post-2022 (Algeria, Azerbaijan, Qatar LNG) away from Russian pipeline reliance",
+    "electricity_mix_estimate": "gas ~45%, renewables ~40%, hydro ~15%",
+    "major_energy_suppliers": [
+      "DZA",
+      "AZE",
+      "QAT",
+      "LBY"
+    ],
+    "record_type": "ESTIMATE",
+    "confidence": "moderate \u2014 approximate orders of magnitude consistent with IEA/EIA reporting patterns, not precise official figures for a specific year",
+    "source": "Compiled from IEA/EIA-consistent general energy-market knowledge; recommend cross-checking against IEA World Energy Outlook or EIA Country Analysis Briefs for precise current-year figures"
+  },
+  "infrastructure": {},
+  "trade": {},
+  "technology": {},
+  "geography": {
+    "region": "Europe"
+  },
+  "politics": {
+    "head_of_government": "Giorgia Meloni",
+    "role": "Prime Minister",
+    "in_office_since": "2022",
+    "party": "Brothers of Italy",
+    "record_type": "FACT",
+    "confidence": "high",
+    "source": "Verified via web search Sept 2026 (Korea-Italy summit, Jan 2026)"
+  },
+  "nuclear": {
+    "weapons_state": false
+  },
+  "strategic_priorities": [
+    "Mediterranean/North Africa stability",
+    "Energy diversification post-Russia",
+    "NATO southern flank commitments"
+  ],
+  "dependencies": [],
+  "vulnerabilities": [
+    "Historically high public debt-to-GDP ratio constrains sustained defence-spending increases even under NATO target pressure",
+    "Central Mediterranean geography places Italy on the front line of North African migration flows and Libya-related instability, a recurring domestic political and security strain",
+    "Heavy energy import dependence, though significantly diversified away from Russian gas since 2022",
+    "Naval and air force modernisation pace lags larger European peers (France, UK, Germany) despite Italy's substantial domestic defence industry (Leonardo)"
+  ],
+  "strengths": [
+    "Anchors NATO's southern flank, with critical airbases and naval facilities positioned for Mediterranean and North African contingencies",
+    "Substantial domestic defence-industrial base (Leonardo) spanning helicopters, radar, and naval systems",
+    "G7 member with deep EU institutional integration and diplomatic weight in Mediterranean/North African affairs",
+    "Strategic Mediterranean chokepoint proximity \u2014 Sicily and southern Italy sit astride central Mediterranean shipping lanes"
+  ],
+  "alliances": [
+    "FRA",
+    "DEU",
+    "USA"
+  ],
+  "rivals": [],
+  "_meta": {
+    "data_quality": "demo; military spending %GDP and arms exports now sourced from real World Bank WDI data",
+    "source": "see data/sources/",
+    "confidence": "low-demo",
+    "last_updated": "2026-09-03",
+    "strengths_vulnerabilities_source": "Original ASSESSMENT \u2014 mechanism-based, matching the depth pattern of the Gemini-sourced entries for other countries, compiled from well-established open-source strategic analysis"
+  }
+}

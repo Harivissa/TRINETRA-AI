@@ -1,0 +1,23 @@
+{
+  "country_a": "USA",
+  "country_b": "GBR",
+  "relationship_type": "strategic_ally",
+  "classification": {
+    "category": "strategic_ally",
+    "strength": 0.97,
+    "strength_note": "Analyst judgment on a 0-1 scale, from the user-provided unified research file (Gemini/Perplexity synthesis) \u2014 not a precise measurement."
+  },
+  "strategic_issues": [
+    "Five Eyes intelligence alliance",
+    "AUKUS submarine partnership",
+    "nuclear propulsion technology sharing"
+  ],
+  "dominant_leverage": "Near-complete strategic, intelligence, and nuclear-force integration.",
+  "trend_2022_2026": "Unconditional alignment",
+  "record_type": "ASSESSMENT",
+  "confidence": "medium-high",
+  "_meta": {
+    "source": "User-provided unified research file (Perplexity OSINT + Gemini strategic analysis), Section 6 Bilateral Relationship Directory",
+    "last_updated": "2026-09-01"
+  }
+}

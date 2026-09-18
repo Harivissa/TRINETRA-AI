@@ -1,0 +1,27 @@
+{
+  "country_a": "ISR",
+  "country_b": "IRN",
+  "relationship_type": "active_war",
+  "classification": {
+    "category": "active_war",
+    "strength": 0.98,
+    "strength_note": "Analyst judgment on a 0-1 scale, from the user-provided unified research file (Gemini/Perplexity synthesis) \u2014 not a precise measurement."
+  },
+  "strategic_issues": [
+    "Active state of war since 28 February 2026 ('2026 Iran War' / 'Operation Epic Fury' / 'Operation Roaring Lion')",
+    "Opening US-Israeli strikes killed Iranian Supreme Leader Ali Khamenei and senior officials in a leadership-decapitation operation",
+    "Iran's nuclear enrichment programme (pre-war 60%+ purity at Fordow/Natanz)",
+    "Iran's regional proxy network (Hezbollah, Houthis) drawn into the wider conflict",
+    "A conditional ceasefire (8 Apr-8 Jul 2026), mediated by Pakistan, collapsed and fighting resumed 8 Jul 2026",
+    "Recurring Strait of Hormuz shipping disruption by Iran during the conflict"
+  ],
+  "dominant_leverage": "Israel: air superiority, qualitative technology edge, intelligence penetration. Iran: asymmetric missile/drone swarm capacity.",
+  "trend_2022_2026": "Direct multi-domain conflict",
+  "record_type": "FACT",
+  "confidence": "high \u2014 independently verified via multiple live sources (Wikipedia, Britannica, UK Parliament research briefing), September 2026",
+  "_meta": {
+    "source": "User-provided unified research file (Perplexity OSINT + Gemini strategic analysis), Section 6 Bilateral Relationship Directory",
+    "last_updated": "2026-09-03",
+    "major_update": "Relationship reclassified from 'active_hostility' to 'active_war' following verified confirmation of the 2026 Iran War"
+  }
+}

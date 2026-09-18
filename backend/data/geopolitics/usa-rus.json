@@ -1,0 +1,23 @@
+{
+  "country_a": "USA",
+  "country_b": "RUS",
+  "relationship_type": "adversarial",
+  "classification": {
+    "category": "rival",
+    "strength": 0.75,
+    "strength_note": "Analyst judgment on a 0-1 scale, from the user-provided unified research file (Gemini/Perplexity synthesis) \u2014 not a precise measurement."
+  },
+  "strategic_issues": [
+    "War in Ukraine",
+    "NATO deterrence posture",
+    "collapse of nuclear arms-control architecture (New START expired Feb 2026, no replacement)"
+  ],
+  "dominant_leverage": "USA: economic sanctions, NATO coalition. Russia: strategic nuclear parity, tactical warhead inventory.",
+  "trend_2022_2026": "High-friction stasis",
+  "record_type": "ASSESSMENT",
+  "confidence": "medium-high",
+  "_meta": {
+    "source": "User-provided unified research file (Perplexity OSINT + Gemini strategic analysis), Section 6 Bilateral Relationship Directory",
+    "last_updated": "2026-09-01"
+  }
+}

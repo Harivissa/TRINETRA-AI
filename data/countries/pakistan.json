@@ -1,0 +1,74 @@
+{
+  "id": "PAK",
+  "name": "Pakistan",
+  "region": "South Asia",
+  "demographics": {
+    "population_millions": 240
+  },
+  "economy": {
+    "gdp_usd_trillion": 0.34,
+    "gdp_growth_pct": 2.5,
+    "notes": "Demo/approximate figures \u2014 replace with sourced data via data/sources/"
+  },
+  "military": {
+    "active_troops": 654000,
+    "defence_spending_usd_billion": 10.2,
+    "defence_spending_pct_gdp": 2.67,
+    "defence_spending_pct_gdp_source": "World Bank WDI (MS.MIL.XPND.GD.ZS), 2024 data, extracted from user-provided dataset (file last updated 2026-02-24)",
+    "arms_exports_usd": 6000000,
+    "arms_exports_year": 2024,
+    "arms_exports_source": "World Bank WDI (MS.MIL.XPRT.KD), constant USD, from user-provided dataset"
+  },
+  "energy": {
+    "net_import_dependence_ratio": 0.7,
+    "note": "Positive = net importer, negative = net exporter (approximate ratio, demo data)"
+  },
+  "infrastructure": {},
+  "trade": {},
+  "technology": {},
+  "geography": {
+    "region": "South Asia"
+  },
+  "politics": {},
+  "nuclear": {
+    "weapons_state": true
+  },
+  "strategic_priorities": [
+    "India deterrence (Kashmir, post Operation Sindoor / May 2025 conflict)",
+    "China alignment (CPEC, ~63% of Chinese arms exports 2020-24 went to Pakistan per SIPRI)",
+    "Deepening Turkey defence ties (drones, MILGEM corvettes, T129 helicopters)",
+    "Mecca Joint Defence Agreement with Saudi Arabia and Turkey (signed 7 Aug 2026 - mutual-defence clause)",
+    "Economic stabilisation via IMF/China"
+  ],
+  "dependencies": [
+    "Heavy reliance on Chinese arms imports (~63-80% of major weapons per SIPRI, varying by estimate)",
+    "Growing reliance on Turkish co-production (MILGEM corvettes, ADVENT combat systems, drones)"
+  ],
+  "vulnerabilities": [
+    "Chronic economic/debt crisis",
+    "IMF dependency",
+    "Domestic militant insurgencies",
+    "Reported loss of at least one Chinese-supplied HQ-9B air-defence battery during the May 2025 conflict with India (per Indian and open-source reporting; not confirmed by Pakistan)"
+  ],
+  "strengths": [
+    "Nuclear deterrent vs India",
+    "China strategic partnership (CPEC + majority of arms imports)",
+    "Turkey defence partnership (drones, naval co-production)",
+    "New Saudi Arabia-Turkey mutual defence pact (Aug 2026)",
+    "Large standing army"
+  ],
+  "alliances": [
+    "CHN",
+    "TUR",
+    "SAU"
+  ],
+  "rivals": [
+    "IND"
+  ],
+  "_meta": {
+    "data_quality": "mixed - core economic/military stats are still demo/approximate, but the 2025-2026 events noted above are sourced; military spending %GDP and arms exports now sourced from real World Bank WDI data",
+    "source": "see data/sources/; recent events sourced from SIPRI Trends in International Arms Transfers 2024, Stimson Center ('Four Days in May', 2025), Al-Monitor (Aug 2026 Mecca pact), Sunday Guardian Live / India.com (Aug 2026 airlift reports)",
+    "confidence": "recent-events: moderate (multiple independent reports, some details unconfirmed); economic/military baseline figures: low-demo",
+    "last_updated": "2026-08-27"
+  }
+}

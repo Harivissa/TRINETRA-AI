@@ -1,0 +1,12 @@
+{
+  "id": "ORG_NATO",
+  "entity_type": "organisation",
+  "name": "North Atlantic Treaty Organization (NATO)",
+  "members": ["USA", "GBR", "FRA", "DEU", "ITA", "TUR"],
+  "type": "formal collective-defence military alliance (Article 5 mutual defence commitment)",
+  "purpose": "Collective defence of member states, originally against the Soviet Union, now centred on European security including the response to Russia's war in Ukraine.",
+  "founded": "1949",
+  "record_type": "FACT",
+  "confidence": "high",
+  "_meta": {"sources": [], "last_updated": "2026-08-22"}
+}

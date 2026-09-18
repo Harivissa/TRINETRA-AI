@@ -1,0 +1,19 @@
+{
+  "id": "PERSON_CHN_GENSEC_001",
+  "entity_type": "person",
+  "name": "Xi Jinping",
+  "country": "CHN",
+  "position": "General Secretary of the Chinese Communist Party; President of the People's Republic of China; Chairman of the Central Military Commission",
+  "political_party": "PARTY_CHN_CCP",
+  "ideology": "Communist Party orthodoxy with strong centralisation of power (\"Xi Jinping Thought\")",
+  "period_active": "General Secretary since Nov 2012; President since March 2013; term limits on the presidency were removed in 2018",
+  "previous_positions": ["Vice President of China (2008-2013)", "Party Secretary of Shanghai (2007)"],
+  "foreign_policy_position": "Assertive regional posture (Taiwan, South China Sea), Belt & Road global infrastructure diplomacy, close alignment with Russia short of formal military alliance, strategic competition with the US.",
+  "current_status": "In office, holding all three top posts (party, state, military) concurrently, a structural feature of the current Chinese system.",
+  "record_type": "FACT",
+  "confidence": "high",
+  "_meta": {
+    "sources": [],
+    "last_updated": "2026-08-22"
+  }
+}

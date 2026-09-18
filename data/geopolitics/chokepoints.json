@@ -1,0 +1,62 @@
+{
+  "chokepoints": [
+    {
+      "id": "CHOKEPOINT_MALACCA",
+      "name": "Strait of Malacca",
+      "location": "Between Malaysia/Singapore and Indonesia (Sumatra)",
+      "why_it_matters": "The shortest sea route between the Indian Ocean and the Pacific/South China Sea. An estimated ~80% of China's crude oil imports transit this strait — a dependency significant enough that Chinese leadership (Hu Jintao, 2003) coined the term 'Malacca Dilemma' to describe it. Roughly a quarter of all global seaborne trade passes through it.",
+      "countries_most_exposed": [
+        {
+          "country": "CHN",
+          "exposure": "very high",
+          "reason": "~80% of crude oil imports transit this route with no comparable-scale alternative; overland pipelines from Russia/Central Asia and the China-Myanmar pipeline cover only a fraction of the volume.",
+          "record_type": "ESTIMATE",
+          "confidence": "moderate-high",
+          "source": "Widely cited figure in energy-security literature; exact percentage varies by year and source (75-85% range commonly cited)"
+        },
+        {
+          "country": "JPN",
+          "exposure": "high",
+          "reason": "Heavily energy-import-dependent economy relying on Gulf oil shipped through this route."
+        },
+        {
+          "country": "KOR",
+          "exposure": "high",
+          "reason": "Near-total energy import dependence, similar route reliance to Japan."
+        }
+      ],
+      "countries_with_leverage": [
+        {
+          "country": "IND",
+          "leverage": "moderate — geographic position, not a blockade capability",
+          "reason": "The Andaman & Nicobar Islands (home to India's Andaman & Nicobar Command, its only unified tri-service military command) sit within a few hundred kilometres of the strait's northern entrance. This gives the Indian Navy a genuine forward position to monitor or, in a severe and sustained crisis, complicate shipping through the chokepoint — it does NOT mean India could or would unilaterally 'shut' the strait, which is bordered by Malaysia, Singapore, and Indonesia and used by the entire world, not just China.",
+          "record_type": "ANALYTICAL_ASSESSMENT",
+          "confidence": "medium",
+          "caveat": "A full closure would require sustained naval operations against a strait bordered by three other sovereign states and used by global shipping — this would be an act of war against international shipping broadly, not a clean 'switch off China's oil' lever. Realistic leverage is closer to surveillance, selective interdiction risk, and the deterrent value of that risk, not a guaranteed blockade."
+        }
+      ],
+      "historical_note": "China has invested for two decades in reducing this dependency — the China-Myanmar oil and gas pipelines (operational since 2013/2017) and China-Russia/Central Asia pipelines are direct responses to the Malacca Dilemma, though they cover only a minority of China's import volume.",
+      "record_type": "FACT",
+      "confidence": "high",
+      "_meta": {"last_updated": "2026-08-22"}
+    },
+    {
+      "id": "CHOKEPOINT_HORMUZ",
+      "name": "Strait of Hormuz",
+      "location": "Between Iran and Oman/UAE",
+      "why_it_matters": "The primary export route for Gulf oil and gas — roughly a fifth of global oil consumption transits this strait.",
+      "countries_most_exposed": [
+        {"country": "CHN", "exposure": "high", "reason": "Major buyer of Gulf crude oil."},
+        {"country": "IND", "exposure": "high", "reason": "Major buyer of Gulf crude oil."},
+        {"country": "JPN", "exposure": "high", "reason": "Major buyer of Gulf crude oil."},
+        {"country": "KOR", "exposure": "high", "reason": "Major buyer of Gulf crude oil."}
+      ],
+      "countries_with_leverage": [
+        {"country": "IRN", "leverage": "high — direct proximity and repeated history of threatening closure during periods of tension", "record_type": "ANALYTICAL_ASSESSMENT", "confidence": "medium"}
+      ],
+      "record_type": "FACT",
+      "confidence": "high",
+      "_meta": {"last_updated": "2026-08-22"}
+    }
+  ]
+}

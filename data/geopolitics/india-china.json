@@ -1,0 +1,58 @@
+{
+  "country_a": "IND",
+  "country_b": "CHN",
+  "relationship_type": "strategic_rivalry",
+  "strategic_issues": [
+    "Unresolved Line of Actual Control (LAC) border dispute",
+    "China-Pakistan Economic Corridor passing through disputed Kashmir territory",
+    "Competition for influence in the Indian Ocean Region",
+    "Trade imbalance heavily favouring China"
+  ],
+  "trade_dependencies": [
+    "India imports large volumes of Chinese electronics, machinery, and active pharmaceutical ingredients",
+    "China is one of India's top two trading partners despite political tension"
+  ],
+  "energy_relationship": {
+    "direct_dependency": "low",
+    "notes": "No major direct energy trade; competition instead centres on securing the same overseas energy sources (Gulf, Russia, Africa)"
+  },
+  "military_relationship": {
+    "posture": "high alert, forward deployed",
+    "notes": "Repeated standoffs since 2020 (Galwan Valley clash); both sides have significantly built up troops, roads, and air infrastructure along the LAC"
+  },
+  "diplomatic_relationship": {
+    "posture": "tense but communicating",
+    "notes": "Both sides maintain military-to-military hotlines and periodic Special Representative talks; both are members of BRICS and SCO"
+  },
+  "major_disputes": [
+    "Line of Actual Control demarcation (Ladakh, Arunachal Pradesh)",
+    "China's claims over Arunachal Pradesh (referred to by China as 'South Tibet')",
+    "India's hosting of the Tibetan government-in-exile"
+  ],
+  "areas_of_cooperation": [
+    "Joint BRICS and SCO membership",
+    "Shared interest in reforming global financial institutions",
+    "Climate negotiation coordination (as large developing economies)"
+  ],
+  "escalation_factors": [
+    "Further infrastructure buildup near the LAC",
+    "Naval competition in the Indian Ocean",
+    "Deepening China-Pakistan military cooperation",
+    "Taiwan Strait crisis diverting/testing Chinese posture elsewhere"
+  ],
+  "indirect_pressure_dynamics": {
+    "statement": "Rather than direct confrontation, China has structural reasons to prefer applying pressure on India indirectly — most clearly through its deep military and economic relationship with Pakistan, which keeps India oriented toward a two-front defence posture without China itself needing to escalate at the LAC.",
+    "record_type": "ANALYTICAL_ASSESSMENT",
+    "confidence": "MEDIUM-HIGH",
+    "reasoning": "This is well evidenced: China supplies the large majority of Pakistan's major arms imports (see data/entities relationship china-pakistan.json), and reporting through Aug 2026 shows continued Chinese/Turkish resupply to Pakistan after the May 2025 India-Pakistan conflict. Keeping India's military attention split between two borders is a plausible, low-cost way for China to constrain India without direct engagement.",
+    "myanmar_caveat": "A similar 'China uses Myanmar against India' framing is sometimes suggested, but the evidence for it is much weaker and shouldn't be presented as established fact. In practice, India and Myanmar's military have cooperated directly against insurgent groups operating along their shared border (e.g. coordinated operations in 2019), and India has invested in Myanmar-linked connectivity projects (Kaladan Multi-Modal Transit corridor) specifically to counter Chinese influence there. Myanmar's ruling military government under the current sanctions/isolation it faces leans on China economically, but that is better described as Myanmar hedging between two large neighbours than as it acting as a directed Chinese proxy against India specifically.",
+    "record_type_myanmar_caveat": "ANALYTICAL_ASSESSMENT — presented to counter a stronger claim, not to assert a rival stronger claim",
+    "confidence_myanmar": "LOW for the 'proxy' framing specifically; MEDIUM for the general observation that Myanmar hedges between India and China"
+  },
+  "deescalation_factors": [
+    "Growing bilateral trade interdependence",
+    "Disengagement agreements at friction points",
+    "Shared interest in avoiding a two-front distraction from other priorities (US-China, India-Pakistan)"
+  ],
+  "_meta": {"data_quality": "demo for older baseline claims; sourced for 2025-2026 additions and indirect-pressure analysis", "confidence": "low-demo for baseline, medium-high for sourced additions", "last_updated": "2026-08-22"}
+}

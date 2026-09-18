@@ -1,0 +1,19 @@
+{
+  "id": "PERSON_RUS_PRES_001",
+  "entity_type": "person",
+  "name": "Vladimir Putin",
+  "country": "RUS",
+  "position": "President of the Russian Federation",
+  "political_party": "PARTY_RUS_UNITED_RUSSIA",
+  "ideology": "State-centred nationalism, Eurasianist foreign policy orientation",
+  "period_active": "President 2000-2008, 2012-present (Prime Minister in the intervening term); current term following 2024 re-election",
+  "previous_positions": ["Prime Minister of Russia (2008-2012, 1999-2000)", "Director of the FSB (1998-1999)"],
+  "foreign_policy_position": "Resistance to NATO/Western expansion, deepening alignment with China, maintenance of independent ties with India, continuation of the war in Ukraine.",
+  "current_status": "In office.",
+  "record_type": "FACT",
+  "confidence": "high",
+  "_meta": {
+    "sources": [],
+    "last_updated": "2026-08-22"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "PERSON_USA_PRES_001",
+  "entity_type": "person",
+  "name": "Donald Trump",
+  "country": "USA",
+  "position": "President of the United States",
+  "political_party": "PARTY_USA_GOP",
+  "ideology": "America First — populist, protectionist trade policy, reduced multilateral commitment emphasis",
+  "period_active": "47th President, second non-consecutive term, inaugurated 20 January 2025 (also 45th President, 2017-2021); Vice President is J.D. Vance",
+  "previous_positions": ["45th President of the United States (2017-2021)"],
+  "foreign_policy_position": "Transactional bilateralism, tariff-driven trade pressure, scepticism of open-ended multilateral commitments, continued strategic competition with China.",
+  "current_status": "In office; second-term approval ratings had declined through 2025-2026 per multiple published polling; 2026 midterm elections scheduled for 3 November 2026.",
+  "record_type": "FACT",
+  "confidence": "high",
+  "_meta": {
+    "sources": ["SRC_BALLOTPEDIA_TRUMP_2026", "SRC_GOVTRACK_TRUMP"],
+    "last_updated": "2026-08-22"
+  }
+}

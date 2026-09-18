@@ -1,0 +1,19 @@
+{
+  "id": "PERSON_IND_PM_001",
+  "entity_type": "person",
+  "name": "Narendra Modi",
+  "country": "IND",
+  "position": "Prime Minister of India",
+  "political_party": "PARTY_IND_BJP",
+  "ideology": "Hindu nationalist, right-of-centre",
+  "period_active": "PM since 26 May 2014; began third consecutive term June 2024",
+  "previous_positions": ["Chief Minister of Gujarat (2001-2014)"],
+  "foreign_policy_position": "Strategic autonomy — multi-alignment across US/Quad, Russia, and Gulf states rather than a single-bloc alliance; assertive posture on China border and Pakistan cross-border terrorism.",
+  "current_status": "In office, leading NDA coalition government (293/543 Lok Sabha seats) after the BJP fell short of a single-party majority in the 2024 election.",
+  "record_type": "FACT",
+  "confidence": "high",
+  "_meta": {
+    "sources": ["SRC_CRS_IF10298", "SRC_WIKI_2024_INDIAN_ELECTION"],
+    "last_updated": "2026-08-22"
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "id": "ANALYSIS_USA_INDIA_CHINA_POSITION",
+  "subject": "USA's likely position in a hypothetical India-China crisis",
+  "record_type": "ANALYTICAL_ASSESSMENT",
+  "confidence": "MEDIUM",
+  "confidence_reason": "Reasoned from the US's declared partnerships and documented interests; the US has never had to respond to an actual large-scale India-China military crisis, so this is inference, not precedent.",
+
+  "facts": [
+    {
+      "statement": "The US and India are Quad partners (with Japan and Australia) and have deepened defence cooperation over the past two decades, but have no formal mutual-defence treaty.",
+      "record_type": "FACT",
+      "confidence": "HIGH",
+      "source": "See data/relationships/strategic/india-usa.json equivalent, data/geopolitics/india-usa.json"
+    },
+    {
+      "statement": "The US regards China as its primary long-term strategic competitor, with Taiwan as its most sensitive flashpoint.",
+      "record_type": "FACT",
+      "confidence": "HIGH"
+    },
+    {
+      "statement": "The US has no formal treaty alliance obligating it to intervene militarily on India's behalf, unlike its NATO or Japan/South Korea commitments.",
+      "record_type": "FACT",
+      "confidence": "HIGH"
+    }
+  ],
+
+  "competing_us_interests": [
+    "India relationship — strategic partner and Quad member seen as a key Indo-Pacific counterweight to China; the US has an interest in India's success as a check on Chinese regional dominance.",
+    "China relationship — the US's most consequential bilateral relationship, involving trade, Taiwan, and broader strategic competition; the US has strong incentives to control escalation risk rather than let a third-party crisis spiral toward a US-China confrontation it didn't choose.",
+    "Taiwan priority — US strategic planning and military posture in Asia is heavily oriented around a potential Taiwan contingency; a simultaneous India-China crisis could strain the same regional military assets and attention.",
+    "Alliance credibility — Japan and Australia (fellow Quad members) would be watching how reliably the US supports a partner under pressure, even without a formal treaty commitment to India specifically.",
+    "Domestic politics — direct US military involvement in a South Asian border conflict with a nuclear-armed China would carry major domestic political risk and is not a commitment any recent US administration has signalled willingness to make."
+  ],
+
+  "assessment": {
+    "statement": "The US would very likely provide diplomatic backing and could offer intelligence-sharing or logistical support to India, while deliberately avoiding direct military involvement — preferring to support India's own capacity to respond rather than intervene directly.",
+    "record_type": "ANALYTICAL_ASSESSMENT",
+    "confidence": "MEDIUM",
+    "reasoning": "This follows the pattern of the actual 2020 Galwan crisis and 2025 India-Pakistan conflict, in both of which the US offered diplomatic statements and, in some reporting, intelligence support, without any suggestion of direct military commitment. The absence of a mutual-defence treaty (a documented fact above) means the US retains full discretion over its response."
+  },
+
+  "what_would_push_toward_more_active_us_support": [
+    "A crisis that clearly framed China as the unambiguous aggressor, making a US statement of support lower-cost and more aligned with existing US messaging on Chinese regional behaviour.",
+    "Simultaneous US-China tension elsewhere (e.g. Taiwan Strait activity) that made demonstrating Quad solidarity with India strategically useful to Washington regardless of the India-China dispute's own merits."
+  ],
+
+  "what_would_push_toward_us_caution": [
+    "Any risk of the crisis being read as a proxy or wider US-China confrontation, which recent US administrations have shown strong reluctance to court.",
+    "A need to preserve bandwidth and political capital for a Taiwan Strait contingency, which US strategic planning treats as the higher-priority flashpoint."
+  ],
+
+  "scenario_note": {
+    "statement": "A plausible scenario is US diplomatic statements naming China's actions as destabilising, coordinated messaging with Japan and Australia through the Quad, and quiet intelligence-sharing with India, without any formal declaration of support or military deployment.",
+    "record_type": "SCENARIO",
+    "confidence": "LOW-MEDIUM",
+    "caveat": "Illustrative, not a prediction. The actual US response would depend heavily on how the crisis started, who was seen as escalating first, and the state of US-China relations at that specific moment."
+  },
+
+  "_meta": {
+    "last_updated": "2026-08-22",
+    "note": "Companion object to analysis-russia-india-china-dilemma.json — together these are the worked 'India-China-Russia-USA strategic system' the spec asks for in Part 19."
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "id": "DEU",
+  "name": "Germany",
+  "region": "Europe",
+  "demographics": {
+    "population_millions": 84
+  },
+  "economy": {
+    "gdp_usd_trillion": 4.6,
+    "gdp_growth_pct": 0.5,
+    "notes": "Demo/approximate figures \u2014 replace with sourced data via data/sources/"
+  },
+  "military": {
+    "active_troops": 181000,
+    "defence_spending_usd_billion": 68,
+    "defence_spending_pct_gdp": 1.89,
+    "defence_spending_pct_gdp_source": "World Bank WDI (MS.MIL.XPND.GD.ZS), 2024 data, extracted from user-provided dataset (file last updated 2026-02-24)",
+    "arms_exports_usd": 2049000000,
+    "arms_exports_year": 2024,
+    "arms_exports_source": "World Bank WDI (MS.MIL.XPRT.KD), constant USD, from user-provided dataset"
+  },
+  "energy": {
+    "net_import_dependence_ratio": 0.65,
+    "note": "Positive = net importer, negative = net exporter (approximate ratio, demo data)"
+  },
+  "infrastructure": {},
+  "trade": {},
+  "technology": {},
+  "geography": {
+    "region": "Europe"
+  },
+  "politics": {},
+  "nuclear": {
+    "weapons_state": false
+  },
+  "strategic_priorities": [
+    "Military modernisation (Zeitenwende)",
+    "Energy diversification from Russia",
+    "EU strategic autonomy"
+  ],
+  "dependencies": [],
+  "vulnerabilities": [
+    "Post-2022 energy supply shock exposure",
+    "Export dependence on China market",
+    "Underinvested military (post-Zeitenwende ramp-up)"
+  ],
+  "strengths": [
+    "Industrial/manufacturing base",
+    "EU economic leadership",
+    "Export-driven engineering sector"
+  ],
+  "alliances": [
+    "FRA",
+    "GBR",
+    "USA"
+  ],
+  "rivals": [
+    "RUS"
+  ],
+  "_meta": {
+    "data_quality": "demo; military spending %GDP and arms exports now sourced from real World Bank WDI data",
+    "source": "see data/sources/",
+    "confidence": "low-demo",
+    "last_updated": "2026-08-27"
+  }
+}

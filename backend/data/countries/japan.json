@@ -1,0 +1,97 @@
+{
+  "id": "JPN",
+  "name": "Japan",
+  "region": "East Asia",
+  "demographics": {
+    "population_millions": 123.8,
+    "population_source": "SIPRI Yearbook 2026 (released 8 Jun 2026) + IMF WEO Apr/Jul 2026 + World Bank WDI Jun 2026, via user-provided unified research file; nuclear warhead counts and India's defence spend independently cross-checked against live SIPRI press materials (Aug 2026) (2025 figure)"
+  },
+  "economy": {
+    "gdp_usd_trillion": 4.19,
+    "gdp_growth_pct": 0.7,
+    "notes": "Demo/approximate figures \u2014 replace with sourced data via data/sources/",
+    "gdp_source": "SIPRI Yearbook 2026 (released 8 Jun 2026) + IMF WEO Apr/Jul 2026 + World Bank WDI Jun 2026, via user-provided unified research file; nuclear warhead counts and India's defence spend independently cross-checked against live SIPRI press materials (Aug 2026) (2025 figures)"
+  },
+  "military": {
+    "active_troops": 247000,
+    "defence_spending_usd_billion": 58.2,
+    "defence_spending_pct_gdp": 1.39,
+    "defence_spending_pct_gdp_source": "World Bank WDI (MS.MIL.XPND.GD.ZS), 2024 data, extracted from user-provided dataset (file last updated 2026-02-24)",
+    "arms_exports_usd": 21000000,
+    "arms_exports_year": 2024,
+    "arms_exports_source": "World Bank WDI (MS.MIL.XPRT.KD), constant USD, from user-provided dataset",
+    "reserve_troops": 56000,
+    "defence_spending_pct_gdp_worldbank_2024": 1.37,
+    "defence_spending_source": "SIPRI Yearbook 2026 (released 8 Jun 2026) + IMF WEO Apr/Jul 2026 + World Bank WDI Jun 2026, via user-provided unified research file; nuclear warhead counts and India's defence spend independently cross-checked against live SIPRI press materials (Aug 2026) (2025 figures)"
+  },
+  "energy": {
+    "net_import_dependence_ratio": 0.9,
+    "note": "Positive = net importer, negative = net exporter (approximate ratio, demo data)",
+    "status_2025": "Critical net importer",
+    "oil_production_bpd_estimate": "negligible",
+    "oil_consumption_bpd_estimate": "~3.2M",
+    "net_oil_position": "near-total importer",
+    "gas_position": "near-total LNG importer",
+    "electricity_mix_estimate": "gas ~34%, coal ~30%, renewables ~22%, nuclear restart ongoing ~7%",
+    "major_energy_suppliers": [
+      "SAU",
+      "ARE",
+      "AUS (LNG)",
+      "QAT"
+    ],
+    "record_type": "ESTIMATE",
+    "confidence": "moderate \u2014 approximate orders of magnitude consistent with IEA/EIA reporting patterns, not precise official figures for a specific year",
+    "source": "Compiled from IEA/EIA-consistent general energy-market knowledge; recommend cross-checking against IEA World Energy Outlook or EIA Country Analysis Briefs for precise current-year figures"
+  },
+  "infrastructure": {},
+  "trade": {},
+  "technology": {},
+  "geography": {
+    "region": "East Asia"
+  },
+  "politics": {},
+  "nuclear": {
+    "weapons_state": true,
+    "warhead_estimate": 0,
+    "warhead_estimate_year": 2026,
+    "warhead_estimate_source": "SIPRI Yearbook 2026 (as of Jan 2026), independently verified against live SIPRI press materials Aug 2026"
+  },
+  "strategic_priorities": [
+    "China/Taiwan contingency planning",
+    "Energy import route security",
+    "Defence spending expansion (2% GDP target)"
+  ],
+  "dependencies": [],
+  "vulnerabilities": [
+    "Near-total energy import dependency \u2014 over 90% of energy needs met via imported fossil fuels transported through long maritime sea lines of communication vulnerable to South China Sea or Malacca Strait interdiction",
+    "Severe demographic contraction \u2014 a rapidly aging, shrinking population constrains military recruitment and creates structural labour shortfalls",
+    "Proximity to adversary missile architecture \u2014 major urban and military hubs sit within range of Chinese, North Korean, and Russian ballistic/cruise/hypersonic arsenals, risking saturation of domestic missile defence in a multi-vector attack",
+    "Constitutional constraints on military deployment \u2014 Article 9 restricts proactive offensive operations, creating hesitation or legal delay in authorising force during ambiguous 'gray-zone' crises",
+    "Unresolved territorial disputes on multiple fronts simultaneously \u2014 Senkaku Islands (China), Northern Territories/Kurils (Russia), and Takeshima/Dokdo (South Korea) \u2014 splitting Coast Guard and Self-Defense Force assets across flashpoints"
+  ],
+  "strengths": [
+    "Advanced high-technology industrial base \u2014 dominant in precision machinery, advanced materials, semiconductor equipment, and robotics",
+    "Geographic command of East Asian maritime outlets \u2014 the archipelago straddles the Miyako, Tsushima, and Soya Straits, sitting directly across Russian and Chinese access routes to the open Pacific",
+    "High-end naval surface and submarine capability \u2014 Aegis-equipped destroyers, advanced Taigei-class attack submarines, and Izumo-class carriers operating F-35B aircraft",
+    "Deep integration with US intelligence and defence infrastructure, hosting the US Seventh Fleet and III MEF with integrated radar/missile-defence architecture",
+    "World's largest net-creditor nation, with vast foreign direct investment holdings globally"
+  ],
+  "alliances": [
+    "USA",
+    "AUS",
+    "GBR"
+  ],
+  "rivals": [
+    "CHN",
+    "PRK"
+  ],
+  "_meta": {
+    "data_quality": "demo; military spending %GDP and arms exports now sourced from real World Bank WDI data",
+    "source": "see data/sources/",
+    "confidence": "low-demo",
+    "last_updated": "2026-09-01",
+    "core_data_source": "SIPRI Yearbook 2026 (released 8 Jun 2026) + IMF WEO Apr/Jul 2026 + World Bank WDI Jun 2026, via user-provided unified research file; nuclear warhead counts and India's defence spend independently cross-checked against live SIPRI press materials (Aug 2026)",
+    "strengths_vulnerabilities_source": "SOURCE B (Gemini strategic analysis) via user-provided unified research file \u2014 mechanism-based ASSESSMENT, not raw fact"
+  },
+  "strategic_autonomy_profile": "US alliance anchor, expanding counterstrike capability"
+}

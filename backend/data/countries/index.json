@@ -1,0 +1,109 @@
+{
+  "countries": [
+    {
+      "id": "IND",
+      "name": "India",
+      "file": "india.json"
+    },
+    {
+      "id": "CHN",
+      "name": "China",
+      "file": "china.json"
+    },
+    {
+      "id": "USA",
+      "name": "United States",
+      "file": "usa.json"
+    },
+    {
+      "id": "RUS",
+      "name": "Russia",
+      "file": "russia.json"
+    },
+    {
+      "id": "JPN",
+      "name": "Japan",
+      "file": "japan.json"
+    },
+    {
+      "id": "DEU",
+      "name": "Germany",
+      "file": "germany.json"
+    },
+    {
+      "id": "GBR",
+      "name": "United Kingdom",
+      "file": "uk.json"
+    },
+    {
+      "id": "FRA",
+      "name": "France",
+      "file": "france.json"
+    },
+    {
+      "id": "KOR",
+      "name": "South Korea",
+      "file": "south-korea.json"
+    },
+    {
+      "id": "TUR",
+      "name": "T\u00fcrkiye",
+      "file": "turkey.json"
+    },
+    {
+      "id": "SAU",
+      "name": "Saudi Arabia",
+      "file": "saudi-arabia.json"
+    },
+    {
+      "id": "IRN",
+      "name": "Iran",
+      "file": "iran.json"
+    },
+    {
+      "id": "ISR",
+      "name": "Israel",
+      "file": "israel.json"
+    },
+    {
+      "id": "PAK",
+      "name": "Pakistan",
+      "file": "pakistan.json"
+    },
+    {
+      "id": "AUS",
+      "name": "Australia",
+      "file": "australia.json"
+    },
+    {
+      "id": "CAN",
+      "name": "Canada",
+      "file": "canada.json"
+    },
+    {
+      "id": "BRA",
+      "name": "Brazil",
+      "file": "brazil.json"
+    },
+    {
+      "id": "IDN",
+      "name": "Indonesia",
+      "file": "indonesia.json"
+    },
+    {
+      "id": "ITA",
+      "name": "Italy",
+      "file": "italy.json"
+    },
+    {
+      "id": "ARE",
+      "name": "United Arab Emirates",
+      "file": "uae.json"
+    },
+    {
+      "id": "BGD",
+      "name": "Bangladesh",
+      "file": "bangladesh.json"
+    }
+  ]
+}

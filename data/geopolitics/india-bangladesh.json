@@ -1,0 +1,54 @@
+{
+  "country_a": "IND",
+  "country_b": "BGD",
+  "relationship_type": "strained_realignment",
+  "strategic_issues": [
+    "Sheikh Hasina's continued presence in India since fleeing Dhaka on 5 August 2024",
+    "Bangladesh's post-2024 tilt toward China and Pakistan under the Yunus interim government",
+    "Jamaat-e-Islami's election gains concentrated near the India border",
+    "Ganga/Brahmaputra river water-sharing negotiations"
+  ],
+  "trade_dependencies": [
+    "Bangladesh is one of India's larger regional trading partners",
+    "India sent approximately 45,000 tons of emergency diesel to Bangladesh in April 2026 amid fuel shortages (per The Diplomat, Aug 2026)"
+  ],
+  "energy_relationship": {
+    "direct_dependency": "moderate",
+    "notes": "India has provided emergency fuel supplies; broader energy cooperation exists but is not the primary friction point"
+  },
+  "military_relationship": {
+    "posture": "no direct military tension, but India has expressed concern over Bangladesh-Pakistan military normalization",
+    "notes": "Under the Yunus interim government, Bangladesh resumed direct trade links and direct flights with Pakistan after 14 years, and initiated high-level military-to-military dialogue, including talks on possible Bangladeshi procurement of Pakistan's JF-17 fighter aircraft (Jan 2026, per The Diplomat)."
+  },
+  "diplomatic_relationship": {
+    "posture": "attempted reset, still fragile",
+    "notes": "PM Tarique Rahman (BNP, sworn in Feb 2026) chose China for his first overseas state visit rather than India, elevating ties to a 'China-Bangladesh Community with a Shared Future' (June 2026) and reportedly proposing a China-Myanmar-Bangladesh connectivity corridor. India appointed a cabinet-rank High Commissioner (Dinesh Trivedi, June 2026) and invited Rahman to the Sept 2026 BRICS summit in Delhi; as of the latest reporting Rahman had not yet accepted. A New Delhi press event by Sheikh Hasina on 5 Aug 2026 (the anniversary of her ouster) drew formal Bangladeshi 'outrage', which India said it was not responsible for."
+  },
+  "major_disputes": [
+    "Sheikh Hasina extradition request (Bangladesh has requested her return to face charges related to the 2024 crackdown on protesters; India has not extradited her)",
+    "Mangla Port operational agreement reportedly transferred to a Chinese operator, which Indian commentary frames as a strategic concern",
+    "Framing disputes over Hasina's public statements from Indian soil"
+  ],
+  "areas_of_cooperation": [
+    "Continued bilateral trade despite political tension",
+    "Indian emergency fuel assistance (April 2026)",
+    "BIMSTEC multilateral engagement (Modi-Yunus meeting, April 2025)"
+  ],
+  "escalation_factors": [
+    "Further Bangladesh-Pakistan military cooperation (e.g. potential JF-17 acquisition)",
+    "Continued Bangladesh-China infrastructure and connectivity deals seen by India as encroaching on its sphere of influence",
+    "Unresolved Hasina extradition question",
+    "Jamaat-e-Islami's growing influence in India-border constituencies"
+  ],
+  "deescalation_factors": [
+    "India's diplomatic outreach (cabinet-rank envoy, BRICS invitation, emergency fuel aid)",
+    "Bangladesh's continued economic dependence on Indian trade",
+    "Congratulatory exchanges between Modi and Rahman after the Feb 2026 election"
+  ],
+  "_meta": {
+    "data_quality": "sourced",
+    "source": "The Diplomat (Aug 2026, two articles); RSIS Commentary (2026); Al Jazeera (Feb 2026); Organiser (Aug 2026); Deccan Herald; Malay Mail (April 2025)",
+    "confidence": "moderate-high for the factual sequence of events; commentary framing (e.g. characterizing Bangladesh's foreign policy as 'anti-India') reflects predominantly Indian-aligned sources and should be weighed against Bangladeshi government statements, which describe their approach as seeking 'equity and fairness'",
+    "last_updated": "2026-08-22"
+  }
+}

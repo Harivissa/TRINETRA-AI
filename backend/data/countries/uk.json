@@ -1,0 +1,95 @@
+{
+  "id": "GBR",
+  "name": "United Kingdom",
+  "region": "Europe",
+  "demographics": {
+    "population_millions": 68.3,
+    "population_source": "SIPRI Yearbook 2026 (released 8 Jun 2026) + IMF WEO Apr/Jul 2026 + World Bank WDI Jun 2026, via user-provided unified research file; nuclear warhead counts and India's defence spend independently cross-checked against live SIPRI press materials (Aug 2026) (2025 figure)"
+  },
+  "economy": {
+    "gdp_usd_trillion": 3.53,
+    "gdp_growth_pct": 1.1,
+    "notes": "Demo/approximate figures \u2014 replace with sourced data via data/sources/",
+    "gdp_source": "SIPRI Yearbook 2026 (released 8 Jun 2026) + IMF WEO Apr/Jul 2026 + World Bank WDI Jun 2026, via user-provided unified research file; nuclear warhead counts and India's defence spend independently cross-checked against live SIPRI press materials (Aug 2026) (2025 figures)"
+  },
+  "military": {
+    "active_troops": 141000,
+    "defence_spending_usd_billion": 78.5,
+    "defence_spending_pct_gdp": 2.22,
+    "defence_spending_pct_gdp_source": "World Bank WDI (MS.MIL.XPND.GD.ZS), 2024 data, extracted from user-provided dataset (file last updated 2026-02-24)",
+    "arms_exports_usd": 756000000,
+    "arms_exports_year": 2024,
+    "arms_exports_source": "World Bank WDI (MS.MIL.XPRT.KD), constant USD, from user-provided dataset",
+    "reserve_troops": 74000,
+    "defence_spending_pct_gdp_worldbank_2024": 2.28,
+    "defence_spending_source": "SIPRI Yearbook 2026 (released 8 Jun 2026) + IMF WEO Apr/Jul 2026 + World Bank WDI Jun 2026, via user-provided unified research file; nuclear warhead counts and India's defence spend independently cross-checked against live SIPRI press materials (Aug 2026) (2025 figures)"
+  },
+  "energy": {
+    "net_import_dependence_ratio": 0.4,
+    "note": "Positive = net importer, negative = net exporter (approximate ratio, demo data)",
+    "status_2025": "Net importer",
+    "oil_production_bpd_estimate": "~0.75M (declining North Sea)",
+    "oil_consumption_bpd_estimate": "~1.3M",
+    "net_oil_position": "net importer",
+    "gas_position": "net importer, North Sea production declining, LNG-reliant",
+    "electricity_mix_estimate": "gas ~30%, wind ~30%, nuclear ~15%, other renewables ~15%",
+    "major_energy_suppliers": [
+      "NOR",
+      "USA",
+      "QAT"
+    ],
+    "record_type": "ESTIMATE",
+    "confidence": "moderate \u2014 approximate orders of magnitude consistent with IEA/EIA reporting patterns, not precise official figures for a specific year",
+    "source": "Compiled from IEA/EIA-consistent general energy-market knowledge; recommend cross-checking against IEA World Energy Outlook or EIA Country Analysis Briefs for precise current-year figures"
+  },
+  "infrastructure": {},
+  "trade": {},
+  "technology": {},
+  "geography": {
+    "region": "Europe"
+  },
+  "politics": {},
+  "nuclear": {
+    "weapons_state": true,
+    "warhead_estimate": 225,
+    "warhead_estimate_year": 2026,
+    "warhead_estimate_source": "SIPRI Yearbook 2026 (as of Jan 2026), independently verified against live SIPRI press materials Aug 2026"
+  },
+  "strategic_priorities": [
+    "AUKUS submarine program",
+    "NATO Eastern flank support",
+    "Indo-Pacific tilt"
+  ],
+  "dependencies": [],
+  "vulnerabilities": [
+    "Naval fleet escort and hull quantity constraints \u2014 contracting surface escort numbers as Type 23 frigates retire before Type 26/31 arrive at full capacity",
+    "Energy import and offshore grid exposure \u2014 reliance on Norwegian pipeline gas, LNG imports, and vulnerable North Sea wind infrastructure to subsea disruption",
+    "National fiscal and public expenditure deficit limiting the speed of military recapitalisation",
+    "Erosion of domestic defence industrial supply chains after decades of reduced heavy industrial manufacturing base",
+    "Subsea telecom cable bottleneck \u2014 transatlantic cables land concentrated along the UK coastal shelf, a single-point-of-failure risk for international financial data traffic"
+  ],
+  "strengths": [
+    "Continuous at-sea sovereign nuclear deterrent \u2014 Vanguard-class SSBNs with Trident D5 SLBMs (transitioning to Dreadnought-class)",
+    "Tier-one global intelligence network as the Five Eyes anchor (GCHQ, MI6, MI5)",
+    "Global strategic staging outposts \u2014 Gibraltar, Akrotiri/Dhekelia, Diego Garcia, Falklands, Ascension Island",
+    "Carrier strike and blue-water naval force projection \u2014 two Queen Elizabeth-class carriers with F-35B aircraft",
+    "Global financial and legal capital node (City of London) \u2014 world-leading insurance, maritime law, and FX markets"
+  ],
+  "alliances": [
+    "USA",
+    "FRA",
+    "AUS"
+  ],
+  "rivals": [
+    "RUS"
+  ],
+  "_meta": {
+    "data_quality": "demo; military spending %GDP and arms exports now sourced from real World Bank WDI data",
+    "source": "see data/sources/",
+    "confidence": "low-demo",
+    "last_updated": "2026-09-01",
+    "core_data_source": "SIPRI Yearbook 2026 (released 8 Jun 2026) + IMF WEO Apr/Jul 2026 + World Bank WDI Jun 2026, via user-provided unified research file; nuclear warhead counts and India's defence spend independently cross-checked against live SIPRI press materials (Aug 2026)",
+    "strengths_vulnerabilities_source": "SOURCE B (Gemini strategic analysis) via user-provided unified research file \u2014 mechanism-based ASSESSMENT, not raw fact"
+  },
+  "strategic_autonomy_profile": "NATO Euro-Atlantic anchor, Five Eyes pillar"
+}

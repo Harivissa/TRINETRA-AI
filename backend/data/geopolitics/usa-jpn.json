@@ -1,0 +1,23 @@
+{
+  "country_a": "USA",
+  "country_b": "JPN",
+  "relationship_type": "strategic_ally",
+  "classification": {
+    "category": "strategic_ally",
+    "strength": 0.9,
+    "strength_note": "Analyst judgment on a 0-1 scale, from the user-provided unified research file (Gemini/Perplexity synthesis) \u2014 not a precise measurement."
+  },
+  "strategic_issues": [
+    "US-Japan Security Treaty",
+    "50,000+ forward-deployed US troops in Japan",
+    "Tomahawk missile sales enabling Japanese counterstrike capability"
+  ],
+  "dominant_leverage": "US extended nuclear deterrence; Japan hosts bases and anchors the First Island Chain naval/ASW posture.",
+  "trend_2022_2026": "Deepening integrated deterrence",
+  "record_type": "ASSESSMENT",
+  "confidence": "medium-high",
+  "_meta": {
+    "source": "User-provided unified research file (Perplexity OSINT + Gemini strategic analysis), Section 6 Bilateral Relationship Directory",
+    "last_updated": "2026-09-01"
+  }
+}

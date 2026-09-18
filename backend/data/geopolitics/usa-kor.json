@@ -1,0 +1,23 @@
+{
+  "country_a": "USA",
+  "country_b": "KOR",
+  "relationship_type": "strategic_ally",
+  "classification": {
+    "category": "strategic_ally",
+    "strength": 0.9,
+    "strength_note": "Analyst judgment on a 0-1 scale, from the user-provided unified research file (Gemini/Perplexity synthesis) \u2014 not a precise measurement."
+  },
+  "strategic_issues": [
+    "Combined Forces Command",
+    "28,500 US troops stationed in South Korea",
+    "Washington Declaration (Nuclear Consultative Group)"
+  ],
+  "dominant_leverage": "US extended deterrence; South Korea contributes conventional firepower and a world-leading semiconductor/battery industrial base.",
+  "trend_2022_2026": "Solidified counter-North Korea alignment",
+  "record_type": "ASSESSMENT",
+  "confidence": "medium-high",
+  "_meta": {
+    "source": "User-provided unified research file (Perplexity OSINT + Gemini strategic analysis), Section 6 Bilateral Relationship Directory",
+    "last_updated": "2026-09-01"
+  }
+}

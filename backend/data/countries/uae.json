@@ -1,0 +1,89 @@
+{
+  "id": "ARE",
+  "name": "United Arab Emirates",
+  "region": "Middle East",
+  "demographics": {
+    "population_millions": 9.4
+  },
+  "economy": {
+    "gdp_usd_trillion": 0.51,
+    "gdp_growth_pct": 4.0,
+    "notes": "Demo/approximate figures \u2014 replace with sourced data via data/sources/"
+  },
+  "military": {
+    "active_troops": 63000,
+    "defence_spending_usd_billion": 22,
+    "defence_spending_pct_gdp": 5.64,
+    "defence_spending_pct_gdp_source": "World Bank WDI (MS.MIL.XPND.GD.ZS), 2014 data, extracted from user-provided dataset (file last updated 2026-02-24)",
+    "arms_exports_usd": 117000000,
+    "arms_exports_year": 2024,
+    "arms_exports_source": "World Bank WDI (MS.MIL.XPRT.KD), constant USD, from user-provided dataset"
+  },
+  "energy": {
+    "net_import_dependence_ratio": -1.4,
+    "note": "Positive = net importer, negative = net exporter (approximate ratio, demo data)",
+    "oil_production_bpd_estimate": "~3.2M (OPEC+ member)",
+    "oil_consumption_bpd_estimate": "~0.7M",
+    "net_oil_position": "major net exporter",
+    "gas_position": "net exporter, though imports some LNG for peak domestic demand",
+    "electricity_mix_estimate": "gas ~85%, nuclear (Barakah plant) ~10%, solar ~5% and growing",
+    "major_energy_customers": [
+      "JPN",
+      "KOR",
+      "IND"
+    ],
+    "record_type": "ESTIMATE",
+    "confidence": "moderate \u2014 approximate orders of magnitude consistent with IEA/EIA reporting patterns, not precise official figures for a specific year",
+    "source": "Compiled from IEA/EIA-consistent general energy-market knowledge; recommend cross-checking against IEA World Energy Outlook or EIA Country Analysis Briefs for precise current-year figures"
+  },
+  "infrastructure": {},
+  "trade": {},
+  "technology": {},
+  "geography": {
+    "region": "Middle East"
+  },
+  "politics": {
+    "head_of_government": "Sheikh Mohamed bin Zayed Al Nahyan",
+    "role": "President",
+    "in_office_since": "2022",
+    "party": "N/A (hereditary/Federal Supreme Council)",
+    "record_type": "FACT",
+    "confidence": "high",
+    "source": "Verified via web search Sept 2026"
+  },
+  "nuclear": {
+    "weapons_state": false
+  },
+  "strategic_priorities": [
+    "Hormuz security",
+    "Economic diversification beyond oil",
+    "Regional mediator/hedging role (Iran-US-China)"
+  ],
+  "dependencies": [],
+  "vulnerabilities": [
+    "Small citizen population relative to a very large expatriate workforce creates long-term social and labour-market structural dependencies",
+    "Coastline and export infrastructure sit close to the Strait of Hormuz, exposed to the same Iran-related disruption risk as Saudi Arabia despite the East-West pipeline mitigation (ADCOP)",
+    "Heavy reliance on imported technology and foreign military hardware/maintenance contracts",
+    "Regional exposure to Iran-aligned proxy threats (Houthi drone/missile reach) given proximity to Yemen and the Gulf"
+  ],
+  "strengths": [
+    "Major logistics and trade hub status (Jebel Ali Port, DP World network) makes the UAE a critical node in global and regional supply chains, giving it outsized diplomatic relevance relative to its size",
+    "Large oil/gas export capacity as an OPEC+ member with partial Hormuz-bypass infrastructure (ADCOP pipeline)",
+    "Aggressive economic diversification (Abu Dhabi's sovereign wealth funds, Dubai's finance/tourism/trade economy) reduces long-term oil-price vulnerability relative to regional peers",
+    "Active diplomatic hedging \u2014 maintains substantive relationships with the US, China, Russia, and Israel (Abraham Accords) simultaneously, giving it mediating credibility other Gulf states lack"
+  ],
+  "alliances": [
+    "SAU",
+    "USA"
+  ],
+  "rivals": [
+    "IRN-tensions"
+  ],
+  "_meta": {
+    "data_quality": "demo; military spending %GDP and arms exports now sourced from real World Bank WDI data",
+    "source": "see data/sources/",
+    "confidence": "low-demo",
+    "last_updated": "2026-09-03",
+    "strengths_vulnerabilities_source": "Original ASSESSMENT \u2014 mechanism-based, matching the depth pattern of the Gemini-sourced entries for other countries, compiled from well-established open-source strategic analysis"
+  }
+}

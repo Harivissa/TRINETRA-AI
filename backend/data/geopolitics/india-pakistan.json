@@ -1,0 +1,54 @@
+{
+  "country_a": "IND",
+  "country_b": "PAK",
+  "relationship_type": "strategic_rivalry",
+  "strategic_issues": [
+    "Unresolved Kashmir territorial dispute since 1947",
+    "India accuses Pakistan of sponsoring cross-border terrorism",
+    "Indus Waters Treaty suspended by India after the April 2025 Pahalgam attack",
+    "Pakistan's deepening defence partnerships with China, Turkey, and Saudi Arabia"
+  ],
+  "trade_dependencies": [
+    "Formal bilateral trade is minimal and has been suspended for extended periods amid political tension"
+  ],
+  "energy_relationship": {
+    "direct_dependency": "none",
+    "notes": "No significant direct energy trade between the two countries"
+  },
+  "military_relationship": {
+    "posture": "high alert following the May 2025 conflict",
+    "notes": "On 22 April 2025, gunmen killed 26 people near Pahalgam in Indian-administered Kashmir; India blamed Pakistan-linked militants. India launched 'Operation Sindoor' on 7 May 2025, striking targets in Pakistan and Pakistan-administered Kashmir. Four days of strikes and counter-strikes followed (informally called the '87/88-hour war' by some analysts) before a ceasefire was announced on 10 May 2025. India has stated the ceasefire was negotiated directly between the two militaries; the US publicly described it as US-brokered, a characterization India has downplayed. Indian officials (e.g. Vice Admiral K. Swaminathan, Dec 2025) said the threat of Indian naval offensive action was a key factor in Pakistan requesting the ceasefire.",
+    "reported_chinese_pakistani_cooperation": "China has acknowledged its aviation industry provided technical assistance to Pakistan during the conflict, per Chinese and Indian reporting. Indian and Pakistani sources dispute aircraft-loss figures from the engagement; neither government has released full official confirmation.",
+    "recent_activity_aug_2026": "Indian outlets (Organiser, Sunday Guardian Live, India.com, Tribune India — 20-21 Aug 2026) reported a roughly 60-hour surge of Chinese and Turkish military transport aircraft landing at Pakistani airbases (Nur Khan, Masroor), which Indian security sources interpreted as a possible arms/equipment resupply, ahead of SCO and BRICS meetings. The exact cargo has not been officially confirmed by China, Turkey, or Pakistan."
+  },
+  "diplomatic_relationship": {
+    "posture": "hostile, minimal direct diplomatic engagement",
+    "notes": "India's Ministry of External Affairs has publicly urged Turkey to press Pakistan on cross-border terrorism, citing an estimated 350+ Turkish-linked drones and reported Turkish operational assistance to Pakistan during the May 2025 conflict (per Indian government and Tribune India reporting)."
+  },
+  "major_disputes": [
+    "Jammu & Kashmir sovereignty dispute",
+    "Cross-border terrorism allegations",
+    "Indus Waters Treaty suspension (2025)",
+    "Siachen and Sir Creek boundary disagreements"
+  ],
+  "areas_of_cooperation": [
+    "Limited — occasional back-channel and multilateral (SCO) engagement only"
+  ],
+  "escalation_factors": [
+    "Further militant attacks attributed to Pakistan-based groups",
+    "Continued Chinese and Turkish arms resupply to Pakistan (reported Aug 2026 airlift)",
+    "New Pakistan-Turkey-Saudi Mecca Joint Defence Agreement (7 Aug 2026), which commits the three states to treat an attack on one as an attack on all",
+    "Indus Waters Treaty remaining suspended"
+  ],
+  "deescalation_factors": [
+    "The May 2025 ceasefire has broadly held despite mutual accusations of violations",
+    "Shared SCO/BRICS multilateral forums",
+    "International (particularly US) interest in avoiding renewed conflict between two nuclear powers"
+  ],
+  "_meta": {
+    "data_quality": "sourced for 2025-2026 events, demo for older baseline claims",
+    "source": "Congress.gov CRS IF13000; Stimson Center 'Four Days in May' (2025); CNN live coverage (May 2025); ISAS Briefs (NUS); Deccan Herald; Tribune India; Organiser (Aug 2026); Sunday Guardian Live (Aug 2026); India.com (Aug 2026); Al-Monitor (Aug 2026)",
+    "confidence": "moderate — multiple independent reports corroborate the broad sequence of events; specific operational details (aircraft losses, exact airlift cargo) remain contested or unconfirmed",
+    "last_updated": "2026-08-22"
+  }
+}

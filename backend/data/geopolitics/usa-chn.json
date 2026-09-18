@@ -1,0 +1,25 @@
+{
+  "country_a": "USA",
+  "country_b": "CHN",
+  "relationship_type": "strategic_rivalry",
+  "classification": {
+    "category": "strategic_rivalry",
+    "strength": 0.7,
+    "strength_note": "Analyst judgment on a 0-1 scale, from the user-provided unified research file (Gemini/Perplexity synthesis) \u2014 not a precise measurement."
+  },
+  "strategic_issues": [
+    "Taiwan",
+    "South China Sea",
+    "semiconductor export restrictions",
+    "tech decoupling",
+    "AI competition"
+  ],
+  "dominant_leverage": "USA: capital markets, chip design, alliance network. China: rare-earth processing, manufacturing scale.",
+  "trend_2022_2026": "Deteriorating / managed confrontation (2022-2026)",
+  "record_type": "ASSESSMENT",
+  "confidence": "medium-high",
+  "_meta": {
+    "source": "User-provided unified research file (Perplexity OSINT + Gemini strategic analysis), Section 6 Bilateral Relationship Directory",
+    "last_updated": "2026-09-01"
+  }
+}

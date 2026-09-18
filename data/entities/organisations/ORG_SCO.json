@@ -1,0 +1,12 @@
+{
+  "id": "ORG_SCO",
+  "entity_type": "organisation",
+  "name": "Shanghai Cooperation Organisation (SCO)",
+  "members": ["CHN", "RUS", "IND", "PAK", "IRN"],
+  "type": "regional security and economic organisation",
+  "purpose": "Originally focused on Central Asian border security and counter-terrorism; now a forum where India, China, Pakistan, and Russia sit together despite bilateral rivalries between several members.",
+  "founded": "2001",
+  "record_type": "FACT",
+  "confidence": "high",
+  "_meta": {"sources": [], "last_updated": "2026-08-22"}
+}

@@ -1,0 +1,103 @@
+{
+  "id": "IRN",
+  "name": "Iran",
+  "region": "Middle East",
+  "demographics": {
+    "population_millions": 89.8,
+    "population_source": "SIPRI Yearbook 2026 (released 8 Jun 2026) + IMF WEO Apr/Jul 2026 + World Bank WDI Jun 2026, via user-provided unified research file; nuclear warhead counts and India's defence spend independently cross-checked against live SIPRI press materials (Aug 2026) (2025 figure)"
+  },
+  "economy": {
+    "gdp_usd_trillion": 0.43,
+    "gdp_growth_pct": 3.1,
+    "notes": "Demo/approximate figures \u2014 replace with sourced data via data/sources/",
+    "gdp_source": "SIPRI Yearbook 2026 (released 8 Jun 2026) + IMF WEO Apr/Jul 2026 + World Bank WDI Jun 2026, via user-provided unified research file; nuclear warhead counts and India's defence spend independently cross-checked against live SIPRI press materials (Aug 2026) (2025 figures)"
+  },
+  "military": {
+    "active_troops": 610000,
+    "defence_spending_usd_billion": 12.8,
+    "defence_spending_pct_gdp": 2.98,
+    "defence_spending_pct_gdp_source": "World Bank WDI (MS.MIL.XPND.GD.ZS), 2024 data, extracted from user-provided dataset (file last updated 2026-02-24)",
+    "arms_exports_usd": 226000000,
+    "arms_exports_year": 2024,
+    "arms_exports_source": "World Bank WDI (MS.MIL.XPRT.KD), constant USD, from user-provided dataset",
+    "reserve_troops": 350000,
+    "defence_spending_pct_gdp_worldbank_2024": 2.01,
+    "defence_spending_source": "SIPRI Yearbook 2026 (released 8 Jun 2026) + IMF WEO Apr/Jul 2026 + World Bank WDI Jun 2026, via user-provided unified research file; nuclear warhead counts and India's defence spend independently cross-checked against live SIPRI press materials (Aug 2026) (2025 figures)",
+    "defence_spending_discrepancy_note": "World Bank WDI (MS.MIL.XPND.GD.ZS, 2024) gave 2.01%; SIPRI Yearbook 2026 (2025 data) gives 2.98% \u2014 both are legitimate sources measuring different years and, per SIPRI's own methodology notes, sometimes different expenditure scopes. SIPRI figure used as primary since it is defence-specific and more recent; World Bank figure retained below for comparison."
+  },
+  "energy": {
+    "net_import_dependence_ratio": -1.8,
+    "note": "Positive = net importer, negative = net exporter (approximate ratio, demo data)",
+    "status_2025": "Major net exporter",
+    "oil_production_bpd_estimate": "~3.4M (constrained by sanctions/war damage)",
+    "oil_consumption_bpd_estimate": "~2.0M",
+    "net_oil_position": "major net exporter (largely to China via shadow fleet under sanctions)",
+    "gas_position": "major reserves (South Pars field), limited refining/export infrastructure",
+    "electricity_mix_estimate": "gas ~90%, hydro/nuclear/renewables ~10%",
+    "major_energy_customers": [
+      "CHN"
+    ],
+    "record_type": "ESTIMATE",
+    "confidence": "moderate \u2014 approximate orders of magnitude consistent with IEA/EIA reporting patterns, not precise official figures for a specific year",
+    "source": "Compiled from IEA/EIA-consistent general energy-market knowledge; recommend cross-checking against IEA World Energy Outlook or EIA Country Analysis Briefs for precise current-year figures"
+  },
+  "infrastructure": {},
+  "trade": {},
+  "technology": {},
+  "geography": {
+    "region": "Middle East"
+  },
+  "politics": {
+    "supreme_leader": "Mojtaba Khamenei, since early 2026, following the assassination of his father Ali Khamenei in the opening US-Israeli strikes of the 2026 Iran War (28 Feb 2026)",
+    "current_crisis": "Iran has been at war with the US and Israel since 28 Feb 2026 ('Operation Epic Fury' / 'Operation Roaring Lion' / Iran's 'Operation True Promise IV'). Opening strikes killed Supreme Leader Ali Khamenei and senior officials. A conditional ceasefire (8 Apr-8 Jul 2026), mediated by Pakistan, broke down; fighting resumed 8 Jul 2026. Iran has periodically threatened and briefly disrupted Strait of Hormuz shipping, drawing further US retaliation.",
+    "source": "Wikipedia/Britannica/UK House of Commons Library live coverage, verified via web search 2026-09",
+    "confidence": "high \u2014 independently verified via multiple live sources, Sept 2026"
+  },
+  "nuclear": {
+    "weapons_state": false,
+    "status": "Threshold capability \u2014 HEU enrichment capacity, no declared weapon",
+    "status_source": "SIPRI Yearbook 2026 (released 8 Jun 2026) + IMF WEO Apr/Jul 2026 + World Bank WDI Jun 2026, via user-provided unified research file; nuclear warhead counts and India's defence spend independently cross-checked against live SIPRI press materials (Aug 2026)",
+    "record_type": "ASSESSMENT \u2014 Iran's exact enrichment/breakout status is disputed and changes; treat as a snapshot, not a settled fact"
+  },
+  "strategic_priorities": [
+    "Nuclear program leverage",
+    "Proxy network maintenance",
+    "Sanctions evasion via Russia/China ties"
+  ],
+  "dependencies": [],
+  "vulnerabilities": [
+    "Active war with the US and Israel since 28 February 2026 has killed the Supreme Leader and senior military/political leadership, destroyed a large share of military and nuclear infrastructure, and left the regime in its most precarious position in decades",
+    "Severe macroeconomic sanctions strain \u2014 US secondary sanctions and financial clearing bans have driven currency devaluation and social friction, partly offset by shadow-fleet petroleum sales to China",
+    "Conventional air force and air-defence obsolescence \u2014 a legacy fighter inventory (F-14, F-4, MiG-29) cannot contest air superiority against high-end air forces",
+    "Extreme concentration of crude oil exports through the single Kharg Island terminal \u2014 over 80% of export volume, a single point of catastrophic economic failure if struck",
+    "Domestic political instability and civil discontent diverting internal security resources from external strategic operations",
+    "Water scarcity and environmental stress from depleted aquifers, compounding socio-economic instability"
+  ],
+  "strengths": [
+    "Geographic command of the Strait of Hormuz's northern coastline \u2014 anti-ship missiles, fast attack craft, and sea mines enable credible closure/interdiction threats",
+    "Extensive integrated asymmetric proxy network ('Axis of Resistance': Hezbollah, Houthis, Iraqi militias) projecting power multi-directionally without direct Iranian exposure",
+    "Largest ballistic missile and one-way attack drone inventory in the Middle East (Shahed-series loitering munitions, Khorramshahr/Emad ballistic missiles)",
+    "Threshold nuclear weapons capability \u2014 enrichment above 60% purity at Fordow/Natanz creates rapid breakout potential",
+    "Zagros mountain range forms a natural land fortress housing deep underground missile facilities"
+  ],
+  "alliances": [
+    "RUS",
+    "CHN",
+    "proxy-network"
+  ],
+  "rivals": [
+    "ISR",
+    "SAU",
+    "USA"
+  ],
+  "_meta": {
+    "data_quality": "demo; military spending %GDP and arms exports now sourced from real World Bank WDI data",
+    "source": "see data/sources/",
+    "confidence": "low-demo",
+    "last_updated": "2026-09-03",
+    "core_data_source": "SIPRI Yearbook 2026 (released 8 Jun 2026) + IMF WEO Apr/Jul 2026 + World Bank WDI Jun 2026, via user-provided unified research file; nuclear warhead counts and India's defence spend independently cross-checked against live SIPRI press materials (Aug 2026)",
+    "strengths_vulnerabilities_source": "SOURCE B (Gemini strategic analysis) via user-provided unified research file \u2014 mechanism-based ASSESSMENT, not raw fact",
+    "major_current_event": "2026 Iran War (ongoing as of Sept 2026) \u2014 verified via live search, not in original training data"
+  },
+  "strategic_autonomy_profile": "Asymmetric regional 'Axis of Resistance' leader"
+}

@@ -1,0 +1,72 @@
+{
+  "id": "CHN",
+  "name": "China",
+  "region": "East Asia",
+  "demographics": {
+    "population_millions": 1410
+  },
+  "economy": {
+    "gdp_usd_trillion": 17.8,
+    "gdp_growth_pct": 5.0,
+    "notes": "Demo/approximate figures \u2014 replace with sourced data via data/sources/"
+  },
+  "military": {
+    "active_troops": 2035000,
+    "defence_spending_usd_billion": 296,
+    "defence_spending_pct_gdp": 1.71,
+    "defence_spending_pct_gdp_source": "World Bank WDI (MS.MIL.XPND.GD.ZS), 2024 data, extracted from user-provided dataset (file last updated 2026-02-24)",
+    "arms_exports_usd": 1131000000,
+    "arms_exports_year": 2024,
+    "arms_exports_source": "World Bank WDI (MS.MIL.XPRT.KD), constant USD, from user-provided dataset"
+  },
+  "energy": {
+    "net_import_dependence_ratio": 0.72,
+    "note": "Positive = net importer, negative = net exporter (approximate ratio, demo data)"
+  },
+  "infrastructure": {},
+  "trade": {},
+  "technology": {},
+  "geography": {
+    "region": "East Asia"
+  },
+  "politics": {},
+  "nuclear": {
+    "weapons_state": true
+  },
+  "strategic_priorities": [
+    "Taiwan reunification posture",
+    "South China Sea control",
+    "Tech self-sufficiency (semiconductors)",
+    "Belt & Road consolidation"
+  ],
+  "dependencies": [],
+  "vulnerabilities": [
+    "The 'Malacca Dilemma' \u2014 a term Chinese strategists themselves have used (attributed to Hu Jintao, 2003) \u2014 roughly 80% of China's crude oil imports transit the Strait of Malacca, a single chokepoint China does not control and cannot easily bypass at scale",
+    "Himalayan/Tibetan plateau terrain (average 4,000+ metres altitude along the LAC) imposes severe logistics, acclimatisation, and sustained-offensive constraints on Chinese ground forces relative to fighting at lower altitude",
+    "Aging population",
+    "Property-sector debt overhang",
+    "Export dependence on Western markets"
+  ],
+  "strengths": [
+    "Manufacturing/industrial base",
+    "Global supply chain centrality",
+    "Rapid naval expansion",
+    "Belt & Road strategic reach"
+  ],
+  "alliances": [
+    "RUS",
+    "PAK",
+    "PRK"
+  ],
+  "rivals": [
+    "USA",
+    "IND",
+    "JPN"
+  ],
+  "_meta": {
+    "data_quality": "demo; military spending %GDP and arms exports now sourced from real World Bank WDI data",
+    "source": "see data/sources/",
+    "confidence": "low-demo",
+    "last_updated": "2026-08-27"
+  }
+}

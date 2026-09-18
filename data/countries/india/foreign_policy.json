@@ -1,0 +1,26 @@
+{
+  "country_id": "IND",
+  "doctrine": "Strategic autonomy — India seeks to avoid binding alliance commitments, instead building multiple parallel partnerships (US/Quad, Russia, France, Gulf states) that give it flexibility rather than dependence on any single power bloc.",
+  "strategic_priorities": [
+    "Manage the two-front border tension with China and Pakistan without being drawn into simultaneous conflict on both",
+    "Diversify energy suppliers to reduce exposure to any single source or route",
+    "Build domestic defence manufacturing capacity (referred to domestically as 'Atmanirbhar Bharat' / self-reliant India) to reduce arms-import dependence",
+    "Deepen Indo-Pacific partnerships (Quad with US, Japan, Australia) as a counterweight to Chinese regional influence",
+    "Maintain independent ties with Russia despite Western pressure, given Russia's role as a long-standing defence supplier and discounted energy source"
+  ],
+  "priority_regions": [
+    "South Asia (Pakistan, Bangladesh, Sri Lanka, Nepal — 'neighbourhood first' policy)",
+    "Indo-Pacific (Quad partners, ASEAN, South China Sea-adjacent states)",
+    "Middle East/Gulf (energy suppliers and large Indian expatriate population)"
+  ],
+  "cooperation_and_competition": {
+    "cooperates_closely_with": ["USA", "France", "Russia", "Japan", "Australia", "Gulf states (UAE, Saudi Arabia)"],
+    "competes_or_disputes_with": ["China (border, Indian Ocean influence)", "Pakistan (Kashmir, cross-border terrorism)"],
+    "notes": "India avoids treating any relationship as purely one-dimensional — for example, it maintains a close US partnership while also sustaining a decades-long Russia relationship that the US does not always welcome."
+  },
+  "_meta": {
+    "data_quality": "sourced/analytical synthesis based on India's publicly stated policy positions and widely reported strategic behaviour",
+    "confidence": "moderate-high",
+    "last_updated": "2026-08-22"
+  }
+}

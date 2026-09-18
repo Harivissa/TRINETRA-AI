@@ -1,0 +1,22 @@
+{
+  "country_a": "AUS",
+  "country_b": "USA",
+  "relationship_type": "strategic_ally",
+  "classification": {
+    "category": "strategic_ally",
+    "strength": 0.92,
+    "strength_note": "Analyst judgment on a 0-1 scale, from the user-provided unified research file (Gemini/Perplexity synthesis) \u2014 not a precise measurement."
+  },
+  "strategic_issues": [
+    "AUKUS Pillar 1 (SSN-AUKUS nuclear-powered submarines)",
+    "Pine Gap joint intelligence facility"
+  ],
+  "dominant_leverage": "Australia anchors the Southern Hemisphere; the US provides long-range strike capability and nuclear submarine technology transfer.",
+  "trend_2022_2026": "Structural expansion",
+  "record_type": "ASSESSMENT",
+  "confidence": "medium-high",
+  "_meta": {
+    "source": "User-provided unified research file (Perplexity OSINT + Gemini strategic analysis), Section 6 Bilateral Relationship Directory",
+    "last_updated": "2026-09-01"
+  }
+}

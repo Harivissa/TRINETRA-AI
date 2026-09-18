@@ -1,0 +1,136 @@
+warning: in the working copy of '.env.example', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of '.gitignore', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'KNOWLEDGE_GRAPH_STATUS.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'README.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'backend/ai/analyzer.py', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'backend/ai/client.py', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'backend/ai/prompts.py', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'backend/analysis/chokepoint_engine.py', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'backend/analysis/consequence_chain_engine.py', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'backend/analysis/economic_engine.py', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'backend/analysis/energy_engine.py', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'backend/analysis/geopolitical_engine.py', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'backend/analysis/infrastructure_engine.py', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'backend/analysis/military_engine.py', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'backend/analysis/resilience_engine.py', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'backend/analysis/scenario_engine.py', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'backend/analysis/strategic_engine.py', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'backend/app.py', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'backend/data/repository.py', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'backend/schemas/country.py', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'backend/schemas/relationship.py', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'config/prompts/country_analysis.txt', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'config/prompts/geopolitical_analysis.txt', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'config/prompts/scenario_analysis.txt', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'config/prompts/strategic_analysis.txt', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'data/countries/australia.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'data/countries/bangladesh.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'data/countries/brazil.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'data/countries/canada.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'data/countries/china.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'data/countries/france.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'data/countries/germany.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'data/countries/index.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'data/countries/india.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'data/countries/india/foreign_policy.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'data/countries/india/history.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'data/countries/india/politics.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'data/countries/india/sources.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'data/countries/indonesia.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'data/countries/iran.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'data/countries/israel.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'data/countries/italy.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'data/countries/japan.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'data/countries/pakistan.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'data/countries/russia.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'data/countries/saudi-arabia.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'data/countries/south-korea.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'data/countries/turkey.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'data/countries/uae.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'data/countries/uk.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'data/countries/usa.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'data/entities/countries/CHN.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'data/entities/countries/IND.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'data/entities/countries/RUS.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'data/entities/countries/USA.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'data/entities/organisations/ORG_BRICS.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'data/entities/organisations/ORG_NATO.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'data/entities/organisations/ORG_QUAD.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'data/entities/organisations/ORG_SCO.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'data/entities/people/PERSON_CHN_GENSEC_001.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'data/entities/people/PERSON_IND_PM_001.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'data/entities/people/PERSON_RUS_PRES_001.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'data/entities/people/PERSON_USA_PRES_001.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'data/geopolitics/china-pakistan.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'data/geopolitics/china-russia.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'data/geopolitics/chokepoints.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'data/geopolitics/india-bangladesh.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'data/geopolitics/india-china.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'data/geopolitics/india-pakistan.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'data/geopolitics/india-russia.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'data/geopolitics/india-usa.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'data/relationships/strategic/analysis-russia-india-china-dilemma.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'data/relationships/strategic/analysis-usa-india-china-position.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'data/relationships/strategic/china-russia.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'data/relationships/strategic/india-russia.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'data/schemas/ENTITY_SCHEMA.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'frontend/.env.example', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'frontend/index.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'frontend/package-lock.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'frontend/package.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'frontend/postcss.config.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'frontend/public/audio/README.txt', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'frontend/src/App.tsx', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'frontend/src/components/analysis/AnalysisResults.tsx', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'frontend/src/components/analysis/LoadingEngine.tsx', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'frontend/src/components/charts/CompareBarChart.tsx', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'frontend/src/components/charts/ComparisonBar.tsx', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'frontend/src/components/charts/ResilienceRadar.tsx', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'frontend/src/components/comparison/Comparison3D.tsx', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'frontend/src/components/country/CountrySelect.tsx', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'frontend/src/components/country/ProfileSection.tsx', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'frontend/src/components/country/Timeline.tsx', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'frontend/src/components/dashboard/Footer.tsx', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'frontend/src/components/dashboard/Header.tsx', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'frontend/src/components/dashboard/StatRow.tsx', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'frontend/src/components/entry/EntryExperience.tsx', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'frontend/src/components/network/GlobalMap.tsx', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'frontend/src/components/network/WorldMap.tsx', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'frontend/src/components/spatial/ParallaxSection.tsx', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'frontend/src/components/spatial/SpatialPanel.tsx', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'frontend/src/index.css', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'frontend/src/lib/audio.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'frontend/src/main.tsx', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'frontend/src/pages/About.tsx', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'frontend/src/pages/Contact.tsx', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'frontend/src/pages/CountriesGrid.tsx', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'frontend/src/pages/CountryIntelligence.tsx', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'frontend/src/pages/Dashboard.tsx', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'frontend/src/pages/Modules.tsx', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'frontend/src/pages/NetworkView.tsx', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'frontend/src/pages/RivalryAnalysis.tsx', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'frontend/src/services/api.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'frontend/src/types/index.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'frontend/src/vite-env.d.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'frontend/tailwind.config.js', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'frontend/tsconfig.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'frontend/vite.config.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'requirements.txt', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'scripts/gen_countries.py', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'scripts/ingest_worldbank.py', LF will be replaced by CRLF the next time Git touches it
+ backend/analysis/chokepoint_engine.py              |  21 [32m+[m[31m-[m
+ backend/analysis/strategic_engine.py               |  35 [32m+[m[31m---[m
+ backend/app.py                                     |  48 [32m++++[m[31m-[m
+ backend/data/repository.py                         | 199 [32m++++++++++[m[31m--------[m
+ frontend/src/App.tsx                               |  12 [32m+[m[31m-[m
+ frontend/src/components/analysis/LoadingEngine.tsx |   2 [32m+[m[31m-[m
+ .../src/components/comparison/Comparison3D.tsx     |  71 [32m++[m[31m-----[m
+ frontend/src/components/dashboard/Header.tsx       |   5 [32m+[m[31m-[m
+ frontend/src/components/entry/EntryExperience.tsx  | 231 [32m++++++[m[31m---------------[m
+ frontend/src/components/network/GlobalMap.tsx      |   3 [32m+[m[31m-[m
+ frontend/src/components/network/WorldMap.tsx       |  46 [32m+++[m[31m-[m
+ frontend/src/index.css                             | 103 [32m++++[m[31m-----[m
+ frontend/src/pages/NetworkView.tsx                 |  31 [32m++[m[31m-[m
+ frontend/src/services/api.ts                       |   8 [32m+[m
+ requirements.txt                                   |   3 [32m+[m
+ 15 files changed, 391 insertions(+), 427 deletions(-)

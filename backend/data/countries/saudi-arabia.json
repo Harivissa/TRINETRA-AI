@@ -1,0 +1,95 @@
+{
+  "id": "SAU",
+  "name": "Saudi Arabia",
+  "region": "Middle East",
+  "demographics": {
+    "population_millions": 36.9,
+    "population_source": "SIPRI Yearbook 2026 (released 8 Jun 2026) + IMF WEO Apr/Jul 2026 + World Bank WDI Jun 2026, via user-provided unified research file; nuclear warhead counts and India's defence spend independently cross-checked against live SIPRI press materials (Aug 2026) (2025 figure)"
+  },
+  "economy": {
+    "gdp_usd_trillion": 1.11,
+    "gdp_growth_pct": 2.6,
+    "notes": "Demo/approximate figures \u2014 replace with sourced data via data/sources/",
+    "gdp_source": "SIPRI Yearbook 2026 (released 8 Jun 2026) + IMF WEO Apr/Jul 2026 + World Bank WDI Jun 2026, via user-provided unified research file; nuclear warhead counts and India's defence spend independently cross-checked against live SIPRI press materials (Aug 2026) (2025 figures)"
+  },
+  "military": {
+    "active_troops": 257000,
+    "defence_spending_usd_billion": 75.8,
+    "defence_spending_pct_gdp": 6.83,
+    "defence_spending_pct_gdp_source": "World Bank WDI (MS.MIL.XPND.GD.ZS), 2024 data, extracted from user-provided dataset (file last updated 2026-02-24)",
+    "arms_exports_usd": 3000000,
+    "arms_exports_year": 2023,
+    "arms_exports_source": "World Bank WDI (MS.MIL.XPRT.KD), constant USD, from user-provided dataset",
+    "reserve_troops": 0,
+    "defence_spending_pct_gdp_worldbank_2024": 7.3,
+    "defence_spending_source": "SIPRI Yearbook 2026 (released 8 Jun 2026) + IMF WEO Apr/Jul 2026 + World Bank WDI Jun 2026, via user-provided unified research file; nuclear warhead counts and India's defence spend independently cross-checked against live SIPRI press materials (Aug 2026) (2025 figures)",
+    "defence_spending_discrepancy_note": "World Bank WDI (MS.MIL.XPND.GD.ZS, 2024) gave 7.3%; SIPRI Yearbook 2026 (2025 data) gives 6.83% \u2014 both are legitimate sources measuring different years and, per SIPRI's own methodology notes, sometimes different expenditure scopes. SIPRI figure used as primary since it is defence-specific and more recent; World Bank figure retained below for comparison."
+  },
+  "energy": {
+    "net_import_dependence_ratio": -1.5,
+    "note": "Positive = net importer, negative = net exporter (approximate ratio, demo data)",
+    "status_2025": "Major net exporter",
+    "oil_production_bpd_estimate": "~9-12M (OPEC+ swing capacity)",
+    "oil_consumption_bpd_estimate": "~3.3M",
+    "net_oil_position": "major net exporter",
+    "gas_position": "net producer, growing domestic use",
+    "electricity_mix_estimate": "oil/gas ~99%, solar expansion under Vision 2030",
+    "major_energy_customers": [
+      "CHN",
+      "IND",
+      "JPN",
+      "KOR"
+    ],
+    "record_type": "ESTIMATE",
+    "confidence": "moderate \u2014 approximate orders of magnitude consistent with IEA/EIA reporting patterns, not precise official figures for a specific year",
+    "source": "Compiled from IEA/EIA-consistent general energy-market knowledge; recommend cross-checking against IEA World Energy Outlook or EIA Country Analysis Briefs for precise current-year figures"
+  },
+  "infrastructure": {},
+  "trade": {},
+  "technology": {},
+  "geography": {
+    "region": "Middle East"
+  },
+  "politics": {},
+  "nuclear": {
+    "weapons_state": true,
+    "warhead_estimate": 0,
+    "warhead_estimate_year": 2026,
+    "warhead_estimate_source": "SIPRI Yearbook 2026 (as of Jan 2026), independently verified against live SIPRI press materials Aug 2026"
+  },
+  "strategic_priorities": [
+    "Iran deterrence/normalisation balance",
+    "Yemen conflict resolution",
+    "Oil revenue diversification (Vision 2030)"
+  ],
+  "dependencies": [],
+  "vulnerabilities": [
+    "Extreme concentration of central energy processing (Abqaiq facility) and coastal desalination infrastructure \u2014 a small number of strikes could cause catastrophic oil-production and water-supply loss simultaneously",
+    "Physical export dependence on the Hormuz and Bab el-Mandeb chokepoints \u2014 all seaborne crude must transit one or the other to reach open ocean",
+    "Absence of a domestic high-tech industrial base \u2014 high reliance on foreign arms imports exposes Saudi Arabia to legislative embargo risk during regional disputes",
+    "Absolute water scarcity \u2014 zero permanent rivers, over 60% of potable water needs met via energy-intensive desalination"
+  ],
+  "strengths": [
+    "Global oil market swing-producer leverage as OPEC+ leader \u2014 lowest extraction cost per barrel plus spare capacity to influence global supply",
+    "Custodian of Islam's holiest sites (Mecca and Medina), conferring unmatched religious soft power across roughly 1.8 billion Muslims worldwide",
+    "Vast sovereign wealth fund (Public Investment Fund) capital deployment across global strategic assets",
+    "Geographic span bridging both the Persian Gulf and Red Sea, with coastlines on two major energy chokepoints",
+    "Modern Western military hardware arsenal (F-15SA, Eurofighter Typhoon, PAC-3 Patriot, THAAD)"
+  ],
+  "alliances": [
+    "USA",
+    "UAE"
+  ],
+  "rivals": [
+    "IRN"
+  ],
+  "_meta": {
+    "data_quality": "demo; military spending %GDP and arms exports now sourced from real World Bank WDI data",
+    "source": "see data/sources/",
+    "confidence": "low-demo",
+    "last_updated": "2026-09-01",
+    "core_data_source": "SIPRI Yearbook 2026 (released 8 Jun 2026) + IMF WEO Apr/Jul 2026 + World Bank WDI Jun 2026, via user-provided unified research file; nuclear warhead counts and India's defence spend independently cross-checked against live SIPRI press materials (Aug 2026)",
+    "strengths_vulnerabilities_source": "SOURCE B (Gemini strategic analysis) via user-provided unified research file \u2014 mechanism-based ASSESSMENT, not raw fact"
+  },
+  "strategic_autonomy_profile": "Strategic swing producer, diversified hedging"
+}

@@ -1,0 +1,80 @@
+{
+  "id": "ANALYSIS_RUS_INDIA_CHINA_DILEMMA",
+  "subject": "Russia's position in a hypothetical India-China crisis",
+  "record_type": "ANALYTICAL_ASSESSMENT",
+  "confidence": "MEDIUM",
+  "confidence_reason": "This is a reasoned assessment from Russia's declared relationships and interests, not a confirmed or predicted future decision. Russia has never had to make this exact choice at scale, so there is no direct precedent to point to.",
+
+  "facts": [
+    {
+      "statement": "Russia maintains a strategic partnership with India dating to 1971, including being India's largest cumulative arms supplier historically.",
+      "record_type": "HISTORICAL_FACT",
+      "confidence": "HIGH",
+      "source": "See data/relationships/strategic/india-russia.json"
+    },
+    {
+      "statement": "Russia and China declared a 'no limits' strategic partnership in February 2022, and China has become Russia's most important economic partner following Western sanctions.",
+      "record_type": "FACT",
+      "confidence": "HIGH",
+      "source": "See data/relationships/strategic/china-russia.json"
+    },
+    {
+      "statement": "Both India and China are members of BRICS and the SCO alongside Russia.",
+      "record_type": "FACT",
+      "confidence": "HIGH"
+    },
+    {
+      "statement": "Russian Foreign Minister (later Prime Minister) Yevgeny Primakov proposed a Russia-India-China (RIC) strategic triangle in 1998, explicitly framed as a counterweight to a unipolar, US-centred world order. RIC foreign-ministers' meetings have continued intermittently since, though the format has never developed into anything resembling a formal bloc, largely because of the unresolved India-China border dispute.",
+      "record_type": "HISTORICAL_FACT",
+      "confidence": "high",
+      "note": "This is real, documented history, not a live active alliance — RIC exists as a dormant/occasional diplomatic format rather than an operating institution. Any claim that RIC currently functions as a coherent bloc rivaling NATO or a G7-style grouping is an overstatement of its actual, limited institutional weight."
+    }
+  ],
+  "russia_ric_mediation_pattern": {
+    "statement": "Russia has a documented pattern, going back to Primakov's original 1998 proposal, of wanting India and China to see themselves as part of a shared Russia-anchored multipolar project rather than as adversaries — this gives Russia a standing diplomatic rationale to encourage India-China dialogue whenever tensions rise, independent of any specific crisis.",
+    "record_type": "ANALYTICAL_ASSESSMENT",
+    "confidence": "MEDIUM",
+    "reasoning": "Consistent with Russia's own stated multipolarity agenda and its practice of using BRICS/SCO summits as venues for India-China leaders' meetings during periods of bilateral tension (e.g. informal engagement around the 2020 Galwan standoff took place partly on the margins of RIC/SCO-adjacent diplomacy). This does not mean Russia has ever brokered a binding settlement between the two — its role has been more about providing a face-saving venue than resolving the underlying border dispute."
+  },
+
+  "why_russia_needs_india": [
+    "India is a major buyer of Russian arms (historically) and, since 2022, of discounted Russian oil — a valuable market as Western buyers receded.",
+    "Maintaining India as a partner prevents India from aligning fully with the US-led bloc, which matters to Russia's broader goal of a multipolar order not dominated by the West.",
+    "India provides Russia diplomatic cover at BRICS/SCO/UN by not joining Western condemnation of Russia over Ukraine."
+  ],
+
+  "why_russia_needs_china": [
+    "China is now Russia's most important economic partner, absorbing energy exports and supplying goods that substitute for lost Western trade — this dependency has grown sharply since 2022 sanctions.",
+    "Chinese diplomatic and economic support materially affects Russia's capacity to sustain the war in Ukraine and resist Western economic pressure."
+  ],
+
+  "where_russian_and_chinese_interests_diverge": [
+    "China's growing economic and diplomatic footprint in Central Asia (traditionally a Russian sphere of influence) is a quiet friction point.",
+    "Russia has historically supplied advanced weapons technology to India that China would prefer India not have — an area where Russia's commercial interest in the Indian market runs against Chinese preferences.",
+    "Russia's dependency on China has grown asymmetric since 2022; Russia has more to lose from alienating China now than the reverse, which constrains how much Russia can afford to visibly favour India even if it wanted to."
+  ],
+
+  "assessment": {
+    "statement": "Russia has structural incentives to avoid being forced into an open choice between India and China in a crisis, and would likely prefer a posture of quiet balancing, private diplomacy, or offering to mediate, rather than public alignment with either side.",
+    "record_type": "ANALYTICAL_ASSESSMENT",
+    "confidence": "MEDIUM",
+    "reasoning": "This follows from Russia holding valuable, still-active relationships with both countries (see facts above) and having more to lose from picking a side than from staying above the fray. It is not a certainty — Russia's now-asymmetric economic dependence on China (see divergence points above) could tilt real-world behaviour toward quiet accommodation of Chinese preferences even while publicly appearing neutral."
+  },
+
+  "what_could_make_russia_lean_toward_china_anyway": [
+    "If China explicitly made a request central to the war in Ukraine (e.g. continued economic/diplomatic support) contingent on Russian neutrality or quiet backing in an India-China dispute — this is speculative and not evidenced by any known precedent.",
+    "If the crisis directly touched Central Asian security, where Russia and China already have their own point of friction and Russia might want to avoid opening a second front of disagreement with Beijing."
+  ],
+
+  "scenario_note": {
+    "statement": "In a serious India-China crisis, a plausible scenario is that Russia offers itself as a venue or channel for back-channel diplomacy (drawing on its relationships with both sides and existing SCO/BRICS forums) while avoiding public statements that name a side.",
+    "record_type": "SCENARIO",
+    "confidence": "LOW-MEDIUM",
+    "caveat": "This is an illustrative scenario built from the facts and assessment above, not a prediction of what Russia will actually do. Real crises are shaped by specifics (who is seen as the aggressor, what other powers are doing, domestic political pressure in Moscow) that cannot be fully anticipated in advance."
+  },
+
+  "_meta": {
+    "last_updated": "2026-08-22",
+    "note": "This object is a worked example of the FACT / ANALYTICAL_ASSESSMENT / SCENARIO separation required across the whole knowledge graph — every other 'why would X do Y' analysis in this dataset should follow this same structure."
+  }
+}

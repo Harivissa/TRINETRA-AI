@@ -1,0 +1,100 @@
+{
+  "dependencies": [
+    {
+      "id": "DEP_CHN_IRONORE",
+      "dependent": "CHN",
+      "supplier": ["AUS", "BRA"],
+      "category": "Raw minerals",
+      "commodity": "Iron ore",
+      "exposure": "Extreme — China imports over 70% of its iron ore; Australia accounts for roughly 62% of that, Brazil roughly 21%. Crucial input for steel production.",
+      "alternatives": "Limited. The Simandou project in Guinea is ramping up but remains logistically bottlenecked and years from meaningful scale.",
+      "record_type": "ESTIMATE",
+      "confidence": "high",
+      "source": "USGS Mineral Commodity Summaries 2026, via user-provided unified research"
+    },
+    {
+      "id": "DEP_WEST_RAREEARTH",
+      "dependent": ["USA", "GBR", "DEU", "JPN"],
+      "supplier": ["CHN"],
+      "category": "Critical minerals",
+      "commodity": "Rare earth elements (NdFeB magnets, gallium, germanium, antimony)",
+      "exposure": "Asymmetric near-monopoly — China controls an estimated ~68% of mining and ~90% of global rare-earth refining/magnet processing.",
+      "alternatives": "5-8 year lag estimated for alternative processing capacity to scale in Australia (Lynas) and the US (MP Materials).",
+      "record_type": "ESTIMATE",
+      "confidence": "high",
+      "source": "USGS Mineral Commodity Summaries 2026, via user-provided unified research"
+    },
+    {
+      "id": "DEP_IND_RUS_DEFENCE",
+      "dependent": "IND",
+      "supplier": ["RUS"],
+      "category": "Defence spares and systems",
+      "commodity": "S-400 spares, Su-30MKI parts, nuclear submarine leasing, T-90 fleet spares",
+      "exposure": "Operational exposure — an estimated 36-40% of India's military inventory remains of Russian legacy/design origin.",
+      "alternatives": "Domestic production (India's 'Make in India'/IDEX programs), diversification toward France (Rafale, Scorpène submarines) and the US (GE F414 jet engines).",
+      "record_type": "ESTIMATE",
+      "confidence": "high",
+      "source": "SIPRI Trends in International Arms Transfers, via user-provided unified research"
+    },
+    {
+      "id": "DEP_IND_CHN_INDUSTRIAL",
+      "dependent": "IND",
+      "supplier": ["CHN"],
+      "category": "Industrial / pharma inputs",
+      "commodity": "Active Pharmaceutical Ingredients (APIs), solar cells, electronics intermediate goods",
+      "exposure": "Industrial exposure — India imports an estimated ~68% of its bulk drugs/APIs and over 70% of its photovoltaic cells from Chinese suppliers.",
+      "alternatives": "India's Production Linked Incentive (PLI) schemes are accelerating domestic capacity, but medium-term dependency persists.",
+      "record_type": "ESTIMATE",
+      "confidence": "high",
+      "source": "World Bank WDI 2026, via user-provided unified research"
+    },
+    {
+      "id": "DEP_CHN_SEMICONDUCTOR",
+      "dependent": "CHN",
+      "supplier": ["USA", "JPN", "NLD"],
+      "category": "Semiconductor technology",
+      "commodity": "Advanced lithography tools (EUV/advanced DUV), EDA design software",
+      "exposure": "Technological chokepoint — export denial of tools below the 7nm process node slows indigenous advanced AI chip fabrication.",
+      "alternatives": "Domestic Chinese lithography (SMEE) is estimated to lag 2-3 process-node generations behind, with reliance on legacy nodes (28nm and above) for now.",
+      "record_type": "ASSESSMENT",
+      "confidence": "high",
+      "source": "WTO Global Trade Outlook 2026, via user-provided unified research"
+    },
+    {
+      "id": "DEP_EU_LNG",
+      "dependent": ["DEU", "ITA"],
+      "supplier": ["USA", "QAT", "NOR"],
+      "category": "Energy (gas)",
+      "commodity": "Liquefied natural gas (LNG) and pipeline gas",
+      "exposure": "Post-Russian transition — near-total replacement of Russian pipeline gas with US/Qatari LNG and Norwegian pipeline gas since 2022.",
+      "alternatives": "Long-term supply contracts are now locked in, but spot-price volatility exposure remains meaningfully higher than under the old Russian-pipeline arrangement.",
+      "record_type": "ASSESSMENT",
+      "confidence": "high",
+      "source": "EIA Monthly Energy Review 2025-2026, via user-provided unified research"
+    },
+    {
+      "id": "DEP_EASTASIA_GULF_ENERGY",
+      "dependent": ["KOR", "JPN"],
+      "supplier": ["SAU", "ARE", "QAT"],
+      "category": "Energy",
+      "commodity": "Crude oil and LNG",
+      "exposure": "Critical — over 80% crude dependency on Gulf exporters, shipped through both Hormuz and Malacca.",
+      "alternatives": "Strategic petroleum reserves cover an estimated 90-120 days; essentially zero domestic geological substitutes exist for either country.",
+      "record_type": "ESTIMATE",
+      "confidence": "high",
+      "source": "IEA World Energy Outlook 2025/2026, via user-provided unified research"
+    },
+    {
+      "id": "DEP_RUS_CHN_DUALUSE",
+      "dependent": "RUS",
+      "supplier": ["CHN"],
+      "category": "Dual-use technology",
+      "commodity": "Machine tools, microelectronics, optics, drone components",
+      "exposure": "Sanctions-circumvention dependency — crucial for sustaining Russia's domestic military-industrial output since 2022.",
+      "alternatives": "Limited: North Korea (munitions) and Iran (drone engines/technology) are the main alternative sources, at much smaller scale than China.",
+      "record_type": "ASSESSMENT",
+      "confidence": "high",
+      "source": "SIPRI Trends in International Arms Transfers, via user-provided unified research"
+    }
+  ]
+}
