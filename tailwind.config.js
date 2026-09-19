@@ -13,8 +13,10 @@ export default {
         },
       },
       fontFamily: {
-        display: ["'Cormorant Garamond'", "serif"],
+        display: ["'Playfair Display'", "'Cormorant Garamond'", "Georgia", "serif"],
+        serif: ["'Playfair Display'", "'Cormorant Garamond'", "Georgia", "serif"],
         body: ["'DM Sans'", "sans-serif"],
+        mono: ["'JetBrains Mono'", "ui-monospace", "monospace"],
       },
     },
   },

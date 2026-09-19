@@ -152,3 +152,65 @@
   font-size: 0.75rem;
   color: #737373;
 }
+
+/* Continuous Geopolitical Intelligence Ticker Animation */
+@keyframes geopolitical-ticker {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+.animate-ticker-continuous {
+  display: flex;
+  width: max-content;
+  will-change: transform;
+  animation: geopolitical-ticker var(--ticker-duration, 110s) linear infinite;
+}
+
+.animate-ticker-continuous.is-paused {
+  animation-play-state: paused !important;
+}
+
+.animate-ticker-continuous:hover {
+  animation-play-state: paused;
+}
+
+/* Tactical Intelligence Leaflet Theme */
+.leaflet-container {
+  background-color: #050608 !important;
+  font-family: inherit;
+  outline: none;
+}
+
+.trinetra-popup .leaflet-popup-content-wrapper {
+  background: #090b0f !important;
+  color: #e5e5e5 !important;
+  border: 1px solid rgba(255, 255, 255, 0.15) !important;
+  border-radius: 0.75rem !important;
+  padding: 0 !important;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.8), 0 8px 10px -6px rgba(0, 0, 0, 0.8) !important;
+}
+
+.trinetra-popup .leaflet-popup-content {
+  margin: 0 !important;
+  line-height: inherit;
+}
+
+.trinetra-popup .leaflet-popup-tip {
+  background: #090b0f !important;
+  border: 1px solid rgba(255, 255, 255, 0.15) !important;
+}
+
+.trinetra-popup a.leaflet-popup-close-button {
+  color: #9ca3af !important;
+  padding: 8px !important;
+  top: 4px !important;
+  right: 6px !important;
+}
+
+.trinetra-popup a.leaflet-popup-close-button:hover {
+  color: #ff9933 !important;
+}

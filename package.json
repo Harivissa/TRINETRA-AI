@@ -11,6 +11,7 @@
   "dependencies": {
     "@google/genai": "latest",
     "@types/leaflet": "^1.9.22",
+    "@types/three": "^0.186.0",
     "cors": "^2.8.5",
     "express": "^4.19.2",
     "leaflet": "^1.9.4",
@@ -19,7 +20,8 @@
     "react-dom": "^18.3.1",
     "react-leaflet": "^4.2.1",
     "react-router-dom": "^6.26.0",
-    "recharts": "^2.12.7"
+    "recharts": "^2.12.7",
+    "three": "^0.186.0"
   },
   "devDependencies": {
     "@types/cors": "^2.8.17",

@@ -1,28 +1,35 @@
 import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
-import {
-  Shield,
-  Globe2,
-  Share2,
-  Search,
-  ArrowRight,
-  Zap,
-  Activity,
-  Anchor,
-  Layers,
-  AlertTriangle
-} from "lucide-react";
+import { Link, useLocation } from "react-router-dom";
+import { Anchor, ArrowRight, Shield } from "lucide-react";
 import Header from "../components/dashboard/Header";
 import Footer from "../components/dashboard/Footer";
 import { api } from "../services/api";
 import type { CountryIndexEntry } from "../types";
 
-export default function Dashboard() {
+// Editorial Visual Modules (Matching Screenshot Reference)
+import ConflictTicker from "../components/home/ConflictTicker";
+import EditorialHero from "../components/home/EditorialHero";
+import GlobalRivalryMonitor from "../components/home/GlobalRivalryMonitor";
+import FloatingQuickAction from "../components/home/FloatingQuickAction";
+
+// Authoritative Existing Core Intelligence Modules (Strictly Preserved)
+import SystemFlow from "../components/home/SystemFlow";
+import ThreeEyes from "../components/home/ThreeEyes";
+import GlobalIntelligenceMap from "../components/home/GlobalIntelligenceMap";
+import ModulesGrid from "../components/home/ModulesGrid";
+import InvestigationWorkflow from "../components/home/InvestigationWorkflow";
+import ComparisonLauncher from "../components/home/ComparisonLauncher";
+
+interface DashboardProps {
+  autoScrollToMap?: boolean;
+}
+
+export default function Dashboard({ autoScrollToMap = false }: DashboardProps) {
   const [countries, setCountries] = useState<CountryIndexEntry[]>([]);
   const [chokepoints, setChokepoints] = useState<any[]>([]);
   const [groups, setGroups] = useState<any[]>([]);
   const [loading, setLoading] = useState(true);
-  const [error, setError] = useState<string | null>(null);
+  const location = useLocation();
 
   useEffect(() => {
     setLoading(true);
@@ -39,193 +46,100 @@ export default function Dashboard() {
       })
       .catch((err) => {
         console.error("Dashboard data load error:", err);
-        setError("Failed to load platform data. Please check backend connection.");
         setLoading(false);
       });
   }, []);
 
-  const featuredRivalries = [
-    { a: "IND", b: "CHN", labelA: "India", labelB: "China", tag: "Himalayan & IOR Theatre" },
-    { a: "USA", b: "CHN", labelA: "United States", labelB: "China", tag: "Global Superpower Hegemony" },
-    { a: "IND", b: "PAK", labelA: "India", labelB: "Pakistan", tag: "South Asian Deterrence" },
-    { a: "USA", b: "RUS", labelA: "United States", labelB: "Russia", tag: "Euro-Atlantic Strategic Balance" },
-    { a: "SAU", b: "IRN", labelA: "Saudi Arabia", labelB: "Iran", tag: "Gulf Maritime & Proxy Dynamics" },
-    { a: "ISR", b: "IRN", labelA: "Israel", labelB: "Iran", tag: "Middle East Asymmetric Contestation" },
-  ];
+  // Handle auto-scroll if navigating to #live-map or via /live-map
+  useEffect(() => {
+    if (autoScrollToMap || location.hash === "#live-map") {
+      setTimeout(() => {
+        const el = document.getElementById("live-map");
+        if (el) {
+          el.scrollIntoView({ behavior: "smooth" });
+        }
+      }, 150);
+    }
+  }, [autoScrollToMap, location.hash]);
+
+  const handleReplayIntro = () => {
+    window.dispatchEvent(new CustomEvent("trinetra:replay-intro"));
+  };
 
   return (
-    <div className="min-h-screen bg-trinetra-bg text-neutral-200">
+    <div className="min-h-screen bg-[#070707] text-neutral-200 selection:bg-[#FF7A00]/30 selection:text-white">
+      {/* Primary Header */}
       <Header />
 
-      <main className="mx-auto max-w-[1540px] px-5 py-8 sm:px-8 sm:py-10">
-        {/* Executive Banner */}
-        <section className="mb-10 rounded-lg border border-trinetra-border bg-gradient-to-r from-trinetra-panel via-[#141414] to-trinetra-panel p-8 sm:p-10 relative overflow-hidden">
-          <div className="absolute -right-20 -top-20 size-80 rounded-full bg-trinetra-saffron/5 blur-3xl pointer-events-none" />
-          
-          <div className="relative z-10 max-w-3xl">
-            <div className="section-kicker mb-3">
-              TRINETRA <span>/</span> COMMAND DASHBOARD
-            </div>
-            <h1 className="font-display text-4xl sm:text-5xl text-neutral-100 mb-4 leading-tight">
-              Strategic Intelligence Platform
-            </h1>
-            <p className="text-sm sm:text-base text-neutral-400 mb-6 leading-relaxed">
-              Evaluating global state actors through independent, empirically verified dimensions: military strength, economic resilience, maritime trade chokepoints, supply dependencies, and structural alliances.
-            </p>
+      {/* Geopolitical Crisis Ticker Bar (Directly below Header, matching Screenshot) */}
+      <ConflictTicker />
 
-            <div className="flex flex-wrap items-center gap-4">
-              <Link
-                to="/compare?a=IND&b=CHN"
-                className="px-5 py-2.5 rounded bg-trinetra-saffron text-black text-xs font-semibold hover:bg-trinetra-saffronDim transition-colors flex items-center gap-2"
-              >
-                <Shield className="size-4" />
-                Launch Bilateral Analysis
-              </Link>
-              <Link
-                to="/countries"
-                className="px-5 py-2.5 rounded border border-trinetra-border bg-black/40 text-neutral-200 text-xs hover:border-trinetra-saffron hover:text-white transition-colors flex items-center gap-2"
-              >
-                <Globe2 className="size-4 text-trinetra-saffron" />
-                Explore {countries.length > 0 ? `${countries.length} Country Dossiers` : "Countries"}
-              </Link>
-              <Link
-                to="/network"
-                className="px-5 py-2.5 rounded border border-trinetra-border bg-black/40 text-neutral-200 text-xs hover:border-trinetra-saffron hover:text-white transition-colors flex items-center gap-2"
-              >
-                <Share2 className="size-4 text-trinetra-saffron" />
-                Strategic Network
-              </Link>
-            </div>
-          </div>
-        </section>
+      {/* Hero Section (Matching Screenshot's Editorial Composition & Typographic Scale) */}
+      <EditorialHero
+        countryCount={countries.length}
+        chokepointCount={chokepoints.length}
+        groupCount={groups.length}
+        onReplayIntro={handleReplayIntro}
+      />
 
-        {/* Global Key Metrics Overview */}
-        <section className="mb-12 grid grid-cols-2 sm:grid-cols-4 gap-4">
-          <div className="border border-trinetra-border bg-trinetra-panel p-5 rounded-md">
-            <div className="flex items-center justify-between text-neutral-500 text-xs uppercase mb-2">
-              <span>Tracked States</span>
-              <Globe2 className="size-4 text-trinetra-saffron" />
-            </div>
-            <div className="font-display text-3xl text-neutral-100">
-              {countries.length || 22}
-            </div>
-            <div className="text-[11px] text-neutral-500 mt-1">Verified strategic dossiers</div>
-          </div>
+      <main className="mx-auto max-w-[1540px] px-4 sm:px-8">
+        {/* ACTIVE INTELLIGENCE: GLOBAL RIVALRY MONITOR (Directly below Hero, matching Screenshot) */}
+        <GlobalRivalryMonitor />
 
-          <div className="border border-trinetra-border bg-trinetra-panel p-5 rounded-md">
-            <div className="flex items-center justify-between text-neutral-500 text-xs uppercase mb-2">
-              <span>Maritime Chokepoints</span>
-              <Anchor className="size-4 text-trinetra-saffron" />
-            </div>
-            <div className="font-display text-3xl text-neutral-100">
-              {chokepoints.length || 6}
-            </div>
-            <div className="text-[11px] text-neutral-500 mt-1">Global trade bottlenecks</div>
-          </div>
+        {/* SECTION D: INTERACTIVE GLOBAL INTELLIGENCE MAP (SOVEREIGNS & CHOKEPOINTS) */}
+        <GlobalIntelligenceMap
+          countries={countries}
+          chokepoints={chokepoints}
+        />
 
-          <div className="border border-trinetra-border bg-trinetra-panel p-5 rounded-md">
-            <div className="flex items-center justify-between text-neutral-500 text-xs uppercase mb-2">
-              <span>Strategic Blocs</span>
-              <Layers className="size-4 text-trinetra-saffron" />
-            </div>
-            <div className="font-display text-3xl text-neutral-100">
-              {groups.length || 4}
-            </div>
-            <div className="text-[11px] text-neutral-500 mt-1">Quad, BRICS, NATO, SCO</div>
-          </div>
+        {/* SECTION B: UNDERSTAND THE WORLD AS A SYSTEM (DOMAIN INTERDEPENDENCIES) */}
+        <SystemFlow />
 
-          <div className="border border-trinetra-border bg-trinetra-panel p-5 rounded-md">
-            <div className="flex items-center justify-between text-neutral-500 text-xs uppercase mb-2">
-              <span>Analytical Model</span>
-              <Activity className="size-4 text-trinetra-saffron" />
-            </div>
-            <div className="font-display text-3xl text-emerald-400">
-              Zero-Mock
-            </div>
-            <div className="text-[11px] text-neutral-500 mt-1">Sourced evidence standard</div>
-          </div>
-        </section>
+        {/* SECTION C: THE THREE EYES OF INTELLIGENCE (OBSERVE, CONNECT, ANTICIPATE) */}
+        <ThreeEyes />
 
-        {/* Featured Strategic Bilateral Analyses */}
-        <section className="mb-12">
-          <div className="flex items-end justify-between mb-6">
-            <div>
-              <div className="section-kicker">STRATEGIC PAIRS</div>
-              <h2 className="font-display text-3xl text-neutral-100 mt-1">
-                Core Geopolitical Rivalries
-              </h2>
-            </div>
-            <Link
-              to="/compare"
-              className="text-xs text-trinetra-saffron hover:underline flex items-center gap-1"
-            >
-              Custom Comparison <ArrowRight className="size-3" />
-            </Link>
-          </div>
+        {/* SECTION E: CORE OPERATIONAL INTELLIGENCE MODULES */}
+        <ModulesGrid />
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-            {featuredRivalries.map((pair) => (
-              <Link
-                key={`${pair.a}-${pair.b}`}
-                to={`/compare?a=${pair.a}&b=${pair.b}`}
-                className="group border border-trinetra-border bg-trinetra-panel p-5 rounded-md hover:border-trinetra-saffron transition-all"
-              >
-                <div className="flex items-center justify-between mb-3">
-                  <span className="font-mono text-[10px] uppercase tracking-wider text-neutral-500 border border-trinetra-border px-2 py-0.5 rounded">
-                    {pair.tag}
-                  </span>
-                  <span className="text-xs text-trinetra-saffron group-hover:translate-x-1 transition-transform">
-                    →
-                  </span>
-                </div>
-                <div className="flex items-center justify-between mb-2">
-                  <span className="font-display text-xl text-neutral-100 font-medium">
-                    {pair.labelA}
-                  </span>
-                  <span className="font-mono text-xs text-neutral-600">VS</span>
-                  <span className="font-display text-xl text-neutral-100 font-medium">
-                    {pair.labelB}
-                  </span>
-                </div>
-                <div className="text-xs text-neutral-500">
-                  Compare military budgets, economic leverage, energy flow, and contingency scenarios.
-                </div>
-              </Link>
-            ))}
-          </div>
-        </section>
+        {/* SECTION 5: INTELLIGENCE PREVIEW (INVESTIGATION WORKFLOW WALKTHROUGH) */}
+        <InvestigationWorkflow />
 
-        {/* Strategic Chokepoints & Blocs Dual Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+        {/* SECTION 6: COMPARISON ENGINE ENTRY (FEATURED STRATEGIC RIVALRIES & QUICK LAUNCH) */}
+        <ComparisonLauncher countries={countries} />
+
+        {/* AUXILIARY REPOSITORIES: CHOKEPOINTS & BLOCS ARCHIVES */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-14">
           {/* Critical Maritime Chokepoints */}
-          <section className="border border-trinetra-border bg-trinetra-panel p-6 rounded-md">
+          <section className="border border-neutral-800 bg-[#0d0d0d] p-6 rounded-xl">
             <div className="flex items-center justify-between mb-5">
               <div>
-                <div className="section-kicker">GEO-ECONOMIC TRANSIT</div>
-                <h3 className="font-display text-2xl text-neutral-100 mt-1">
+                <div className="text-[10px] font-mono tracking-wider uppercase text-[#FF7A00]">
+                  GEO-ECONOMIC TRANSIT
+                </div>
+                <h3 className="font-serif text-2xl text-neutral-100 mt-1">
                   Global Maritime Chokepoints
                 </h3>
               </div>
-              <Anchor className="size-5 text-trinetra-saffron" />
+              <Anchor className="size-5 text-[#FF7A00]" />
             </div>
 
             <div className="space-y-3">
-              {chokepoints.slice(0, 5).map((cp: any) => (
+              {chokepoints.slice(0, 4).map((cp: any) => (
                 <div
                   key={cp.id || cp.name}
-                  className="p-3 border border-trinetra-border/70 rounded bg-black/20 hover:border-trinetra-border transition-colors"
+                  className="p-3.5 border border-neutral-800 rounded-lg bg-black/40 hover:border-neutral-700 transition-colors"
                 >
                   <div className="flex items-center justify-between mb-1">
                     <span className="font-medium text-sm text-neutral-200">{cp.name}</span>
-                    <span className="font-mono text-[10px] text-trinetra-saffron">
+                    <span className="font-mono text-[10px] text-[#FF7A00]">
                       {cp.location || "Transit Route"}
                     </span>
                   </div>
-                  <p className="text-xs text-neutral-400 leading-relaxed mb-2">
+                  <p className="text-xs text-neutral-400 leading-relaxed mb-2 font-light">
                     {cp.significance || cp.why_it_matters || "Vital international trade lifeline"}
                   </p>
                   {cp.countries_most_exposed && cp.countries_most_exposed.length > 0 && (
-                    <div className="text-[11px] text-neutral-500">
+                    <div className="text-[11px] text-neutral-500 font-mono">
                       High exposure:{" "}
                       <span className="text-neutral-300">
                         {cp.countries_most_exposed.map((e: any) => e.country || e).join(", ")}
@@ -238,16 +152,19 @@ export default function Dashboard() {
           </section>
 
           {/* Strategic Alliances & Blocs */}
-          <section className="border border-trinetra-border bg-trinetra-panel p-6 rounded-md">
+          <section className="border border-neutral-800 bg-[#0d0d0d] p-6 rounded-xl">
             <div className="flex items-center justify-between mb-5">
               <div>
-                <div className="section-kicker">INSTITUTIONAL ARCHITECTURE</div>
-                <h3 className="font-display text-2xl text-neutral-100 mt-1">
+                <div className="text-[10px] font-mono tracking-wider uppercase text-[#FF7A00]">
+                  INSTITUTIONAL ARCHITECTURE
+                </div>
+                <h3 className="font-serif text-2xl text-neutral-100 mt-1">
                   Multilateral Blocs
                 </h3>
               </div>
-              <Link to="/groups" className="text-xs text-trinetra-saffron hover:underline">
-                All Blocs →
+              <Link to="/groups" className="text-xs text-[#FF7A00] hover:underline flex items-center gap-1 font-mono">
+                <span>All Blocs</span>
+                <ArrowRight className="size-3" />
               </Link>
             </div>
 
@@ -256,22 +173,24 @@ export default function Dashboard() {
                 <Link
                   key={grp.id}
                   to="/groups"
-                  className="block p-3 border border-trinetra-border/70 rounded bg-black/20 hover:border-trinetra-saffron transition-all"
+                  className="block p-3.5 border border-neutral-800 rounded-lg bg-black/40 hover:border-[#FF7A00]/70 transition-all group"
                 >
                   <div className="flex items-center justify-between mb-1">
-                    <span className="font-medium text-sm text-neutral-200">{grp.name}</span>
+                    <span className="font-medium text-sm text-neutral-200 group-hover:text-[#FF7A00] transition-colors">
+                      {grp.name}
+                    </span>
                     <span className="font-mono text-[10px] text-neutral-500">
                       {grp.members?.length || 0} Members
                     </span>
                   </div>
-                  <p className="text-xs text-neutral-400 mb-2">
+                  <p className="text-xs text-neutral-400 mb-2 font-light">
                     {grp.description || grp.strategic_purpose || "Strategic multilateral alliance"}
                   </p>
                   <div className="flex flex-wrap gap-1.5">
                     {(grp.members || []).slice(0, 6).map((m: string) => (
                       <span
                         key={m}
-                        className="font-mono text-[10px] px-1.5 py-0.5 rounded bg-trinetra-border/50 text-neutral-300"
+                        className="font-mono text-[10px] px-1.5 py-0.5 rounded bg-neutral-900 border border-neutral-800 text-neutral-300"
                       >
                         {m}
                       </span>
@@ -283,6 +202,9 @@ export default function Dashboard() {
           </section>
         </div>
       </main>
+
+      {/* Floating Tactical Quick Action Button (Matching bottom right of screenshot) */}
+      <FloatingQuickAction countries={countries} />
 
       <Footer />
     </div>

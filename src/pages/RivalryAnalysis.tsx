@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useRef, useState } from "react";
-import { ArrowRight, RefreshCw } from "lucide-react";
+import { useSearchParams } from "react-router-dom";
+import { ArrowRight, RefreshCw, Swords, Shield, Activity, MapPin } from "lucide-react";
 import Header from "../components/dashboard/Header";
 import Footer from "../components/dashboard/Footer";
 import CountrySelect from "../components/country/CountrySelect";
@@ -8,19 +9,25 @@ import AnalysisResults from "../components/analysis/AnalysisResults";
 import { playLoadingAudio } from "../lib/audio";
 import { api } from "../services/api";
 import type { CountryIndexEntry, RivalryAnalysis as RivalryAnalysisType } from "../types";
+import { SOVEREIGN_PHOTO_DOSSIERS } from "../data/geopoliticalMedia";
 
 export default function RivalryAnalysis() {
+  const [searchParams] = useSearchParams();
   const [countries, setCountries] = useState<CountryIndexEntry[]>([]);
   const [countriesLoading, setCountriesLoading] = useState(true);
   const [countriesError, setCountriesError] = useState<string | null>(null);
 
-  const [countryA, setCountryA] = useState<string>("");
-  const [countryB, setCountryB] = useState<string>("");
+  const initialA = searchParams.get("a") || "IND";
+  const initialB = searchParams.get("b") || "CHN";
+
+  const [countryA, setCountryA] = useState<string>(initialA);
+  const [countryB, setCountryB] = useState<string>(initialB);
   const [analysis, setAnalysis] = useState<RivalryAnalysisType | null>(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [showLoading, setShowLoading] = useState(false);
   const requestRef = useRef<AbortController | null>(null);
+
 
   const fetchCountries = useCallback(() => {
     setCountriesLoading(true);
@@ -170,6 +177,83 @@ export default function RivalryAnalysis() {
               <span className="text-amber-400 ml-2">(Duplicate selection: choose two distinct states)</span>
             )}
           </p>
+
+          {/* Photographic Bilateral Reconnaissance Comparison Cards */}
+          {countryA && countryB && countryA !== countryB && (
+            <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-4">
+              {/* Country A Dossier Header */}
+              {(() => {
+                const infoA = SOVEREIGN_PHOTO_DOSSIERS[countryA] || {
+                  image: "https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?auto=format&fit=crop&w=1200&q=80",
+                  capital: "Sovereign Seat",
+                  strategicFocus: "Territorial & Maritime Autonomy",
+                  flag: "🌐",
+                };
+                return (
+                  <div className="relative rounded-xl overflow-hidden border border-white/10 bg-[#090b0e] h-44 shadow-lg group">
+                    <img
+                      src={infoA.image}
+                      alt={labelA}
+                      className="w-full h-full object-cover filter brightness-50 contrast-110 group-hover:scale-105 transition-all duration-700"
+                      referrerPolicy="no-referrer"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-[#090b0e] via-[#090b0e]/50 to-transparent" />
+                    <div className="absolute top-3 left-4 right-4 flex items-center justify-between font-mono text-[9px]">
+                      <span className="px-2 py-0.5 rounded bg-black/80 border border-trinetra-saffron/40 text-trinetra-saffron font-semibold">
+                        ACTOR VECTOR A // {countryA}
+                      </span>
+                      <span className="text-neutral-400">SEAT: {infoA.capital.toUpperCase()}</span>
+                    </div>
+                    <div className="absolute bottom-3 left-4 right-4">
+                      <div className="flex items-center gap-2 mb-1">
+                        <span className="text-2xl">{infoA.flag}</span>
+                        <h3 className="font-display text-2xl text-white font-medium">{labelA}</h3>
+                      </div>
+                      <p className="text-[11px] text-neutral-300 line-clamp-1 font-light">
+                        <span className="text-amber-400 font-mono">Focus: </span>{infoA.strategicFocus}
+                      </p>
+                    </div>
+                  </div>
+                );
+              })()}
+
+              {/* Country B Dossier Header */}
+              {(() => {
+                const infoB = SOVEREIGN_PHOTO_DOSSIERS[countryB] || {
+                  image: "https://images.unsplash.com/photo-1508804185872-d7badad00f7d?auto=format&fit=crop&w=1200&q=80",
+                  capital: "Sovereign Seat",
+                  strategicFocus: "Regional Power Projection & Defense",
+                  flag: "🌐",
+                };
+                return (
+                  <div className="relative rounded-xl overflow-hidden border border-white/10 bg-[#090b0e] h-44 shadow-lg group">
+                    <img
+                      src={infoB.image}
+                      alt={labelB}
+                      className="w-full h-full object-cover filter brightness-50 contrast-110 group-hover:scale-105 transition-all duration-700"
+                      referrerPolicy="no-referrer"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-[#090b0e] via-[#090b0e]/50 to-transparent" />
+                    <div className="absolute top-3 left-4 right-4 flex items-center justify-between font-mono text-[9px]">
+                      <span className="px-2 py-0.5 rounded bg-black/80 border border-cyan-400/40 text-cyan-400 font-semibold">
+                        ACTOR VECTOR B // {countryB}
+                      </span>
+                      <span className="text-neutral-400">SEAT: {infoB.capital.toUpperCase()}</span>
+                    </div>
+                    <div className="absolute bottom-3 left-4 right-4">
+                      <div className="flex items-center gap-2 mb-1">
+                        <span className="text-2xl">{infoB.flag}</span>
+                        <h3 className="font-display text-2xl text-white font-medium">{labelB}</h3>
+                      </div>
+                      <p className="text-[11px] text-neutral-300 line-clamp-1 font-light">
+                        <span className="text-cyan-400 font-mono">Focus: </span>{infoB.strategicFocus}
+                      </p>
+                    </div>
+                  </div>
+                );
+              })()}
+            </div>
+          )}
         </section>
 
         {(error || countriesError) && (

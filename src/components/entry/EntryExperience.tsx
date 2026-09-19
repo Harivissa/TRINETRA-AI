@@ -36,15 +36,20 @@ export default function EntryExperience({ onComplete, isReplay = false }: EntryE
     const video = videoRef.current;
     if (!video) return;
 
-    video.play().catch(() => {
-      // Autoplay with sound might fail or be blocked by browser policy
-      video.muted = true;
-      setIsMuted(true);
-      video.play().catch(() => {
-        // Autoplay fully blocked; graceful fallback mode
-        setVideoFailed(true);
+    // Explicitly enforce muted properties on DOM node for strict browser autoplay policies
+    video.muted = true;
+    video.defaultMuted = true;
+
+    const playPromise = video.play();
+    if (playPromise !== undefined) {
+      playPromise.catch(() => {
+        video.muted = true;
+        video.play().catch(() => {
+          // Autoplay fully blocked; graceful fallback mode
+          setVideoFailed(true);
+        });
       });
-    });
+    }
   }, []);
 
   const handleEnter = useCallback(() => {
@@ -110,6 +115,7 @@ export default function EntryExperience({ onComplete, isReplay = false }: EntryE
         muted
         preload="auto"
         onLoadedData={() => setVideoLoaded(true)}
+        onCanPlay={() => setVideoLoaded(true)}
         onTimeUpdate={handleTimeUpdate}
         onEnded={handleVideoEnded}
         onError={() => setVideoFailed(true)}
@@ -117,10 +123,8 @@ export default function EntryExperience({ onComplete, isReplay = false }: EntryE
           videoLoaded && !videoFailed ? "opacity-90" : "opacity-0 pointer-events-none"
         }`}
       >
-        {/* Local video asset as specified */}
-        <source src="/video/trinetra-hero.mp4" type="video/mp4" />
-        <source src="/frontend/public/video/trinetra-hero.mp4" type="video/mp4" />
-        <source src="frontend/public/video/trinetra-hero.mp4" type="video/mp4" />
+        {/* Standard Vite public directory root asset path */}
+        <source src="/trinetra-hero.mp4" type="video/mp4" />
       </video>
 
       {/* Fallback ambient tactical grid if video is loading or stalled */}

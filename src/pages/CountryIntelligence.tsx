@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { useSearchParams } from "react-router-dom";
-import { Users, DollarSign, TrendingUp, Radiation, Swords } from "lucide-react";
+import { Users, DollarSign, TrendingUp, Radiation, Swords, Shield, MapPin, Eye, Radio, ExternalLink, Activity } from "lucide-react";
 import Header from "../components/dashboard/Header";
 import Footer from "../components/dashboard/Footer";
 import ProfileSection from "../components/country/ProfileSection";
@@ -11,6 +11,7 @@ import AnalysisResults from "../components/analysis/AnalysisResults";
 import { api } from "../services/api";
 import { playLoadingAudio } from "../lib/audio";
 import type { CountryIndexEntry, Country, RivalryAnalysis as RivalryAnalysisType } from "../types";
+import { SOVEREIGN_PHOTO_DOSSIERS } from "../data/geopoliticalMedia";
 
 function List({ items }: { items?: string[] }) {
   if (!items || items.length === 0) {
@@ -27,6 +28,7 @@ function List({ items }: { items?: string[] }) {
     </ul>
   );
 }
+
 
 export default function CountryIntelligence() {
   const [countries, setCountries] = useState<CountryIndexEntry[]>([]);
@@ -177,10 +179,89 @@ export default function CountryIntelligence() {
 
         {country && (
           <div>
-            <div className="mb-10">
-              <h2 className="font-display text-5xl text-white">{country.name}</h2>
-              <p className="text-neutral-500 text-sm mt-1">{country.region}</p>
-            </div>
+            {/* Editorial Sovereign Dossier Hero Banner with Real Photo Asset */}
+            {(() => {
+              const photoInfo = SOVEREIGN_PHOTO_DOSSIERS[country.id] || {
+                image: "https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?auto=format&fit=crop&w=1600&q=80",
+                capital: "Sovereign Seat",
+                strategicFocus: "Geopolitical Autonomy & Territorial Integrity",
+                flag: "🌐",
+              };
+
+              return (
+                <div className="relative rounded-2xl border border-white/10 overflow-hidden mb-10 bg-[#06080c] shadow-2xl">
+                  {/* Backdrop Photo Image with Cinematic Overlay */}
+                  <div className="relative h-64 sm:h-80 md:h-96 w-full overflow-hidden">
+                    <img
+                      src={photoInfo.image}
+                      alt={country.name}
+                      className="w-full h-full object-cover object-center filter brightness-60 contrast-110 transform hover:scale-105 transition-transform duration-1000"
+                      referrerPolicy="no-referrer"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-[#06080c] via-[#06080c]/60 to-transparent" />
+                    <div className="absolute inset-0 bg-gradient-to-r from-[#06080c] via-transparent to-[#06080c]/80" />
+
+                    {/* Top Reconnaissance Header Overlay */}
+                    <div className="absolute top-4 left-6 right-6 flex items-center justify-between font-mono text-[10px] text-neutral-400">
+                      <div className="flex items-center gap-2">
+                        <span className="size-2 rounded-full bg-trinetra-saffron animate-ping" />
+                        <span className="text-trinetra-saffron font-bold tracking-widest uppercase">
+                          SOVEREIGN INTELLIGENCE FILE // {country.id}
+                        </span>
+                      </div>
+                      <div className="flex items-center gap-3">
+                        <span className="px-2 py-0.5 rounded bg-black/70 border border-white/10 text-neutral-300">
+                          SEAT: {photoInfo.capital.toUpperCase()}
+                        </span>
+                        <span className="px-2 py-0.5 rounded bg-emerald-950/80 border border-emerald-500/40 text-emerald-400 font-bold">
+                          GEO-TRACK ACTIVE
+                        </span>
+                      </div>
+                    </div>
+
+                    {/* Bottom Hero Overlay */}
+                    <div className="absolute bottom-6 left-6 right-6">
+                      <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-4">
+                        <div>
+                          <div className="flex items-center gap-3 mb-2">
+                            <span className="text-3xl sm:text-4xl" role="img" aria-label="Flag">
+                              {photoInfo.flag}
+                            </span>
+                            <span className="font-mono text-xs uppercase tracking-widest text-trinetra-saffron bg-trinetra-saffron/10 border border-trinetra-saffron/30 px-2.5 py-0.5 rounded">
+                              {country.region}
+                            </span>
+                            {country.nuclear?.weapons_state && (
+                              <span className="font-mono text-xs uppercase tracking-wider text-rose-400 bg-rose-950/60 border border-rose-500/40 px-2.5 py-0.5 rounded flex items-center gap-1.5">
+                                <span className="size-1.5 rounded-full bg-rose-500 animate-pulse" />
+                                Declared Nuclear Deterrent
+                              </span>
+                            )}
+                          </div>
+                          <h2 className="font-display text-4xl sm:text-6xl text-white font-light tracking-tight">
+                            {country.name}
+                          </h2>
+                          <p className="text-xs sm:text-sm text-neutral-300 max-w-2xl font-light mt-1">
+                            <strong className="text-neutral-200 font-mono text-xs uppercase tracking-wider text-amber-300">Primary Doctrine: </strong>
+                            {photoInfo.strategicFocus}
+                          </p>
+                        </div>
+
+                        {/* Direct Vector CTA */}
+                        <div className="flex items-center gap-2">
+                          <button
+                            onClick={openCompare}
+                            className="py-2.5 px-4 rounded-lg bg-trinetra-saffron text-black text-xs font-bold uppercase tracking-wider hover:bg-[#ffaa4d] transition-colors flex items-center gap-2 cursor-pointer shadow-lg shadow-orange-500/10"
+                          >
+                            <Swords className="size-3.5" />
+                            Launch Bilateral Vector
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              );
+            })()}
 
             <div className="mb-6">
               <ProfileSection title="At a Glance">
