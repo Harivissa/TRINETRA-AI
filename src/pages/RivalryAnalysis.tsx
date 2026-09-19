@@ -1,5 +1,4 @@
 import { useCallback, useEffect, useRef, useState } from "react";
-import { useSearchParams } from "react-router-dom";
 import { ArrowRight, RefreshCw } from "lucide-react";
 import Header from "../components/dashboard/Header";
 import Footer from "../components/dashboard/Footer";
@@ -14,13 +13,9 @@ export default function RivalryAnalysis() {
   const [countries, setCountries] = useState<CountryIndexEntry[]>([]);
   const [countriesLoading, setCountriesLoading] = useState(true);
   const [countriesError, setCountriesError] = useState<string | null>(null);
-  const [searchParams] = useSearchParams();
 
-  const initialA = searchParams.get("a") || searchParams.get("country_a") || "";
-  const initialB = searchParams.get("b") || searchParams.get("country_b") || "";
-
-  const [countryA, setCountryA] = useState<string>(initialA);
-  const [countryB, setCountryB] = useState<string>(initialB);
+  const [countryA, setCountryA] = useState<string>("");
+  const [countryB, setCountryB] = useState<string>("");
   const [analysis, setAnalysis] = useState<RivalryAnalysisType | null>(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
@@ -81,33 +76,26 @@ export default function RivalryAnalysis() {
     }
   }, [countryA, countryB]);
 
-  // Only auto-run if both distinct countries were explicitly provided in URL search parameters
   useEffect(() => {
-    if (initialA && initialB && initialA !== initialB) {
-      runAnalysis(initialA, initialB);
-    }
     return () => {
       requestRef.current?.abort();
     };
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const handleCountryAChange = (val: string) => {
     setCountryA(val);
     if (val && val === countryB) {
-      setError("Select two different countries to compare.");
-    } else {
-      setError(null);
+      setCountryB("");
     }
+    setError(null);
   };
 
   const handleCountryBChange = (val: string) => {
     setCountryB(val);
     if (val && val === countryA) {
-      setError("Select two different countries to compare.");
-    } else {
-      setError(null);
+      setCountryA("");
     }
+    setError(null);
   };
 
   const labelA = countryA ? (countries.find((country) => country.id === countryA)?.name || countryA) : "Select country";

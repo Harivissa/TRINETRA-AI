@@ -19,6 +19,11 @@ async function startServer() {
   app.use(cors());
   app.use(express.json({ limit: "10mb" }));
 
+  // Serve static assets from public, video, and frontend/public directories
+  app.use("/frontend/public", express.static(path.join(process.cwd(), "frontend/public")));
+  app.use("/public", express.static(path.join(process.cwd(), "public")));
+  app.use("/video", express.static(path.join(process.cwd(), "public/video")));
+
   // --- API Routes ---
 
   app.get("/api/health", (_req, res) => {
