@@ -1,0 +1,6 @@
+{
+  "name": "Trinetra AI",
+  "description": "Strategic Intelligence Platform for geopolitical and strategic systems analysis",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

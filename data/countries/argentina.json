@@ -1,0 +1,84 @@
+{
+  "id": "ARG",
+  "name": "Argentina",
+  "region": "South America",
+  "demographics": {
+    "population_millions": 46.0
+  },
+  "economy": {
+    "gdp_usd_trillion": 0.64,
+    "gdp_growth_pct": -1.6,
+    "currency": "ARS (Argentine Peso)",
+    "notes": "Verified public economic statistics, INDEC and World Bank estimates"
+  },
+  "military": {
+    "active_troops": 75000,
+    "defence_spending_usd_billion": 3.2,
+    "defence_spending_pct_gdp": 0.5,
+    "defence_spending_pct_gdp_source": "SIPRI / World Bank WDI",
+    "arms_exports_usd": 15000000,
+    "arms_exports_year": 2024,
+    "arms_exports_source": "SIPRI / World Bank WDI"
+  },
+  "energy": {
+    "net_import_dependence_ratio": 0.05,
+    "note": "Transitioning toward net exporter via Vaca Muerta shale gas development"
+  },
+  "infrastructure": {
+    "ports": ["Buenos Aires", "Rosario", "Bahía Blanca"],
+    "critical_assets": ["Vaca Muerta Energy Basin", "Paraná River Grain Corridor"]
+  },
+  "trade": {
+    "major_exports": ["Soymeal", "Corn", "Soybean oil", "Wheat", "Lithium", "Automotive"],
+    "major_imports": ["Machinery", "Intermediate manufactured goods", "Refined petroleum"]
+  },
+  "technology": {
+    "space_agency": "CONAE",
+    "nuclear_reactors": "INVAP research reactors and nuclear energy infrastructure"
+  },
+  "geography": {
+    "region": "South America",
+    "area_sq_km": 2780400,
+    "capital": "Buenos Aires"
+  },
+  "politics": {
+    "system": "Federal Presidential Constitutional Republic",
+    "executive": "President of the Argentine Nation",
+    "legislature": "National Congress (Senate and Chamber of Deputies)"
+  },
+  "nuclear": {
+    "weapons_state": false
+  },
+  "strategic_priorities": [
+    "Macroeconomic stabilization and debt sustainability",
+    "Southern Cone and Mercosur trade development",
+    "Vaca Muerta energy infrastructure expansion",
+    "South Atlantic maritime domain awareness and Antarctic treaty presence"
+  ],
+  "dependencies": [
+    "External debt and multilateral financing",
+    "Agricultural commodity market volatility"
+  ],
+  "vulnerabilities": [
+    "Fiscal volatility and currency exchange pressures",
+    "Under-equipped conventional armed forces",
+    "Reliance on global agricultural prices"
+  ],
+  "strengths": [
+    "Top global agricultural exporter (soy, grain)",
+    "World-class lithium reserves (Lithium Triangle)",
+    "Second largest global shale gas formation (Vaca Muerta)",
+    "High human development index and nuclear research capabilities"
+  ],
+  "alliances": [
+    "BRA",
+    "regional-blocs"
+  ],
+  "rivals": [],
+  "_meta": {
+    "data_quality": "verified public indicators from World Bank, INDEC, and SIPRI",
+    "source": "INDEC / World Bank WDI / SIPRI 2024-2025",
+    "confidence": "high",
+    "last_updated": "2025-06-01"
+  }
+}

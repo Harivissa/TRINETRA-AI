@@ -86,6 +86,11 @@
       "file": "brazil.json"
     },
     {
+      "id": "ARG",
+      "name": "Argentina",
+      "file": "argentina.json"
+    },
+    {
       "id": "IDN",
       "name": "Indonesia",
       "file": "indonesia.json"
